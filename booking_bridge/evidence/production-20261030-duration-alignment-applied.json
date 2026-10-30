@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "completed_at_utc": "2026-10-30T12:13:36.613Z",
+  "scope": "nine_source_authoritative_duration_updates_only",
+  "owner_authority": "SrediMe_catalog_priority",
+  "company_identity_verified": true,
+  "service_metadata_updates": 9,
+  "verified_service_readbacks": 9,
+  "changed_fields": [
+    "duration"
+  ],
+  "operations": [
+    {
+      "source_native_id": "116145",
+      "target_service_id": 404,
+      "duration_before": 30,
+      "duration_after": 45
+    },
+    {
+      "source_native_id": "222405",
+      "target_service_id": 472,
+      "duration_before": 75,
+      "duration_after": 60
+    },
+    {
+      "source_native_id": "116156",
+      "target_service_id": 5,
+      "duration_before": 60,
+      "duration_after": 90
+    },
+    {
+      "source_native_id": "189001",
+      "target_service_id": 434,
+      "duration_before": 40,
+      "duration_after": 60
+    },
+    {
+      "source_native_id": "222383",
+      "target_service_id": 438,
+      "duration_before": 5,
+      "duration_after": 30
+    },
+    {
+      "source_native_id": "207951",
+      "target_service_id": 6,
+      "duration_before": 60,
+      "duration_after": 90
+    },
+    {
+      "source_native_id": "149351",
+      "target_service_id": 15,
+      "duration_before": 50,
+      "duration_after": 60
+    },
+    {
+      "source_native_id": "195282",
+      "target_service_id": 162,
+      "duration_before": 60,
+      "duration_after": 70
+    },
+    {
+      "source_native_id": "176064",
+      "target_service_id": 14,
+      "duration_before": 50,
+      "duration_after": 30
+    }
+  ],
+  "target_service_other_metadata_preserved": true,
+  "preexisting_active_bookings_preserved": 4,
+  "future_native_bookings_preserved": 2,
+  "appointment_writes": 0,
+  "client_writes": 0,
+  "source_writes": 0,
+  "production_enabled": false,
+  "profile_or_readiness_changed": false,
+  "unattended_sync_enabled": false,
+  "inactive_service_activity_alignment_performed": false,
+  "connector_argument_rejections_before_transport": 1,
+  "unknown_mutation_outcomes": 0
+}

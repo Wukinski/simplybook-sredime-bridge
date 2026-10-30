@@ -1,0 +1,17 @@
+# Replace the hostname only after DNS and hosting approval. Caddy runs on host.
+booking-bridge.example.invalid {
+    # No access logging: ICS paths contain bearer credentials.
+    header {
+        Strict-Transport-Security "max-age=31536000"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "no-referrer"
+    }
+    @public path /sredime/webhook /simplybook/webhook /ics/* /health/live
+    handle @public {
+        reverse_proxy 127.0.0.1:8000
+    }
+    # Operations and readiness are accessed via SSH port forwarding/VPN only.
+    handle {
+        respond 404
+    }
+}

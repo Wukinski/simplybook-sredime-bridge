@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T10:51:42.192301+00:00",
+  "source": "provider_assignment/evidence/admin-openapi.json",
+  "source_sha256": "fac14a69aa94d4f539d54dccf2a040206ad6a9c6d8a49c37f60dd0292ac739cb",
+  "client_field_routes": {
+    "/admin/clients/fields": [
+      "get"
+    ],
+    "/admin/clients/field-values/{id}": [
+      "get",
+      "put"
+    ],
+    "/admin/clients/field-values": [
+      "post"
+    ]
+  },
+  "admin_config_or_setting_routes": {
+    "/admin/config": [
+      "get"
+    ],
+    "/admin/invoices/terminal/stripe-config-location": [
+      "get"
+    ]
+  },
+  "schema_optionality_properties": [
+    {
+      "schema": "Client_FieldDetailsEntity",
+      "keys": [
+        "is_optional"
+      ]
+    },
+    {
+      "schema": "AdditionalFieldEntity",
+      "keys": [
+        "optional"
+      ]
+    }
+  ],
+  "client_field_policy_mutation_route_documented": false,
+  "field_values_mutations_change_client_values_not_field_requirements": true,
+  "account_requests": 0
+}

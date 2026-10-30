@@ -1,0 +1,45 @@
+{
+    "schema_version":  1,
+    "checked_at_utc":  "2026-10-28T12:53:58.9146323Z",
+    "secrets_private_acl":  true,
+    "allowed_principal_roles":  [
+                                    "current_windows_user",
+                                    "SYSTEM",
+                                    "Administrators"
+                                ],
+    "files":  [
+                  {
+                      "file":  "booking_bridge/secrets/diagnostic-smtp-password.txt",
+                      "exists":  true,
+                      "inheritance_disabled":  true,
+                      "only_expected_principals":  true,
+                      "all_expected_principals_present":  true,
+                      "deny_rules_absent":  true,
+                      "inherited_rules_absent":  true,
+                      "owner_unchanged":  true,
+                      "contents_unchanged":  true,
+                      "last_write_unchanged":  true,
+                      "creation_time_unchanged":  true,
+                      "attributes_unchanged":  true,
+                      "password_present":  false
+                  },
+                  {
+                      "file":  "booking_bridge/secrets/diagnostic-smtp.env",
+                      "exists":  true,
+                      "inheritance_disabled":  true,
+                      "only_expected_principals":  true,
+                      "all_expected_principals_present":  true,
+                      "deny_rules_absent":  true,
+                      "inherited_rules_absent":  true,
+                      "owner_unchanged":  true,
+                      "contents_unchanged":  true,
+                      "last_write_unchanged":  true,
+                      "creation_time_unchanged":  true,
+                      "attributes_unchanged":  true
+                  }
+              ],
+    "contents_modified":  false,
+    "secret_values_printed":  false,
+    "server_changes":  0,
+    "emails_sent":  0
+}

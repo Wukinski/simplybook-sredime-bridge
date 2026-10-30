@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-23T09:30:18.618812+00:00",
+  "direction": "Supported ICS/webhook pilot; subminute is optimization target, SimplyBook full isolation waived",
+  "runtime_mode": "simulation",
+  "production_enabled": false,
+  "windows_tests": {
+    "tests": 385,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "focused_tests": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "windows_http_smoke": {
+    "mode": "simulation",
+    "external_reads": false,
+    "external_writes": false,
+    "ack_ms": 31,
+    "accepted_status": 202,
+    "deduplicated_rows": 1,
+    "final_state": "test",
+    "invalid_signature_status": 401,
+    "readiness_status": 200,
+    "status": "passed"
+  },
+  "linux_current_code_tests": "Not run: Docker Desktop reports unable to start after launch attempt",
+  "previous_linux_tests": {
+    "count": 241,
+    "scope": "Prior image only; does not validate modified code"
+  },
+  "live_record_ids": {
+    "simplybook_provider": 9,
+    "simplybook_service": 496,
+    "sredime_employee": "11772",
+    "sredime_service": "233160"
+  },
+  "live_writes_this_checkpoint": {
+    "simplybook_provider_creates": 1,
+    "simplybook_service_creates": 1,
+    "simplybook_test_schedule_updates": 2,
+    "sredime_employee_creates": 1,
+    "sredime_test_employee_updates": 3,
+    "sredime_service_creates": 1,
+    "bookings": 0,
+    "clients": 0,
+    "webhook_subscriptions": 0,
+    "import_url_updates": 0
+  },
+  "original_source_employee_settings_preserved": true,
+  "existing_simplybook_catalog_and_existing_to_existing_assignments_preserved": true,
+  "simplybook_inherited_service_links": 12,
+  "repeat_provisioning_reused_same_ids": true,
+  "measurements": {
+    "simplybook_close_request_to_slots_readback_seconds": 5.215,
+    "simplybook_restore_request_to_slots_readback_seconds": 5.097,
+    "live_read_snapshot_to_local_feed_seconds": 4.0,
+    "local_testclient_feed_seconds": 0.078,
+    "sredime_export_get_seconds": 0.375,
+    "source_to_effective_remote_availability_seconds": null
+  },
+  "measurement_limitations": [
+    "SimplyBook schedule observations include MCP roundtrips and are not source commit timestamps",
+    "Local feed fetch was TestClient, not SrediMe",
+    "No real source booking/webhook/refresh/import/customer-visible availability trial yet"
+  ],
+  "external_dependencies": [
+    "Public HTTPS host/domain/access not configured",
+    "Controlled test contact missing",
+    "Real signing secrets obtained during callback configuration"
+  ],
+  "trial_preparation_remaining": [
+    "Timing/resource verification flags remain false",
+    "Enable source test service/internal test schedule only for controlled trial; currently inactive/nonbookable",
+    "Configure callbacks/import for test employee only"
+  ],
+  "source_hashes": {
+    "booking_bridge/model.py": "7737e9cb65d189f2b76b0dcba8e1214092e1b8d80e48f6f836bdd438985e30ad",
+    "booking_bridge/preflight.py": "29fa7e1d702706867b3642e60aca6f985fabdefb2f01c190c18e21ddfd58b21e",
+    "booking_bridge/pilot_setup.py": "79b1f58ef54abed342e192224325cf6bb481c6e9874a6709e0801b8840b4f64e",
+    "booking_bridge/provision_pilot.py": "e0c87fc4515b7d4ee092385f04dd0be7be23486e79dd6b915c84d089745a30b7",
+    "booking_bridge/controlled_pilot.py": "9ab32f26addeae978cdde964502ef26578495011ea61f3298ec291553c739862",
+    "booking_bridge/__main__.py": "2b740c1879dfac1a30f23de7dae84000708ee092f692fb7552b9b47caeea0bac"
+  }
+}

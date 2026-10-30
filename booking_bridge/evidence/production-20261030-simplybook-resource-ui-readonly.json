@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T12:01:53.127995+00:00",
+  "scope": "readonly_native_related_resources_ui",
+  "navigation_url": "https://studioandjelija.secure.simplybook.me/v2/management/#resources",
+  "source_requests": 0,
+  "resource_ui_requests": [],
+  "resource_json_projections": [],
+  "blocked_non_get_requests": [
+    {
+      "method": "POST",
+      "path": "/content-policy/report"
+    },
+    {
+      "method": "POST",
+      "path": "/content-policy/report"
+    },
+    {
+      "method": "POST",
+      "path": "/server/he-man_main"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/widget/log"
+    }
+  ],
+  "blocked_customer_or_calendar_requests": [],
+  "blocked_other_api_paths": [
+    "/v2/rest/acl"
+  ],
+  "api_get_count": 1,
+  "maximum_api_gets": 35,
+  "feature_enable_or_purchase_attempts": 0,
+  "customer_data_saved": false,
+  "html_cookies_tokens_saved": false,
+  "existing_bookings_6_7_modified": false,
+  "navigation_http_status": 200,
+  "final_native_path": "/v2/management/",
+  "final_native_fragment": "resources",
+  "resource_or_plan_labels": [],
+  "login_form_visible": true,
+  "resource_controls_visible": false,
+  "completed_at_utc": "2026-10-30T12:02:09.868814+00:00",
+  "account_business_mutations": 0,
+  "supported_resource_rest_inventory_discovered": false,
+  "tariff_or_available_custom_feature_quota_proven": false,
+  "availability_of_feature_not_inferred_from_disabled_state": true
+}

@@ -1,0 +1,48 @@
+{
+  "account_identity_verified_via_mcp": true,
+  "bearer_oauth_challenge": true,
+  "business_writes": 0,
+  "business_writes_scope": "identity verification only; subsequent provisioning writes are recorded separately in pilot-provisioning-check.json",
+  "checked_at": "2026-10-22T11:34:07.738561+00:00",
+  "configured": true,
+  "followup": {
+    "account_identity_verified_via_mcp": false,
+    "business_writes": 0,
+    "checked_at": "2026-10-21T18:47:18.416321+00:00",
+    "next_check": "Zed server active indicator and MCP forwarding into a new Codex thread",
+    "oauth_result_independently_verified": false,
+    "owner_reports_setup_completed": true,
+    "session_simplybook_tools_available": false,
+    "zed_configuration_verified": true,
+    "zed_log_contains_oauth_required": true
+  },
+  "initial_attempt": {
+    "account_identity_verified_via_mcp": false,
+    "business_writes": 0,
+    "checked_at": "2026-10-21T18:43:18.550870+00:00",
+    "oauth_completed": false,
+    "session_simplybook_tools_available": false
+  },
+  "oauth_completed": true,
+  "other_settings_preserved": true,
+  "session_simplybook_tools_available": true,
+  "settings_backup_created": true,
+  "successful_connection": {
+    "account_identity_verified_via_mcp": true,
+    "baseline_provider_count": 6,
+    "baseline_service_count": 494,
+    "business_writes_for_identity_check": 0,
+    "checked_at": "2026-10-22T11:34:07.738561+00:00",
+    "company": "studioandjelija",
+    "oauth_completed": true,
+    "session_simplybook_tools_available": true,
+    "timezone": "Europe/Belgrade",
+    "verification_methods": [
+      "get_company_info",
+      "get_providers_list",
+      "get_services_list"
+    ]
+  },
+  "unauthenticated_initialize_http_status": 401,
+  "zed_server_name": "simplybook-admin"
+}

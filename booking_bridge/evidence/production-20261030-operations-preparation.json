@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "prepared_at_utc": "2026-10-30T11:04:35.181955+00:00",
+  "scope": "dormant_offhost_backup_and_independent_monitor_tools",
+  "windows_focused_tests": {
+    "passed": 50,
+    "failed": 0,
+    "skipped": 0,
+    "includes_real_pinned_sdk_contract": true,
+    "includes_offline_docker_compose_parsing": true
+  },
+  "sdk": {
+    "boto3": "1.43.119",
+    "botocore": "1.43.119",
+    "jmespath": "1.0.1",
+    "s3transfer": "0.19.0",
+    "installed_only_in_ignored_local_sdk_directory": true
+  },
+  "linux_validation_performed": false,
+  "public_bundle": {
+    "files": 20,
+    "archive_sha256": "3afb71cbe6bcfacf77973e09ceaac4b01b6ac12a25fd5f0fcb8dde9c79bb89e5",
+    "archive_bytes": 17361,
+    "private_inputs_included": false,
+    "installed_or_activated": false
+  },
+  "actual_s3_uploads": 0,
+  "actual_smtp_messages": 0,
+  "live_booking_writes": 0,
+  "server_mutations": 0,
+  "accounts_created": 0,
+  "timers_installed_or_enabled": 0,
+  "unattended_offhost_backup_active": false,
+  "independent_monitor_active": false,
+  "production_configuration_or_policy_changed": false,
+  "owner_inputs_remaining": [
+    "selected_independent_storage_and_private_restricted_credentials",
+    "independent_recovery_key_custody",
+    "managed_external_monitor_or_existing_independent_executor"
+  ],
+  "file_sha256": {
+    "booking_bridge/deploy/offhost_backup.py": "a9e582104651d87feaf2961222c87f225e3fe9310f6c242428ff38f2ce9ad097",
+    "booking_bridge/deploy/operations_monitor.py": "439bfd20a5c4c4a17247aeae94a9a3475144f971cba5477fedc6f1df4be596a6",
+    "booking_bridge/deploy/operations/README.md": "d3569bc0a3e528173e3cbe8c9c91d415d43de56db3225d83730c733267a37097",
+    "booking_bridge/deploy/operations/Dockerfile": "1c08b770b05e1c109288e337ddb9d76a27c74ee02a1f926d44cb9fe7be6d9567",
+    "booking_bridge/deploy/operations/requirements.lock.txt": "da884b56c2375b267b8b32e60667d09e35401328b879d9bb2e8e3512c624cf0e",
+    "booking_bridge/deploy/operations/operations.env.example": "abd3d4c552322594ef53769cc45e0658ed00e27f8889924384fecd4b618b9fbf",
+    "booking_bridge/deploy/operations/backup.example.json": "abc5e68050e40059280c5aa9dacb9c284c4239d27f7d7c57f59a584e4e654226",
+    "booking_bridge/deploy/operations/s3-credentials.example.json": "eb852e5c1f38fa2834dd09529d96c6709c7caf6198e45dbf18b692e0e280e978",
+    "booking_bridge/deploy/operations/monitor.host.example.json": "4cb38ad69e60e173414de552c95b20342d7a9ef5361486fc4cf214eccda2c87e",
+    "booking_bridge/deploy/operations/monitor.external.example.json": "fbc80708ab498afdd2a73c6d21ca65d65d25a702e968d847707cb6394fcf52a9",
+    "booking_bridge/deploy/operations/compose.host-operations.yaml": "b5a03c48a976ac14dcf105271739e13f71d77dff3daa9348dd190fcdc491d7f0",
+    "booking_bridge/deploy/operations/compose.external-monitor.yaml": "ce853f61ac5dee5b577771b0dd60da130aa38612029eefdbb8a173a5a21ee079",
+    "booking_bridge/deploy/operations/booking-bridge-offhost-backup.service": "83c2417a5d730121559634e565c8ddb0c1434f69f2e2691e36826495c4bfbaff",
+    "booking_bridge/deploy/operations/booking-bridge-offhost-backup.timer": "bb0195248363fb6747c142d9595fb2b28af03217fd82173302b0ba7cb4504c42",
+    "booking_bridge/deploy/operations/booking-bridge-offhost-restore-drill.service": "c6fe8bf1c229c31660fd9431b729fab91423120ce58258af35cd9fb4587663c7",
+    "booking_bridge/deploy/operations/booking-bridge-offhost-restore-drill.timer": "33d3cc98b685f8502a620bb3be98b03ee0b416d141446f96f31e24a0061822d5",
+    "booking_bridge/deploy/operations/booking-bridge-host-monitor.service": "e91b6c634ab1f93a8be3aff173232517cf39284382ef92771900501728173a57",
+    "booking_bridge/deploy/operations/booking-bridge-host-monitor.timer": "25e8ccfa3c4d3ebd9ec925b5a375545838a8dcd7a7f1014a5b28c66f43589ab4",
+    "booking_bridge/deploy/operations/booking-bridge-external-monitor.service": "90e06ffe333cffb0df33d8e25dea5d4aa6ba56a08aa04ec8b487ca3442738c07",
+    "booking_bridge/deploy/operations/booking-bridge-external-monitor.timer": "ca66db195de68e451475f1fce11ead0da8c6aab46ac9e8396e830543fb5ae436",
+    "booking_bridge/deploy/build_operations_bundle.py": "ebed628e6133e5301f4b09587ed249518bbbf6d8d2d665889f2ab58c367dfe18",
+    "booking_bridge/tests/test_operations_deployment.py": "11cfd7e53346a3aecfbb0cb9871c42209636ad597471ee786588f51fff97779b",
+    "booking_bridge/tests/test_offhost_backup_runner.py": "76bf8395e5f7f283f3ee276ab94fdc54fd91bce8f51f185e3b8af140991b81c7",
+    "booking_bridge/tests/test_operations_monitor_runner.py": "d8617437a1451260d644f63ac849f7173330d3d50c434a959d5661d782e77fab",
+    "booking_bridge/tests/test_operations_s3_sdk_contract.py": "0413c31d99e1987a0178fd14ce895c20541a28aff839210b2778a78a7982c3e3"
+  }
+}

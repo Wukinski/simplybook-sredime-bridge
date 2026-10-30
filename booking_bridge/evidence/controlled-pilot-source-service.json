@@ -1,0 +1,40 @@
+{
+  "active": false,
+  "duration": 30,
+  "employee_id": "11772",
+  "external_id": "496",
+  "mutations": [
+    {
+      "at": "2026-10-23T09:22:41.987325+00:00",
+      "operation": "temporary_staff_bookable_True",
+      "state": "verified"
+    },
+    {
+      "at": "2026-10-23T09:22:44.114914+00:00",
+      "operation": "temporary_staff_bookable_False",
+      "state": "verified"
+    }
+  ],
+  "name": "TEST integracija 30 min",
+  "observed_form_errors": false,
+  "price": 0,
+  "started_at": "2026-10-23T09:22:43.071980+00:00",
+  "state": "verified",
+  "id": "233160",
+  "verified_at": "2026-10-23T09:23:19.742011+00:00",
+  "readback": {
+    "name": "TEST integracija 30 min",
+    "duration": "30",
+    "sale_price": "0.00",
+    "external_id": "496",
+    "cleanup_duration": "0",
+    "start_duration": "0",
+    "end_duration": "0",
+    "active": false,
+    "employees": [],
+    "assets": []
+  },
+  "staff_service_assignment_verified": true,
+  "staff_bookable": false,
+  "staff_working_days": []
+}

@@ -1,0 +1,12 @@
+{
+  "mode": "simulation",
+  "external_reads": false,
+  "external_writes": false,
+  "ack_ms": 39,
+  "accepted_status": 202,
+  "deduplicated_rows": 1,
+  "final_state": "test",
+  "invalid_signature_status": 401,
+  "readiness_status": 200,
+  "status": "passed"
+}

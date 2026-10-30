@@ -1,0 +1,18 @@
+{
+  "scope": "host",
+  "live_url": "",
+  "ready_url": "",
+  "admin_key_file": null,
+  "tls_host": "",
+  "tls_min_days": 2,
+  "local_state": "/bridge-state/bridge.sqlite",
+  "disk_path": "/backup-spool",
+  "backup_status_file": "/backup-spool/backup-status.json",
+  "backup_max_age": 7200,
+  "restore_status_file": "/backup-spool/restore-drill-status.json",
+  "restore_max_age": 172800,
+  "state_directory": "/monitor-state",
+  "smtp_env_file": "/run/secrets/smtp_env",
+  "failure_threshold": 2,
+  "recovery_threshold": 2
+}

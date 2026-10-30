@@ -1,0 +1,56 @@
+{
+  "passed": false,
+  "schema_version": 1,
+  "synthetic_only": true,
+  "tests": [
+    {
+      "actual_assessment": "no_additional_issue",
+      "error_code": null,
+      "expected": "no_additional_issue",
+      "name": "healthy_adjacency",
+      "passed": true
+    },
+    {
+      "actual_assessment": "operator_review",
+      "error_code": null,
+      "expected": "operator_review",
+      "name": "verified_overlap",
+      "passed": true
+    },
+    {
+      "actual_assessment": "operator_review",
+      "error_code": null,
+      "expected": "operator_review",
+      "name": "duplicate_candidate",
+      "passed": true
+    },
+    {
+      "actual_assessment": "operator_review",
+      "error_code": null,
+      "expected": "operator_review",
+      "name": "source_canceled_target_active",
+      "passed": true
+    },
+    {
+      "actual_assessment": null,
+      "error_code": "model_unavailable",
+      "expected": "operator_review",
+      "name": "unresolved_intent",
+      "passed": false
+    },
+    {
+      "actual_assessment": "insufficient_evidence",
+      "error_code": null,
+      "expected": "insufficient_evidence",
+      "name": "stale_conflicting_data",
+      "passed": true
+    },
+    {
+      "actual_assessment": "no_additional_issue",
+      "error_code": null,
+      "expected": "no_additional_issue",
+      "name": "canceled_overlap_healthy",
+      "passed": true
+    }
+  ]
+}

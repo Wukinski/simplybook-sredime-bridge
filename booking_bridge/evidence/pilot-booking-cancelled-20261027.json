@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-27 08:17:45 UTC",
+  "booking_id": 2,
+  "found_in_cancelled_report": true,
+  "status": "canceled",
+  "provider_id": 9,
+  "service_id": 496,
+  "client_id": 1,
+  "new_booking_created": false,
+  "existing_client_deleted": false,
+  "notification_delivery": "unknown",
+  "normalized_status": "cancelled"
+}

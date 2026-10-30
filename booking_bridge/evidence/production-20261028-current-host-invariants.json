@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-28T18:14:55.344819+00:00",
+  "scope": "read_only_current_pilot_vs_earlier_host_and_held_stage",
+  "database_access": "mode=ro;query_only;single_snapshot_transaction",
+  "raw_rows_or_payloads_exported": false,
+  "account_api_calls": 0,
+  "staging_or_release_created": false,
+  "source_callbacks": 0,
+  "table_comparison": {
+    "events": {
+      "earlier_host": {
+        "count": 4,
+        "ordered_sha256": "51d74ef88bd4471218ad55ea64c8d14fb200c79a7ea6170dd465ddf6784b0228"
+      },
+      "current_host": {
+        "count": 4,
+        "ordered_sha256": "51d74ef88bd4471218ad55ea64c8d14fb200c79a7ea6170dd465ddf6784b0228"
+      },
+      "unchanged": true,
+      "held_stage": {
+        "count": 4,
+        "ordered_sha256": "51d74ef88bd4471218ad55ea64c8d14fb200c79a7ea6170dd465ddf6784b0228"
+      },
+      "stage_matches_current": true
+    },
+    "booking_heads": {
+      "earlier_host": {
+        "count": 2,
+        "ordered_sha256": "8e731e65aa8b0f8edaeaece5b118440d3c42de697ab36e17abac57c653b8777b"
+      },
+      "current_host": {
+        "count": 2,
+        "ordered_sha256": "8e731e65aa8b0f8edaeaece5b118440d3c42de697ab36e17abac57c653b8777b"
+      },
+      "unchanged": true,
+      "held_stage": {
+        "count": 2,
+        "ordered_sha256": "8e731e65aa8b0f8edaeaece5b118440d3c42de697ab36e17abac57c653b8777b"
+      },
+      "stage_matches_current": true
+    },
+    "links": {
+      "earlier_host": {
+        "count": 0,
+        "ordered_sha256": "eba6954aec3cd5bb8edda10309a548170dd417dfb56478bcf09e9e5f16360823"
+      },
+      "current_host": {
+        "count": 0,
+        "ordered_sha256": "eba6954aec3cd5bb8edda10309a548170dd417dfb56478bcf09e9e5f16360823"
+      },
+      "unchanged": true,
+      "held_stage": {
+        "count": 1,
+        "ordered_sha256": "53b33abd92f967e23031cb33fcc1b389eaecda39051ae399581f7f1610a99440"
+      },
+      "stage_matches_current": false
+    },
+    "intents": {
+      "earlier_host": {
+        "count": 0,
+        "ordered_sha256": "6aaa8706d66018a07f195c374d6fa205170d7bac955e0dbdc6e84d621af9924d"
+      },
+      "current_host": {
+        "count": 0,
+        "ordered_sha256": "6aaa8706d66018a07f195c374d6fa205170d7bac955e0dbdc6e84d621af9924d"
+      },
+      "unchanged": true,
+      "held_stage": {
+        "count": 1,
+        "ordered_sha256": "dcbefc2648df2b9c67d283c9da22f20c1adeae196c38ac4ebe9d5d3ee958dd3f"
+      },
+      "stage_matches_current": false
+    },
+    "clients": {
+      "earlier_host": {
+        "count": 0,
+        "ordered_sha256": "0905271edcabbafa76ba7f538c5a3ccf8acfba0c9781a4d3ad85efe97e0b43f2"
+      },
+      "current_host": {
+        "count": 0,
+        "ordered_sha256": "0905271edcabbafa76ba7f538c5a3ccf8acfba0c9781a4d3ad85efe97e0b43f2"
+      },
+      "unchanged": true,
+      "held_stage": {
+        "count": 1,
+        "ordered_sha256": "4fa8fe70a1ccfae295a70ef60e7e072d579e2f746e69433cf02b9ad2c5945fce"
+      },
+      "stage_matches_current": false
+    },
+    "rates": {
+      "earlier_host": {
+        "count": 0,
+        "ordered_sha256": "3cd1d8163beda6d37953e0e330303202802625d0a68e17c98a0be89604194057"
+      },
+      "current_host": {
+        "count": 0,
+        "ordered_sha256": "3cd1d8163beda6d37953e0e330303202802625d0a68e17c98a0be89604194057"
+      },
+      "unchanged": true,
+      "held_stage": {
+        "count": 1,
+        "ordered_sha256": "cee78ffeae74bd728f0e3616c5512b2fcf86c83a606623eb3ea6335dccaada22"
+      },
+      "stage_matches_current": false
+    },
+    "source_bindings": {
+      "earlier_host": {
+        "count": 0,
+        "ordered_sha256": "c543e0e2a081f5e49c83366de63b38c47b7f0d6a51aac6d7a8d26cd4fa6b3469"
+      },
+      "current_host": {
+        "count": 0,
+        "ordered_sha256": "c543e0e2a081f5e49c83366de63b38c47b7f0d6a51aac6d7a8d26cd4fa6b3469"
+      },
+      "unchanged": true,
+      "held_stage": {
+        "count": 0,
+        "ordered_sha256": "c543e0e2a081f5e49c83366de63b38c47b7f0d6a51aac6d7a8d26cd4fa6b3469"
+      },
+      "stage_matches_current": true
+    }
+  },
+  "current_host": {
+    "schema_version": 1,
+    "query_only": true,
+    "tables": {
+      "events": {
+        "count": 4,
+        "ordered_sha256": "51d74ef88bd4471218ad55ea64c8d14fb200c79a7ea6170dd465ddf6784b0228"
+      },
+      "booking_heads": {
+        "count": 2,
+        "ordered_sha256": "8e731e65aa8b0f8edaeaece5b118440d3c42de697ab36e17abac57c653b8777b"
+      },
+      "links": {
+        "count": 0,
+        "ordered_sha256": "eba6954aec3cd5bb8edda10309a548170dd417dfb56478bcf09e9e5f16360823"
+      },
+      "intents": {
+        "count": 0,
+        "ordered_sha256": "6aaa8706d66018a07f195c374d6fa205170d7bac955e0dbdc6e84d621af9924d"
+      },
+      "clients": {
+        "count": 0,
+        "ordered_sha256": "0905271edcabbafa76ba7f538c5a3ccf8acfba0c9781a4d3ad85efe97e0b43f2"
+      },
+      "rates": {
+        "count": 0,
+        "ordered_sha256": "3cd1d8163beda6d37953e0e330303202802625d0a68e17c98a0be89604194057"
+      },
+      "source_bindings": {
+        "count": 0,
+        "ordered_sha256": "c543e0e2a081f5e49c83366de63b38c47b7f0d6a51aac6d7a8d26cd4fa6b3469"
+      }
+    },
+    "cache": {
+      "count": 16,
+      "ordered_sha256": "881970da2ddcd94b6b80982de7c64e8c91eb5f32e8bc31e8fd593b653431f83a"
+    },
+    "applied_baselines": {
+      "count": 0,
+      "ordered_sha256": "9834f987d9a1d28ead423854a6722f442c5ff61dd3184203367e4cc350ce7c33"
+    },
+    "issues": {
+      "count": 2,
+      "ordered_sha256": "0166ea80d5a5ac41ec9bf1c3ef967b1ec65f91f0d4f2eac865a866c5e3654daa"
+    },
+    "event_state_counts": {
+      "done": 3,
+      "ignored": 1
+    },
+    "unresolved_intents": 0,
+    "open_issues": 1,
+    "snapshot_statuses": {
+      "bookings": {
+        "status": "stale",
+        "age_seconds": 99012.228
+      },
+      "buffers": {
+        "status": "stale",
+        "age_seconds": 99011.267
+      },
+      "heartbeat": {
+        "status": "fresh",
+        "age_seconds": 0.146
+      }
+    },
+    "database_volume": "booking-bridge-pilot_bridge_state",
+    "snapshot_transaction": true
+  },
+  "earlier_host": {
+    "schema_version": 1,
+    "query_only": true,
+    "tables": {
+      "events": {
+        "count": 4,
+        "ordered_sha256": "51d74ef88bd4471218ad55ea64c8d14fb200c79a7ea6170dd465ddf6784b0228"
+      },
+      "booking_heads": {
+        "count": 2,
+        "ordered_sha256": "8e731e65aa8b0f8edaeaece5b118440d3c42de697ab36e17abac57c653b8777b"
+      },
+      "links": {
+        "count": 0,
+        "ordered_sha256": "eba6954aec3cd5bb8edda10309a548170dd417dfb56478bcf09e9e5f16360823"
+      },
+      "intents": {
+        "count": 0,
+        "ordered_sha256": "6aaa8706d66018a07f195c374d6fa205170d7bac955e0dbdc6e84d621af9924d"
+      },
+      "clients": {
+        "count": 0,
+        "ordered_sha256": "0905271edcabbafa76ba7f538c5a3ccf8acfba0c9781a4d3ad85efe97e0b43f2"
+      },
+      "rates": {
+        "count": 0,
+        "ordered_sha256": "3cd1d8163beda6d37953e0e330303202802625d0a68e17c98a0be89604194057"
+      },
+      "source_bindings": {
+        "count": 0,
+        "ordered_sha256": "c543e0e2a081f5e49c83366de63b38c47b7f0d6a51aac6d7a8d26cd4fa6b3469"
+      }
+    },
+    "cache": {
+      "count": 16,
+      "ordered_sha256": "04c895e33af3e401c780e3d2dcb981b7ec574b713ce1bd2530df1e56e763483e"
+    },
+    "applied_baselines": {
+      "count": 0,
+      "ordered_sha256": "9834f987d9a1d28ead423854a6722f442c5ff61dd3184203367e4cc350ce7c33"
+    },
+    "issues": {
+      "count": 2,
+      "ordered_sha256": "3f1f0b26d31603ebc71d6f10cd97607cf0d4e827253de1b02666de525ba69720"
+    },
+    "event_state_counts": {
+      "done": 3,
+      "ignored": 1
+    },
+    "unresolved_intents": 0,
+    "open_issues": 1,
+    "snapshot_statuses": {
+      "bookings": {
+        "status": "stale",
+        "age_seconds": 99006.24
+      },
+      "buffers": {
+        "status": "stale",
+        "age_seconds": 99005.279
+      },
+      "heartbeat": {
+        "status": "stale",
+        "age_seconds": 21969.662
+      }
+    },
+    "file_sha256": "7be961e574accd5a099a2af91bfa379cf68faf1a52fa31d1d371aa32667736f0",
+    "input_bytes_unchanged": true
+  },
+  "held_stage": {
+    "schema_version": 1,
+    "query_only": true,
+    "tables": {
+      "events": {
+        "count": 4,
+        "ordered_sha256": "51d74ef88bd4471218ad55ea64c8d14fb200c79a7ea6170dd465ddf6784b0228"
+      },
+      "booking_heads": {
+        "count": 2,
+        "ordered_sha256": "8e731e65aa8b0f8edaeaece5b118440d3c42de697ab36e17abac57c653b8777b"
+      },
+      "links": {
+        "count": 1,
+        "ordered_sha256": "53b33abd92f967e23031cb33fcc1b389eaecda39051ae399581f7f1610a99440"
+      },
+      "intents": {
+        "count": 1,
+        "ordered_sha256": "dcbefc2648df2b9c67d283c9da22f20c1adeae196c38ac4ebe9d5d3ee958dd3f"
+      },
+      "clients": {
+        "count": 1,
+        "ordered_sha256": "4fa8fe70a1ccfae295a70ef60e7e072d579e2f746e69433cf02b9ad2c5945fce"
+      },
+      "rates": {
+        "count": 1,
+        "ordered_sha256": "cee78ffeae74bd728f0e3616c5512b2fcf86c83a606623eb3ea6335dccaada22"
+      },
+      "source_bindings": {
+        "count": 0,
+        "ordered_sha256": "c543e0e2a081f5e49c83366de63b38c47b7f0d6a51aac6d7a8d26cd4fa6b3469"
+      }
+    },
+    "cache": {
+      "count": 19,
+      "ordered_sha256": "8463976a569e06b5af1fda47c792728b6c6adb79fdc69b22448f1d702b2a96d7"
+    },
+    "applied_baselines": {
+      "count": 1,
+      "ordered_sha256": "bf75912f9fdd678a1897a58903a012b753f4ef47a543b41904e2112effd3b95a"
+    },
+    "issues": {
+      "count": 2,
+      "ordered_sha256": "3f1f0b26d31603ebc71d6f10cd97607cf0d4e827253de1b02666de525ba69720"
+    },
+    "event_state_counts": {
+      "done": 3,
+      "ignored": 1
+    },
+    "unresolved_intents": 0,
+    "open_issues": 1,
+    "snapshot_statuses": {
+      "bookings": {
+        "status": "stale",
+        "age_seconds": 99006.248
+      },
+      "buffers": {
+        "status": "stale",
+        "age_seconds": 99005.287
+      },
+      "heartbeat": {
+        "status": "stale",
+        "age_seconds": 21969.67
+      }
+    },
+    "file_sha256": "6d652c601c834ffb6ad49fc1def5d9322e3af54be59845f43cc868b276d5922f",
+    "input_bytes_unchanged": true
+  },
+  "port_check": {
+    "port": 8001,
+    "checked": true,
+    "listening": false,
+    "method": "ss_listen_only"
+  },
+  "nginx": {
+    "read_only_test_exit_code": 0,
+    "pilot_proxy_port": 8000,
+    "matching_directive_count": 4,
+    "configuration_paths": [
+      "/etc/nginx/sites-enabled/booking-bridge-pilot"
+    ]
+  },
+  "all_seven_host_tables_unchanged": true,
+  "cache_unchanged": false,
+  "applied_baselines_unchanged": true,
+  "held_stage_archive_copy_only": true,
+  "worker_start_allowed": false,
+  "promotion_allowed": false,
+  "limits": [
+    "current_host_receipts_and_rates_remain_authoritative",
+    "held_stage_is_historical_blocked_staging_only",
+    "cache_and_heartbeat_freshness_not_renewed",
+    "new_external_budgets_require_reconciliation",
+    "no_verified_production_mapping_profile_or_readiness_ledger",
+    "port_free_observation_is_point_in_time_only"
+  ],
+  "prior_snapshot_provenance": {
+    "hash_method": "reconcile_trial uses recovery._online_snapshot memory backup plus VACUUM then serialize; raw file hash is a different representation",
+    "inputs": [
+      {
+        "snapshot": "host",
+        "raw_file_sha256": "7be961e574accd5a099a2af91bfa379cf68faf1a52fa31d1d371aa32667736f0",
+        "normalized_memory_snapshot_sha256": "1ee1b2e14ec3f156dbae3571f2620eaea9e65619833ae04370099b88457438a8",
+        "reconciliation_receipt_sha256": "1ee1b2e14ec3f156dbae3571f2620eaea9e65619833ae04370099b88457438a8",
+        "normalized_receipt_matches": true
+      },
+      {
+        "snapshot": "local",
+        "raw_file_sha256": "2f3a0d89411fbff3fdc9035ea18f52a16dfd1e4bc4b1cd748feb9e44f7813cde",
+        "normalized_memory_snapshot_sha256": "2f3a0d89411fbff3fdc9035ea18f52a16dfd1e4bc4b1cd748feb9e44f7813cde",
+        "reconciliation_receipt_sha256": "2f3a0d89411fbff3fdc9035ea18f52a16dfd1e4bc4b1cd748feb9e44f7813cde",
+        "normalized_receipt_matches": true
+      }
+    ],
+    "source_input_bytes_not_modified": true,
+    "normalization_writes_confined_to_private_in_memory_sqlite": true
+  },
+  "input_database_sql_writes": 0,
+  "live_database_sql_writes": 0
+}

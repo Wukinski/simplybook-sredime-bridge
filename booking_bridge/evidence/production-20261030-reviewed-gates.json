@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "observed_at": 1793355199.3647707,
+  "profile_digest": "28b23cebf2578970d451170eecbe69a5643ba067219b87d701fa1bd01c34ea42",
+  "reviewed_gates": 6,
+  "pending_gates": 10,
+  "changed_gates": [
+    "diagnostic_qwen_readonly",
+    "server_credentials_review",
+    "tls_renewal"
+  ],
+  "preflight_checks": 49,
+  "preflight_failures": 29,
+  "configuration_ready": false,
+  "production_enabled": false,
+  "runtime_profile_unchanged": true,
+  "policy_guards_unchanged": true,
+  "protected_processes_unchanged": true,
+  "smtp_inbox_delivery_verified": false,
+  "diagnostic_scope": "existing_pilot_database_only",
+  "booking_writes": 0,
+  "emails_sent_by_review": 0,
+  "network_requests_to_account": 0
+}

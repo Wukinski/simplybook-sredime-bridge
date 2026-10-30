@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T12:05:07.422806+00:00",
+  "documented_route": "GET /admin/tariff/current",
+  "business_mutations": 0,
+  "feature_enable_or_purchase_attempts": 0,
+  "customer_or_booking_reads": 0,
+  "source_requests": 0,
+  "contact_or_billing_link_values_saved": false,
+  "transport_read_attempts": 1,
+  "http_success": true,
+  "tariff": {
+    "subscription_name": "Standard",
+    "start_date": "2026-10-21 12:25:19",
+    "expire_date": "2026-11-21 11:25:19",
+    "is_expired": false,
+    "expire_in": 21
+  },
+  "response_field_names": [
+    "expire_date",
+    "expire_in",
+    "id",
+    "is_expired",
+    "limits",
+    "start_date",
+    "subscription_link",
+    "subscription_name"
+  ],
+  "total_paced_transport_calls_including_auth": 2,
+  "completed_at_utc": "2026-10-30T12:05:09.357343+00:00"
+}

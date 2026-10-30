@@ -1,0 +1,48 @@
+{
+  "observed_at_utc": "2026-10-27T10:17:58.114786+00:00",
+  "authorization": "user_uradi_to_after_exact_transfer_question",
+  "approved_destination": "169.58.118.33",
+  "remote": {
+    "observed_at": 1793096277.177641,
+    "mode": "simulation",
+    "reads_enabled": false,
+    "allowed_employees": [
+      "11772"
+    ],
+    "liveness_http": 200,
+    "private_readiness_http": 200,
+    "open_issues": [],
+    "event_state_counts": {
+      "ignored": 1
+    },
+    "links": 0,
+    "simplybook_signing_secret_configured": true,
+    "source_signing_secret_configured": true,
+    "cache_updated": {
+      "bookings": 1793095995.2792778,
+      "buffers": 1793095996.4229887,
+      "schedule:11772": 1793095997.2719846
+    },
+    "feed_ready": {
+      "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+      "events": 15
+    },
+    "feed_last_served": {
+      "metadata": {
+        "events": 15,
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919"
+      },
+      "at": 1793095774.0509348
+    }
+  },
+  "snapshot_original_timestamps_match_local": true,
+  "minimal_occupancy_packet_transferred": true,
+  "signing_secret_installed": true,
+  "public_invalid_signature_http": 401,
+  "contacts_transferred_in_occupancy_packet": false,
+  "administrator_credentials_transferred": false,
+  "production_enabled": false,
+  "simplybook_subscriptions": "not_created_blocked_by_auto_review_separate_mutation",
+  "source_customer_trial": "not_run_blocked_by_auto_review_contact_disclosure_and_account_mutation",
+  "simplybook_provider_delivery_confirmed": false
+}

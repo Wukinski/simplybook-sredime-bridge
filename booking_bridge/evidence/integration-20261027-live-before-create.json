@@ -1,0 +1,38 @@
+{
+  "observed_at_epoch": 1793107578.7903924,
+  "mode": "simulation",
+  "reads_enabled": false,
+  "source_events": [],
+  "cache": {
+    "feed-last-served:11772": {
+      "value": {
+        "events": 15,
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919"
+      },
+      "updated": 1793096671.0692537
+    },
+    "feed-ready:11772": {
+      "value": {
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+        "events": 15
+      },
+      "updated": 1793095307.5715902
+    },
+    "health": {
+      "value": {
+        "open_issues": 0,
+        "old_queued": 0
+      },
+      "updated": 1793107577.6467829
+    },
+    "heartbeat": {
+      "value": true,
+      "updated": 1793107578.7284112
+    }
+  },
+  "open_issues": [],
+  "observed_at_utc": "2026-10-27T13:26:18.605192+00:00",
+  "phase": "before-create",
+  "contacts_in_evidence": false,
+  "provider_delivery_claim_based_on_actual_receipt_only": true
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=Daily isolated held restore of an encrypted remote backup
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/booking-bridge-operations
+EnvironmentFile=/opt/booking-bridge-operations/operations.env
+ExecStart=/usr/bin/docker compose -f compose.host-operations.yaml --profile operations run --rm --no-deps -T backup python -m booking_bridge.deploy.offhost_backup --config /run/config/backup.json --restore-drill
+TimeoutStartSec=1200
+NoNewPrivileges=true
+UMask=0077

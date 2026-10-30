@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-10-30T09:32:53.249868+00:00",
+  "read_only_audit": true,
+  "inference_requests": 0,
+  "service_changes": 0,
+  "emails_sent_by_audit": 0,
+  "account_reads": 2,
+  "account_writes": 0,
+  "services": [
+    {
+      "name": "booking-bridge-diagnostics-analyzer-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "analyzer",
+      "running": true,
+      "status": "running",
+      "health": "unhealthy",
+      "image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+      "started_at": "2026-10-28T17:21:37.308763253Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-diagnostics-collector-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "collector",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": true,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-keeper-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "keeper",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-qwen-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "qwen",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-pilot-worker-1",
+      "project": "booking-bridge-pilot",
+      "role": "worker",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-pilot-api-1",
+      "project": "booking-bridge-pilot",
+      "role": "api",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    }
+  ],
+  "port_8001": {
+    "tcp_listener_present": false,
+    "running_docker_port_claim_present": false,
+    "free": true
+  },
+  "diagnostics_status": {
+    "schema_version": 1,
+    "updated_at": 1793352770.3774323,
+    "diagnostics_only": true,
+    "repairs_enabled": false,
+    "healthy": false,
+    "email_configured": false,
+    "model_review_pending": false,
+    "last_model_ok": true,
+    "last_model_started_at": 1793352530.3009083,
+    "last_model_self_test_at": 1793294711.7808123,
+    "last_model_self_test_ok": true,
+    "finding_count": 4,
+    "finding_details_limited": false,
+    "last_alert_status": "smtp_not_configured"
+  },
+  "diagnostics_status_age_seconds": 2.473,
+  "smtp_outbox_states": {
+    "pending": 2
+  },
+  "smtp_attempt_count": 0,
+  "smtp_accepted_attempt_count": 0,
+  "smtp_password_file_present": true,
+  "smtp_password_present": false,
+  "smtp_metadata_file_present": true,
+  "named_project_directories": {
+    "/opt/booking-bridge-production": true,
+    "/opt/booking-bridge-pilot": true,
+    "/opt/booking-bridge": false,
+    "/opt/booking-bridge-diagnostics": true
+  },
+  "production_directory_entries": [
+    "CREDENTIALS_INSTALLED.json",
+    "PENDING-CUTOVER.txt",
+    "STAGED_WITHOUT_CREDENTIALS.json",
+    "blank-template-backups-20261030-53f91059c68740e59c3c266057636a52",
+    "compose.yaml",
+    "preflight-blocked.json",
+    "secrets",
+    "staging-receipt.json"
+  ],
+  "named_project_files": [
+    {
+      "path": "/opt/booking-bridge-production/compose.yaml",
+      "present": true,
+      "size_bytes": 2663
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-config.json",
+      "present": true,
+      "size_bytes": 1110,
+      "mode": "production"
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-evidence/readiness.json",
+      "present": true,
+      "size_bytes": 3172
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/ingress.env",
+      "present": true,
+      "size_bytes": 291
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/worker.env",
+      "present": true,
+      "size_bytes": 537
+    },
+    {
+      "path": "/opt/booking-bridge-pilot/compose.yaml",
+      "present": true,
+      "size_bytes": 1298
+    },
+    {
+      "path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "present": true,
+      "size_bytes": 5261
+    }
+  ],
+  "production_containers_present": false,
+  "production_containers_running": false,
+  "production_profile": {
+    "mode": "production",
+    "reads_enabled": true,
+    "require_subminute_availability": false,
+    "counts": {
+      "employees": 0,
+      "services": 0,
+      "clients": 0,
+      "allowed_employees": 0,
+      "schedule_service_ids": 0
+    },
+    "approval_true_count": 2,
+    "approval_false_count": 13
+  },
+  "readiness_gates": {
+    "state_reconciliation": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "identity_mappings": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "business_rules": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "notification_delivery": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "original_created_delivery": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "availability_latency": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "empty_feed_removal": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "external_monitoring": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "encrypted_off_host_restore": {
+      "status": "verified",
+      "reviewed": true
+    },
+    "tls_renewal": {
+      "status": "verified",
+      "reviewed": true
+    },
+    "linux_http_validation": {
+      "status": "verified",
+      "reviewed": true
+    },
+    "soak_72h": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "server_credentials_review": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "diagnostic_qwen_readonly": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "diagnostic_email_delivery": {
+      "status": "pending",
+      "reviewed": false
+    },
+    "activation": {
+      "status": "verified",
+      "reviewed": true
+    }
+  },
+  "worker_env_metadata": {
+    "configured_fields": {
+      "SIMPLYBOOK_REST_BASE_URL": true,
+      "SIMPLYBOOK_COMPANY_LOGIN": true,
+      "SIMPLYBOOK_ADMIN_LOGIN": true,
+      "SIMPLYBOOK_ADMIN_SECRET": true,
+      "SREDIME_WEBHOOK_SECRET": true,
+      "SIMPLYBOOK_WEBHOOK_SECRET": true,
+      "BRIDGE_ADMIN_KEY": true
+    },
+    "mtime_epoch": 1793352656.8444583,
+    "export_url_count": 0,
+    "feed_token_count": 0
+  },
+  "ingress_env_metadata": {
+    "configured_fields": {
+      "SIMPLYBOOK_REST_BASE_URL": false,
+      "SIMPLYBOOK_COMPANY_LOGIN": false,
+      "SIMPLYBOOK_ADMIN_LOGIN": false,
+      "SIMPLYBOOK_ADMIN_SECRET": false,
+      "SREDIME_WEBHOOK_SECRET": true,
+      "SIMPLYBOOK_WEBHOOK_SECRET": true,
+      "BRIDGE_ADMIN_KEY": true
+    },
+    "mtime_epoch": 1793352656.8394585,
+    "export_url_count": 0,
+    "feed_token_count": 0
+  },
+  "running_pilot_source_hashes": {
+    "scheduler.py": "9fb2358ad4b9c5cfc1dc125287df215b4c7b11b8c6f570fbe6b82c4135a27e65",
+    "worker.py": "451b3d9af7f45c9e10a97305aa1ef5c769275466d9fad482c012491424c8638c",
+    "model.py": "f8934d988b3dc805e916620670acd486b775ae41263a4a78f2ed4211d92c491e"
+  },
+  "public_endpoints": [
+    {
+      "route": "/health/live",
+      "method": "GET",
+      "status_code": 200,
+      "tls_verification_enabled": true,
+      "redirect_followed": false,
+      "response_body_recorded": false
+    },
+    {
+      "route": "/sredime/webhook",
+      "method": "GET",
+      "status_code": 405,
+      "tls_verification_enabled": true,
+      "redirect_followed": false,
+      "response_body_recorded": false
+    },
+    {
+      "route": "/simplybook/webhook",
+      "method": "GET",
+      "status_code": 405,
+      "tls_verification_enabled": true,
+      "redirect_followed": false,
+      "response_body_recorded": false
+    }
+  ],
+  "public_tls": [
+    {
+      "host": "169.58.118.33",
+      "chain_and_hostname_verified": true,
+      "not_after_utc": "2026-11-05T23:55:03+00:00",
+      "sha256": "5425cf77b155f7594028001a8bb3af8077d699ba90348c74b8a6fc0785324697"
+    },
+    {
+      "host": "vmi3688215.contaboserver.net",
+      "chain_and_hostname_verified": true,
+      "not_after_utc": "2026-11-05T23:55:03+00:00",
+      "sha256": "5425cf77b155f7594028001a8bb3af8077d699ba90348c74b8a6fc0785324697"
+    }
+  ],
+  "running_source_matches_local": {
+    "scheduler.py": true,
+    "worker.py": false,
+    "model.py": false
+  },
+  "source_callback_live_admin_state_checked": true,
+  "source_callback_last_recorded_state": {
+    "active": false,
+    "scope": "historical controlled-trial application scope; native callback staff filtering not established",
+    "evidence": "integration-20261027-booking-cycle.json",
+    "historical_not_fresh": true,
+    "superseded_by_current_readback": true
+  },
+  "software_policy_unchanged": {
+    "evidence_max_age_seconds": 604800,
+    "required_gate": "soak_72h",
+    "previously_rejected_policy_changes_applied": false
+  },
+  "review_scope": "read_only_runtime_source_pipeline_and_launch_critical_path",
+  "gate_classification": {
+    "software_policy_controls": {
+      "seven_day_evidence_expiry": {
+        "implemented_by": "production_readiness.MAX_AGE",
+        "requires_external_fact": false,
+        "unchanged": true
+      },
+      "soak_72h": {
+        "duration_requirement_is_software_policy": true,
+        "actual_observation_duration_is_external_fact": true,
+        "unchanged": true
+      }
+    },
+    "external_or_operational_facts_required": [
+      "state_reconciliation",
+      "identity_mappings",
+      "business_rules",
+      "notification_delivery",
+      "original_created_delivery",
+      "availability_latency",
+      "empty_feed_removal",
+      "external_monitoring",
+      "encrypted_off_host_restore",
+      "tls_renewal",
+      "server_credentials_review",
+      "diagnostic_qwen_readonly",
+      "diagnostic_email_delivery"
+    ],
+    "local_validation_fact": [
+      "linux_http_validation"
+    ],
+    "owner_authorization": [
+      "activation"
+    ],
+    "existing_evidence_ready_for_operator_review": [
+      "diagnostic_qwen_readonly",
+      "server_credentials_review"
+    ],
+    "review_does_not_set_verified": true
+  },
+  "pipeline_code_findings": [
+    {
+      "file": "scheduler.py",
+      "finding": "Source polling executes only when reads_enabled is true and iterates export_urls entries whose employee is allowlisted."
+    },
+    {
+      "file": "model.py",
+      "finding": "export_urls and feed_tokens come from SREDIME_EXPORT_URLS and BRIDGE_FEED_TOKENS, not native inventory or implicit mappings."
+    },
+    {
+      "file": "scheduler.py",
+      "finding": "Source refresh POST additionally requires approval sredime_refresh; GET and POST use the same explicitly configured private export endpoint."
+    },
+    {
+      "file": "calendar.py",
+      "finding": "Source ICS reconciliation only compares explicit source UID bindings to accepted webhook snapshots. It never creates bookings or clients and never guesses event IDs."
+    },
+    {
+      "file": "server_worker.py",
+      "finding": "Full production preflight occurs before constructing the gateway/store and again under the worker lock; Worker/Gateway retain their own production evidence guard."
+    },
+    {
+      "file": "api.py",
+      "finding": "Module-level create_app uses Settings.load without read_only. Current production profile approvals/allowlist are insufficient to start that API as a capture-only listener."
+    },
+    {
+      "file": "diagnostics.py",
+      "finding": "ReadOnlyGateway exposes GET-only transport and refuses write unconditionally; isolated read-only inspection requires no guessed source mappings."
+    }
+  ],
+  "safe_read_only_shadow": {
+    "available": true,
+    "kind": "isolated account/source observations, not production synchronization",
+    "settings": "Settings.load(explicit_config, read_only=True, isolated_profile=True)",
+    "gateway": "ReadOnlyGateway",
+    "separate_audit_state_required": true,
+    "worker_constructed": false,
+    "source_identity_mapping_required_for_read_only_inventory": false,
+    "does_not_prove_source_to_target_identity": true,
+    "production_readiness_controls_bypassed": false,
+    "activation_or_shadow_started_by_audit": false
+  },
+  "critical_path": [
+    "Review installed worker/API credential separation and authenticate a read-only account identity/inventory inspection; no business writes.",
+    "Complete SMTP owner-controlled configuration and actual authorized delivery evidence; current attempts remain zero.",
+    "Obtain authoritative native-to-opaque webhook identities for the first real employee/services and explicit client identity/consent; unique names alone are insufficient.",
+    "Configure and verify scoped callback delivery, private source export URL, outbound feed token/import subscription, service timing/resources and business policies.",
+    "Resolve the actual state reconciliation findings without replaying historical controlled trials or dropping ownership history.",
+    "Complete actual notification/original-created/availability/empty-feed/monitoring evidence and the retained observation policy, then review the exact config-bound ledger.",
+    "Only after actual preflight passes, start the singleton production API/worker and perform the explicitly reviewed routing cutover."
+  ],
+  "source_callback_live_admin_state": {
+    "checked_at_utc": "2026-10-30T09:37:17.266036+00:00",
+    "read_only": true,
+    "source_http_gets": 2,
+    "source_post_requests": 0,
+    "source_changes": 0,
+    "raw_html_saved": false,
+    "secrets_emitted": false,
+    "callback": {
+      "status_code": 200,
+      "active": false,
+      "expected_existing_endpoint_matches": true,
+      "employee_scope_control_observed": false,
+      "selected_employee_count": 0,
+      "selected_scope_is_only_known_test_employee": false
+    },
+    "test_employee": {
+      "status_code": 200,
+      "bookable": false
+    }
+  },
+  "source_native_callback_employee_filter_proven": false,
+  "source_http_gets": 2,
+  "source_post_requests": 0,
+  "source_configuration_changes": 0
+}

@@ -1,0 +1,112 @@
+{
+  "administrator_credentials_transferred": false,
+  "application_database_writes": 0,
+  "booking_writes": 0,
+  "budget_artifact_sources": [
+    "local_provider_budget.json",
+    "local_provider_last-request.json",
+    "service_importer_budget_projection"
+  ],
+  "budget_artifacts_count": 2,
+  "budget_floor_count": 1,
+  "budget_inputs_captured_at_utc": "2026-10-28T12:50:17.971885+00:00",
+  "checks": {
+    "all_original_database_rows_preserved": true,
+    "attached_external_budget_artifacts_preserved": true,
+    "booking_heads_preserved": true,
+    "ciphertext_transfer_hash_matches": true,
+    "embedded_reconciliation_hold_present": true,
+    "local_authenticated_verification": true,
+    "one_shot_backup_container_removed": true,
+    "original_raw_events_and_hashes_preserved": true,
+    "quota_rows_and_timestamps_preserved": true,
+    "remote_authenticated_verification": true,
+    "remote_intents_preserved": true,
+    "temporary_private_files_removed": true,
+    "temporary_remote_key_deleted": true,
+    "worker_start_blocked": true
+  },
+  "ciphertext_sha256": "8b76931719d7847a6e09debe4484f825a7c808bb5d85f78c350b66e48202a2f3",
+  "container_network": "none",
+  "container_user": 10001,
+  "database_summary": {
+    "open_issues": 1,
+    "queued_events": 0,
+    "schema_version": 1,
+    "table_counts": {
+      "audit": 3,
+      "availability_observations": 2,
+      "booking_heads": 2,
+      "cache": 16,
+      "clients": 0,
+      "events": 4,
+      "feed_health": 0,
+      "intents": 0,
+      "issues": 2,
+      "links": 0,
+      "rates": 0,
+      "refresh": 1,
+      "source_bindings": 0
+    },
+    "unresolved_intents": 0
+  },
+  "encryption": "AES-256-GCM",
+  "hold_released": false,
+  "image_changed": false,
+  "key_material_in_argv_logs_or_public_artifacts": false,
+  "limitations": [
+    "one_shot_drill_not_scheduled_unattended_backup",
+    "database_snapshot_and_external_budget_reads_not_one_atomic_transaction",
+    "other_api_clients_and_remote_provider_budgets_not_proven",
+    "category_legacy_checkpoint_has_no_budget_field_to_attach",
+    "long_term_backup_destination_retention_and_key_custody_pending",
+    "restored_database_requires_remote_and_budget_reconciliation_before_activation"
+  ],
+  "live_databases_changed_by_this_operation": false,
+  "local_key_private_directory_acl_verified": true,
+  "local_private_directory_acl_verified": true,
+  "messages_sent": 0,
+  "observed_at_utc": "2026-10-28T12:50:28.843376+00:00",
+  "off_host_destination": "existing_user_local_private_workspace",
+  "off_host_export_performed": true,
+  "production_enabled": false,
+  "proof_verified": true,
+  "restore_created": true,
+  "restored_database_sha256": "665a4d539e6a447d2d83478ae33a21b89c6b0c6048f5a901b423b9a98daef9f6",
+  "restored_database_summary": {
+    "open_issues": 1,
+    "queued_events": 0,
+    "schema_version": 1,
+    "table_counts": {
+      "audit": 3,
+      "availability_observations": 2,
+      "booking_heads": 2,
+      "cache": 17,
+      "clients": 0,
+      "events": 4,
+      "feed_health": 0,
+      "intents": 0,
+      "issues": 2,
+      "links": 0,
+      "rates": 0,
+      "refresh": 1,
+      "source_bindings": 0
+    },
+    "unresolved_intents": 0
+  },
+  "reviewed_image": "sha256:ac942940d496a7c84c5b29a357e7625044a4b54ef00d372e13068ef8abc7cde3",
+  "schema_version": 1,
+  "scope": "actual_one_shot_encrypted_off_host_backup_and_held_restore_drill",
+  "source": "live_host_bridge_database_read_only_online_snapshot",
+  "source_database_mount_read_only": true,
+  "source_database_sha256": "66bdc8e2fb069a848acc1aca17f479847140391771070b3f173eb458c1a17f34",
+  "source_services_changed": false,
+  "temporary_key_mode_600_verified": true,
+  "unattached_budget_sources": [
+    {
+      "reason": "no_top_level_budget_field_available",
+      "source": "category_sorter_legacy_checkpoint"
+    }
+  ],
+  "unattended_backup_complete": false
+}

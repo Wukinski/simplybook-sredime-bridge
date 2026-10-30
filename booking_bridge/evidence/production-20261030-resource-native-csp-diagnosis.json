@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T12:24:47.639649+00:00",
+  "console_classifications": [
+    {
+      "codes": [],
+      "csp": true,
+      "inline_script_blocked": true,
+      "eval_blocked": true,
+      "directive": "script-src"
+    },
+    {
+      "codes": [],
+      "csp": true,
+      "inline_script_blocked": true,
+      "eval_blocked": true,
+      "directive": "script-src"
+    },
+    {
+      "codes": [],
+      "csp": true,
+      "inline_script_blocked": true,
+      "eval_blocked": true,
+      "directive": "script-src"
+    },
+    {
+      "codes": [
+        "net::ERR_FAILED"
+      ],
+      "csp": false,
+      "inline_script_blocked": false,
+      "eval_blocked": false,
+      "directive": null
+    },
+    {
+      "codes": [],
+      "csp": true,
+      "inline_script_blocked": true,
+      "eval_blocked": true,
+      "directive": "script-src"
+    },
+    {
+      "codes": [
+        "net::ERR_FAILED"
+      ],
+      "csp": false,
+      "inline_script_blocked": false,
+      "eval_blocked": false,
+      "directive": null
+    },
+    {
+      "codes": [
+        "net::ERR_FAILED"
+      ],
+      "csp": false,
+      "inline_script_blocked": false,
+      "eval_blocked": false,
+      "directive": null
+    },
+    {
+      "codes": [
+        "net::ERR_FAILED"
+      ],
+      "csp": false,
+      "inline_script_blocked": false,
+      "eval_blocked": false,
+      "directive": null
+    },
+    {
+      "codes": [],
+      "csp": false,
+      "inline_script_blocked": false,
+      "eval_blocked": false,
+      "directive": null
+    }
+  ],
+  "script_statuses": [
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/jquery-1.9.1.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/jquery-migrate-1.2.1.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/translations.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/jquery.ie10.fix.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/jquery-ui/jquery-ui.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/main-jquery.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/js/initDynamicMenu.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/loader/widget-loader.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/v3/modern/rsa.min.js",
+      "status": 200
+    },
+    {
+      "host": "srv.isy-teamblue.services",
+      "path": "/js/skeletor.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-remote-GoogleLinker.min.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-remote-ExternalAnonymousId.min.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-remote-StorageEncryption.min.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-remote-StorageMigrator.min.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-remote-XhrQueue.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/bootstrap-tagsinput/typeahead.jquery.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/popper/simplybook-tooltip/assets/simplybook.tooltip.min.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-common.min.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-RetryQueue.min.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/3.35.2/modern/plugins/rsa-plugins-legacyEncryptionUtils.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/require.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/react-chat-widget/public/runtime.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/maplibrejs/dist/maplibre-gl-csp.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/bootstrap-autocomplete/bootstrap-autocomplete.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/popper/popper.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/cache/assetic/926986c-d17b749.js",
+      "status": 200
+    },
+    {
+      "host": "srv.motu-teamblue.services",
+      "path": "/js/he-man_all.min.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/react-chat-widget/public/app.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/js/dynamicMenu.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/js/popupTableHeaderFilter.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/loader/widget-simplybook-gate.Csrk1Cjq.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/widget/assets/widget.DfDwxuYm.js",
+      "status": 200
+    },
+    {
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/widget/assets/widget.ChZPgNJD.js",
+      "status": 200
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/js/management/init.min.js",
+      "status": 200
+    }
+  ],
+  "page_errors": [
+    {
+      "name": "Uncaught (in promise) AxiosError"
+    },
+    {
+      "name": "Error"
+    },
+    {
+      "name": "NetworkError"
+    }
+  ],
+  "blocked_post_paths": [
+    {
+      "host": "simplybook.me",
+      "path": "/content-policy/report"
+    },
+    {
+      "host": "simplybook.me",
+      "path": "/content-policy/report"
+    },
+    {
+      "host": "srv.motu-teamblue.services",
+      "path": "/server/he-man_main"
+    },
+    {
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/api/v1/widget/log"
+    }
+  ],
+  "source_requests": 0,
+  "credential_reads": 0,
+  "business_mutations": 0,
+  "public_bootstrap_globals": {
+    "jquery": "function",
+    "require": "function",
+    "requirejs": "function",
+    "inlineScriptCount": 741
+  },
+  "title": "Appointment booking service and free online booking service",
+  "completed_at_utc": "2026-10-30T12:25:17.953918+00:00"
+}

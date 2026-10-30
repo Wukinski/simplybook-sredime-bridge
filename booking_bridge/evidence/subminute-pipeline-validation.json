@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-22",
+  "target_seconds_exclusive": 60,
+  "end_to_end_requirement_met": false,
+  "subminute_verified": false,
+  "source_commit_to_remote_import_measured": false,
+  "measurement_scope": "feed_ready_to_http_fetch",
+  "external_account_reads": 0,
+  "external_business_writes": 0,
+  "mode": "simulation",
+  "production_enabled": false,
+  "tests": {
+    "windows": {
+      "tests": 373,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "linux_connector": {
+      "tests": 230,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "linux_transport": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "smoke": {
+    "windows": {
+      "mode": "simulation",
+      "external_reads": false,
+      "external_writes": false,
+      "ack_ms": 32,
+      "accepted_status": 202,
+      "deduplicated_rows": 1,
+      "final_state": "test",
+      "invalid_signature_status": 401,
+      "readiness_status": 200,
+      "status": "passed"
+    },
+    "linux": {
+      "mode": "simulation",
+      "external_reads": false,
+      "external_writes": false,
+      "ack_ms": 6,
+      "accepted_status": 202,
+      "deduplicated_rows": 1,
+      "final_state": "test",
+      "invalid_signature_status": 401,
+      "readiness_status": 200,
+      "status": "passed"
+    }
+  },
+  "image_id": "sha256:e6221e71f7ad2c20e3c57ca6fc12e0aa18ab9a10a03b3b2355b4468b0e5a078f",
+  "container_test_constraints": {
+    "network": "none",
+    "read_only_root": true,
+    "uid": 10001,
+    "capabilities_dropped": "ALL"
+  },
+  "observed_algorithm_checks": {
+    "default_refresh_coalesce_seconds": 5,
+    "rolling_post_allowance_per_employee": 60,
+    "quota_window_seconds": 3600,
+    "unchanged_feed_uses_no_refresh": true,
+    "publication_and_outbox_atomic": true,
+    "restart_safe_observations": true,
+    "cross_page_source_processing": true,
+    "outdated_drift_evidence_rejected": true,
+    "exact_60s_counted_as_miss": true,
+    "clock_anomalies_not_counted_as_passes": true,
+    "failed_background_task_retry_seconds": 10,
+    "accelerated_recovery_allowance_per_task_per_hour": 12
+  },
+  "source_hashes": {
+    "booking_bridge/__main__.py": "4087b5c22a60c305f6f56ceebdb3e6baa77daf3407566010fe22d78be27e9fdd",
+    "booking_bridge/api.py": "eae6be5044df2a7596de5c5b5eb6c4fdb2925ed8c308b56bcf03736a5b109221",
+    "booking_bridge/calendar.py": "f9d37bf8452f1e33b5e7ff23ac5560a352c580e71a8e871d49042ccd9163f3f6",
+    "booking_bridge/diagnostics.py": "214ba7e8aa98076193463d2ce50f49f854d923640fc94b3b316d4c93c3e51d18",
+    "booking_bridge/latency.py": "70aeb704414035efdd103bfa9b4ac567d31e92eb44f621195bbccb334daced23",
+    "booking_bridge/model.py": "90fede454a42139854277f93f15c25bb54b2ddefd391979cfe14b13865829feb",
+    "booking_bridge/scheduler.py": "9fb2358ad4b9c5cfc1dc125287df215b4c7b11b8c6f570fbe6b82c4135a27e65",
+    "booking_bridge/store.py": "415a0800b8a52921b2762e82b94613de60e1e045478d9e28211e6bdd61a0b369",
+    "booking_bridge/worker.py": "451b3d9af7f45c9e10a97305aa1ef5c769275466d9fad482c012491424c8638c",
+    "booking_bridge/tests/test_subminute_pipeline.py": "91d6e8f88973c4808453da54e9cb90e43cc9a691dadf479b79b4dc762bb9a68d",
+    "booking_bridge/tests/test_availability_latency.py": "3e994e74ef34388938df4876f6f55e19a2f2cec3f70544357ca5d897cb2ab38e",
+    "booking_bridge/tests/test_worker.py": "781eab052c7be09b130bbfc37c188a0d7b1771efc78ae02d0e1892b204c7aa7d",
+    "booking_bridge/tests/smoke_local.py": "8d633b130a7278a7dba0ad7b88d95bc880c9edbdbd6a290680d95d662000691c",
+    "provider_assignment/client.py": "1ab57143e784a3e9c2d90f24f08106901d35e614bb9a2bf840014575ded5b4db",
+    "provider_assignment/tests/test_assignment.py": "90116da25cf4c85eedbb07daaf3094aed478654cb563d27d8e505696849fd136"
+  },
+  "remaining": [
+    "Approved stable public HTTPS host for real callbacks/import trials",
+    "Verified staff/service/timing/resource mapping and isolated test scope",
+    "Supported source change coverage including manual schedules and blocks",
+    "SrediMe bounded import/update interface and verifiable completion acknowledgement",
+    "Sustained refresh capacity above current quota if required"
+  ],
+  "notes": [
+    "Initial Windows smoke reproduced the existing transient SQLite SHM cleanup failure; bounded cleanup retries were implemented and subsequent smoke passed.",
+    "Test-client deprecation warning remains.",
+    "HTTP acknowledgement time and simulated/local tests do not establish remote availability propagation time."
+  ],
+  "application_and_smoke_sources_match_final_image": true,
+  "final_image_linux_tests": {
+    "tests": 241,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

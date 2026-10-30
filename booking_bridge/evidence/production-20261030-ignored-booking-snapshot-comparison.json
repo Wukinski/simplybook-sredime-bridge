@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T10:22:53.559739+00:00",
+  "scope": "one_authorized_current_snapshot_comparison_of_prior_ignored_booking",
+  "native_GET_requests": 1,
+  "account_mutations": 0,
+  "runtime_bindings_created": 0,
+  "prior_event_processed_or_replayed": false,
+  "raw_body_or_contacts_retained": false,
+  "source_event_stored_hash": "c4595374a4efb00006a050adb4a4f64644c5025ef384e2b0e44d19510b22b4ab",
+  "source_event_ref": "44fc627d4341bb54c3efe742971b763f79eca8a77f2d6be000e9f727e41c945f",
+  "source_booking_ref": "094e81e608381ecd75dc2ff48fc5df42fe30392c320517bc4e67b76fd833d98d",
+  "checks": {
+    "exact_route_matched": true,
+    "hid_exact": true,
+    "status_matches": true,
+    "start_at_matches": true,
+    "end_at_matches": true,
+    "duration_matches": true
+  },
+  "current_native_snapshot": {
+    "employee_native_id": 5571,
+    "service_native_id": 208138,
+    "status": -901,
+    "duration_minutes": 90,
+    "start_at_sha256": "9f58a849b536dea286bd8c52929ce52f943327e8d721967ca9d2eaf0d55bc220",
+    "end_at_sha256": "505709b2e5d621aba893aa821a7e27e20052ac69079477c3532c7bf9ac4ecee6"
+  },
+  "version_authority_established": false,
+  "http_status": 200,
+  "response_sha256": "3a6620ade2a7ea468d646a970ac1306eb094d82674fe72584112227dc3fc55c1",
+  "explicit_version_fields_observed": [],
+  "explicit_version_field_value_hashes": {},
+  "all_snapshot_value_checks_match": true,
+  "result": "matching_values_without_version_authority",
+  "further_live_reads_authorized": false,
+  "remaining_global_GET_budget": 4,
+  "native_service208138_offline_target_review": {
+    "native_service_id": 208138,
+    "native_normalized_name_count": 1,
+    "exact_normalized_target_candidate_count": 0,
+    "target_candidates": [],
+    "native_display_duration_minutes": 90,
+    "candidate_is_runtime_mapping_authority": false
+  }
+}

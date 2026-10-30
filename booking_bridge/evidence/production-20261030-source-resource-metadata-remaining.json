@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T11:57:24.800625+00:00",
+  "complete": false,
+  "ids": [
+    "49",
+    "50",
+    "51"
+  ],
+  "prior_asset48_gets": 2,
+  "maximum_new_gets": 3,
+  "maximum_total_gets": 5,
+  "minimum_start_spacing_seconds": 1,
+  "requests": [
+    {
+      "id": "49",
+      "requested_at_utc": "2026-10-30T11:57:25.201834+00:00",
+      "http_status": 200
+    }
+  ],
+  "rows": [],
+  "automatic_request_retries": 0,
+  "source_posts": 0,
+  "customer_or_booking_reads": 0,
+  "html_tokens_cookies_export_urls_saved": false,
+  "quantity_inferred_from_label": false,
+  "reason": "remaining_asset_projection_requires_review_no_retry",
+  "completed_at_utc": "2026-10-30T11:57:25.499206+00:00",
+  "attempted_gets": 1,
+  "total_asset_gets": 3,
+  "business_mutations": 0,
+  "runtime_mapping_changes": false
+}

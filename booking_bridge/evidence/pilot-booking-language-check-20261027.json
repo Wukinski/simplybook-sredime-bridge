@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-27 00:43:41 UTC",
+  "scope": "existing_test_booking_only",
+  "total": 1,
+  "bookings": [
+    {
+      "id": 2,
+      "status": "confirmed",
+      "start_datetime": "2026-10-26 10:00:00",
+      "end_datetime": "2026-10-26 10:30:00",
+      "provider_id": 9,
+      "service_id": 496,
+      "client_id": 1,
+      "provider_visible": false,
+      "service_visible": false,
+      "can_be_canceled": true
+    }
+  ],
+  "new_booking_created": false,
+  "notification_sent": false
+}

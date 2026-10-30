@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-30T12:27:25.890345+00:00",
+  "scope": "dormant_authorized_client_resolver_with_synthetic_transport_validation",
+  "tests": {
+    "tests": 89,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "files": {
+    "booking_bridge/client_resolver.py": {
+      "sha256": "d4e9ecddeccb651b50cc25c5c77e2c51bb826f16c27f8f62aaf202febe96c2d9"
+    },
+    "booking_bridge/tests/test_client_resolver.py": {
+      "sha256": "32d1b5730f23db0684dda49fd5ea91e30faa038409871cc29ef77a873556a6c2"
+    },
+    "booking_bridge/CLIENT_RESOLVER.md": {
+      "sha256": "25b97ee062843e57d73f1e3b73ffd53775a0ebe3f72118d91f3477ee7d463a95"
+    },
+    "booking_bridge/evidence/client-resolver-20261030-tests.xml": {
+      "sha256": "09d0d1eef745dca8f4a26ef90696330fd5ac6d505e801a24ed9889673b820174"
+    }
+  },
+  "live_account_reads": 0,
+  "live_account_writes": 0,
+  "client_records_read_or_created_live": 0,
+  "source_contact_retrieval_implemented": false,
+  "default_transport_constructed": false,
+  "core_worker_or_ingress_integration_present": false,
+  "runtime_profile_or_readiness_changed_by_implementation": false,
+  "database_schema_migration_added": false,
+  "contact_placeholders_generated": false,
+  "client_delete_or_contact_overwrite_implemented": false,
+  "uncertain_post_replay_implemented": false,
+  "successful_response_id_persisted_before_readback": true,
+  "durable_email_and_phone_claims_precede_create": true,
+  "parsed_api_response_limits_enforced": true,
+  "current_required_fields_evidence": "production-20261030-client-required-fields-corrected.json",
+  "source_contact_provenance": "production-20261030-source-contact-contract-provenance.json"
+}

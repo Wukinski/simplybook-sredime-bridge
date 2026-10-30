@@ -1,0 +1,77 @@
+{
+  "read_only": true,
+  "operations": [],
+  "providers": [
+    {
+      "id": 2,
+      "name": "Vanja",
+      "is_active": true,
+      "is_visible": true
+    },
+    {
+      "id": 3,
+      "name": "Sara",
+      "is_active": true,
+      "is_visible": true
+    },
+    {
+      "id": 4,
+      "name": "Jelena",
+      "is_active": true,
+      "is_visible": true
+    },
+    {
+      "id": 5,
+      "name": "Tamara",
+      "is_active": true,
+      "is_visible": true
+    },
+    {
+      "id": 6,
+      "name": "Olja",
+      "is_active": true,
+      "is_visible": true
+    },
+    {
+      "id": 7,
+      "name": "Ljilja",
+      "is_active": true,
+      "is_visible": true
+    }
+  ],
+  "service_count": 494,
+  "calendar": {
+    "keys": [
+      "from",
+      "to",
+      "columns",
+      "id"
+    ],
+    "columns": [
+      {
+        "id": 2,
+        "date": "2026-10-21",
+        "type": "provider",
+        "keys": [
+          "id",
+          "name",
+          "date",
+          "type",
+          "from",
+          "to",
+          "breaktimes",
+          "blocked",
+          "bookings",
+          "notes",
+          "is_day_off",
+          "is_special_day"
+        ],
+        "booking_count": 0,
+        "break_count": 0,
+        "blocked_count": 0
+      }
+    ]
+  },
+  "status": "read_access_verified",
+  "calls": 4
+}

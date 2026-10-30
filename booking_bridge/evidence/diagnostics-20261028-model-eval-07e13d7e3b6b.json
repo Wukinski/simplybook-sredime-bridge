@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "passed": false,
+  "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+  "tests": [
+    {
+      "actual_assessment": "no_additional_issue",
+      "confidence": "high",
+      "elapsed_seconds": 93.116,
+      "error_code": null,
+      "expected_assessment": "no_additional_issue",
+      "finding_references": [],
+      "name": "healthy_adjacency",
+      "passed": true,
+      "validated_recommendation_codes": []
+    },
+    {
+      "actual_assessment": "operator_review",
+      "confidence": "high",
+      "elapsed_seconds": 106.445,
+      "error_code": null,
+      "expected_assessment": "operator_review",
+      "finding_references": [
+        "d27cd2852fcb61d2"
+      ],
+      "name": "verified_overlap",
+      "passed": true,
+      "validated_recommendation_codes": [
+        "review_booking_overlap"
+      ]
+    },
+    {
+      "actual_assessment": "operator_review",
+      "confidence": "high",
+      "elapsed_seconds": 122.5,
+      "error_code": null,
+      "expected_assessment": "operator_review",
+      "finding_references": [
+        "d9cda42c45f6730d"
+      ],
+      "name": "duplicate_candidate",
+      "passed": true,
+      "validated_recommendation_codes": [
+        "review_duplicate_candidate",
+        "review_booking_overlap"
+      ]
+    },
+    {
+      "actual_assessment": "operator_review",
+      "confidence": "high",
+      "elapsed_seconds": 41.947,
+      "error_code": null,
+      "expected_assessment": "operator_review",
+      "finding_references": [
+        "3ef957ec9074b2b6"
+      ],
+      "name": "source_canceled_target_active",
+      "passed": true,
+      "validated_recommendation_codes": [
+        "review_source_target_mismatch"
+      ]
+    },
+    {
+      "actual_assessment": "insufficient_evidence",
+      "confidence": "high",
+      "elapsed_seconds": 92.437,
+      "error_code": "assessment_mismatch",
+      "expected_assessment": "operator_review",
+      "finding_references": [
+        "1356fee90e4cf16f"
+      ],
+      "name": "unresolved_intent",
+      "passed": false,
+      "validated_recommendation_codes": [
+        "review_intent"
+      ]
+    },
+    {
+      "actual_assessment": "insufficient_evidence",
+      "confidence": "high",
+      "elapsed_seconds": 120.805,
+      "error_code": null,
+      "expected_assessment": "insufficient_evidence",
+      "finding_references": [
+        "67169736334cf3ee",
+        "dfcd85e628677bdc",
+        "a359191dc7ba617f",
+        "f9312ca324476ff2"
+      ],
+      "name": "stale_conflicting_data",
+      "passed": true,
+      "validated_recommendation_codes": [
+        "review_snapshot_freshness",
+        "review_booking_overlap"
+      ]
+    },
+    {
+      "actual_assessment": "no_additional_issue",
+      "confidence": "high",
+      "elapsed_seconds": 95.554,
+      "error_code": null,
+      "expected_assessment": "no_additional_issue",
+      "finding_references": [],
+      "name": "canceled_overlap_healthy",
+      "passed": true,
+      "validated_recommendation_codes": []
+    }
+  ],
+  "oom_kill_delta": 0,
+  "model_eval_passed": false,
+  "observed_at": 1793206086.1420095,
+  "started_at": 1793205295.157898,
+  "completed_at": 1793205968.1646316,
+  "elapsed_seconds": 673.007,
+  "synthetic_only": true,
+  "diagnostics_only": true,
+  "repairs_enabled": false,
+  "completed_cases": 7,
+  "total_cases": 7,
+  "fixture_sha256": "fa9df053cfce53a81cce4c8cf36a72738fd805f3d249903f8ac6801cc3edb7d2",
+  "observed_request_num_batches": [
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64
+  ],
+  "model_memory_before": {
+    "captured_at": 1793205289.2628248,
+    "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0,
+    "historical_oom_killed": true,
+    "memory_limit_bytes": 8589934592,
+    "memswap_limit_bytes": 8589934592,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 1344,
+      "oom": 1,
+      "oom_kill": 1,
+      "oom_group_kill": 0
+    },
+    "memory_current_bytes": 4699684864,
+    "memory_peak_bytes": 7318581248
+  },
+  "model_memory_after": {
+    "captured_at": 1793206086.1418304,
+    "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0,
+    "historical_oom_killed": true,
+    "memory_limit_bytes": 8589934592,
+    "memswap_limit_bytes": 8589934592,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 1344,
+      "oom": 1,
+      "oom_kill": 1,
+      "oom_group_kill": 0
+    },
+    "memory_current_bytes": 5604577280,
+    "memory_peak_bytes": 7318581248,
+    "runner_numeric_configuration": {
+      "batch_size": 64,
+      "microbatch_size": 64,
+      "context_length": 4096,
+      "threads": 2
+    }
+  },
+  "model_container_image_start_and_restarts_unchanged": true,
+  "client_isolation": {
+    "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+    "user": "10001:10001",
+    "read_only_root": true,
+    "memory_limit_bytes": 268435456,
+    "nano_cpus": 500000000,
+    "restart_policy": "no",
+    "networks": [
+      "booking-bridge-diagnostics_diagnostics"
+    ],
+    "mounts": [
+      {
+        "destination": "/results",
+        "type": "bind",
+        "rw": true
+      }
+    ],
+    "cap_drop": [
+      "ALL"
+    ],
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "exit_code": 2,
+    "client_oom_killed": false
+  },
+  "account_reads": 0,
+  "account_mutations": 0,
+  "emails_sent": 0,
+  "evaluation_container_removed": true
+}

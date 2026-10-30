@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-10-23T09:26:21.102332+00:00",
+  "mode": "plan_only_not_executed",
+  "simplybook": {
+    "provider_ids": [
+      9
+    ],
+    "service_ids": [
+      496
+    ],
+    "booking_ids": [],
+    "client_ids": [],
+    "dated_schedule_override": {
+      "provider_id": 9,
+      "date": "2026-10-26",
+      "effective_hours": "09:00-20:00",
+      "reason": "Live schedule trial; effective hours restored, special-day override retained"
+    },
+    "inherited_service_ids": [
+      2,
+      3,
+      5,
+      13,
+      29,
+      47,
+      312,
+      444,
+      452,
+      462,
+      472,
+      474
+    ],
+    "procedure": [
+      "Read test-provider booking history and reconcile any new IDs before deletion",
+      "Delete only test service 496 after reviewing booking history",
+      "Delete only test provider 9; do not edit existing service assignment lists manually",
+      "Compare original baseline settings and assignments; keep journals and evidence"
+    ]
+  },
+  "sredime": {
+    "employee_ids": [
+      "11772"
+    ],
+    "service_ids": [
+      "233160"
+    ],
+    "booking_ids": [],
+    "client_ids": [],
+    "current_state": "Employee nonbookable/all days off; service inactive; no import URL",
+    "procedure": [
+      "Confirm exact test IDs and no new bookings or imported blocks",
+      "Remove/deactivate only test service 233160 and employee 11772 using Buker controls",
+      "Leave all pre-existing employees/services/import settings unchanged"
+    ]
+  },
+  "subscriptions_created": [],
+  "production_enabled": false
+}

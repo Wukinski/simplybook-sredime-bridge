@@ -1,0 +1,154 @@
+# Independent diagnostic model service. No booking mounts, credentials, or Docker socket.
+# model-bootstrap is a temporary, explicit download profile; stop it after pull.
+name: booking-bridge-diagnostics
+x-logs: &diagnostic_logs
+  driver: json-file
+  options:
+    max-size: 5m
+    max-file: "3"
+x-model: &model
+  image: ollama/ollama:0.40.12@sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b
+  user: "10002:10002"
+  read_only: true
+  mem_limit: 8g
+  memswap_limit: 8g
+  cpus: 2.0
+  pids_limit: 128
+  tmpfs: ["/tmp:rw,nosuid,nodev,size=512m,uid=10002,gid=10002,mode=1777"]
+  security_opt: ["no-new-privileges:true"]
+  cap_drop: ["ALL"]
+  logging: *diagnostic_logs
+  environment:
+    HOME: /ollama
+    OLLAMA_HOST: 0.0.0.0:11434
+    OLLAMA_MODELS: /ollama/models
+    OLLAMA_NUM_PARALLEL: "1"
+    OLLAMA_MAX_LOADED_MODELS: "1"
+    OLLAMA_MAX_QUEUE: "2"
+    OLLAMA_CONTEXT_LENGTH: "4096"
+    OLLAMA_KEEP_ALIVE: "-1"
+    OLLAMA_NO_CLOUD: "1"
+    OLLAMA_NOHISTORY: "1"
+    OLLAMA_VULKAN: "0"
+  volumes: ["ollama_state:/ollama"]
+  healthcheck:
+    test: ["CMD", "ollama", "list"]
+    interval: 30s
+    timeout: 5s
+    retries: 3
+    start_period: 15s
+services:
+  qwen:
+    <<: *model
+    profiles: [model, watchdog, diagnostics_staged]
+    restart: unless-stopped
+    ports: ["127.0.0.1:11434:11434"]
+    networks: [diagnostics]
+  model-bootstrap:
+    <<: *model
+    profiles: [bootstrap]
+    restart: "no"
+    networks: [model_download]
+  collector:
+    profiles: [watchdog, diagnostics_staged]
+    image: andjelija-bridge:diagnostics-reviewed
+    command: ["python", "-m", "booking_bridge.watchdog_checks", "--database", "/bridge-state/bridge.sqlite", "--output", "/observations/latest.json", "--interval", "30"]
+    user: "10001:10001"
+    restart: unless-stopped
+    network_mode: none
+    read_only: true
+    mem_limit: 256m
+    cpus: 0.25
+    pids_limit: 32
+    logging: *diagnostic_logs
+    tmpfs: ["/tmp:rw,nosuid,nodev,size=32m,uid=10001,gid=10001,mode=1777"]
+    volumes:
+      - bridge_state:/bridge-state:ro
+      - observations:/observations
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    depends_on:
+      keeper:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-m", "booking_bridge.watchdog_health", "collector", "--file", "/observations/latest.json", "--max-age", "90"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+  keeper:
+    profiles: [watchdog, diagnostics_staged]
+    image: andjelija-bridge:diagnostics-reviewed
+    command: ["python", "-m", "booking_bridge.watchdog_keeper", "--database", "/bridge-state/bridge.sqlite", "--interval", "30"]
+    user: "10001:10001"
+    restart: unless-stopped
+    network_mode: none
+    read_only: true
+    mem_limit: 128m
+    cpus: 0.1
+    pids_limit: 32
+    logging: *diagnostic_logs
+    tmpfs: ["/tmp:rw,nosuid,nodev,size=16m,uid=10001,gid=10001,mode=1777"]
+    # Trusted static helper: RW exists only for SQLite WAL/SHM coordination.
+    # Its SQL connection is always mode=ro/query_only and it receives no AI input.
+    volumes: ["bridge_state:/bridge-state"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sqlite3; c=sqlite3.connect('file:/bridge-state/bridge.sqlite?mode=ro',uri=True,timeout=2); c.execute('PRAGMA query_only=ON'); c.execute('SELECT 1 FROM cache LIMIT 1').fetchone(); c.close()"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  analyzer:
+    profiles: [watchdog, diagnostics_staged]
+    image: andjelija-bridge:diagnostics-reviewed
+    command: ["python", "-m", "booking_bridge.watchdog", "--input", "/observations/latest.json", "--state", "/diagnostics", "--model-url", "http://qwen:11434", "--interval", "60", "--ai-interval", "300"]
+    user: "10001:10001"
+    restart: unless-stopped
+    read_only: true
+    mem_limit: 256m
+    cpus: 0.25
+    pids_limit: 32
+    logging: *diagnostic_logs
+    tmpfs: ["/tmp:rw,nosuid,nodev,size=32m,uid=10001,gid=10001,mode=1777"]
+    environment:
+      BRIDGE_DIAGNOSTIC_ENV_FILE: /run/secrets/smtp_env
+    secrets: [smtp_env, smtp_password]
+    volumes:
+      - observations:/observations:ro
+      - diagnostic_state:/diagnostics
+    depends_on:
+      qwen:
+        condition: service_healthy
+      collector:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-m", "booking_bridge.watchdog_health", "analyzer", "--file", "/diagnostics/watchdog-status.json", "--max-age", "120"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 180s
+    networks: [diagnostics, mail_egress]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+volumes:
+  ollama_state:
+    name: booking-bridge-diagnostics_ollama_state
+  observations:
+    name: booking-bridge-diagnostics_observations
+  diagnostic_state:
+    name: booking-bridge-diagnostics_state
+  bridge_state:
+    external: true
+    name: ${BRIDGE_WATCHDOG_DATABASE_VOLUME:-booking-bridge-pilot_bridge_state}
+networks:
+  diagnostics:
+    internal: true
+  model_download:
+  mail_egress:
+secrets:
+  smtp_env:
+    file: ./secrets/diagnostic-smtp.env
+  smtp_password:
+    file: ./secrets/diagnostic-smtp-password.txt

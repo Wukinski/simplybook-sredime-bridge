@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "diagnostics_only": true,
+  "offline_only": true,
+  "model_inference_requests": 0,
+  "v3_model_tested_image_id": "sha256:1ad9a4fa512e969cb193f50dab25e6f4ff2a1588b605554cc6544c64be250608",
+  "v3_watchdog_sha256": "ddb3998dd251d1dac19317dfc0b9197b110316ba1cb3aa5c9c1f23ac3591a02a",
+  "v4_watchdog_sha256": "d3fa26cd25a96500db86b472ccf5d9c6d4f8e6f9f8ba67a3d7f03d05b1353c21",
+  "system_prompt_unchanged": true,
+  "response_schema_unchanged": true,
+  "classifier_definitions_unchanged": {
+    "validate_assessment": true,
+    "supported_recommendations": true,
+    "known_references": true
+  },
+  "synthetic_fixture_module_unchanged": true,
+  "recorded_result_sha256": "58d0296a71fec1d725c090290d204e737b4380e0bc3ce582efa03c35d7c3e4f6",
+  "tests": [
+    {
+      "name": "healthy_adjacency",
+      "request_body_byte_identical": true,
+      "v3_request_body_sha256": "452119fc968141b7c2febaffef0c26946089ccee05a112eb475811cd11a9ff48",
+      "v4_request_body_sha256": "452119fc968141b7c2febaffef0c26946089ccee05a112eb475811cd11a9ff48",
+      "recorded_assessment_revalidated": true,
+      "recorded_assessment": "no_additional_issue"
+    },
+    {
+      "name": "verified_overlap",
+      "request_body_byte_identical": true,
+      "v3_request_body_sha256": "4a6ce56ab5349a5dee53f772c441bdd53d22709931f8cea59459e9a3f1fdbc07",
+      "v4_request_body_sha256": "4a6ce56ab5349a5dee53f772c441bdd53d22709931f8cea59459e9a3f1fdbc07",
+      "recorded_assessment_revalidated": true,
+      "recorded_assessment": "operator_review"
+    },
+    {
+      "name": "duplicate_candidate",
+      "request_body_byte_identical": true,
+      "v3_request_body_sha256": "6fa4034a063c55356b36223eb92fe35a31e6d2a62808fb1c63bc20bee037f6ec",
+      "v4_request_body_sha256": "6fa4034a063c55356b36223eb92fe35a31e6d2a62808fb1c63bc20bee037f6ec",
+      "recorded_assessment_revalidated": true,
+      "recorded_assessment": "operator_review"
+    },
+    {
+      "name": "source_canceled_target_active",
+      "request_body_byte_identical": true,
+      "v3_request_body_sha256": "7109c9c3e369198fa87629b166740a4dec7fb058f014f467f81a83e53c83d7ae",
+      "v4_request_body_sha256": "7109c9c3e369198fa87629b166740a4dec7fb058f014f467f81a83e53c83d7ae",
+      "recorded_assessment_revalidated": true,
+      "recorded_assessment": "operator_review"
+    },
+    {
+      "name": "unresolved_intent",
+      "request_body_byte_identical": true,
+      "v3_request_body_sha256": "30f123440666532327bfdace6cb26353e4e795945df96e2beb5c9f0d46c7fe5e",
+      "v4_request_body_sha256": "30f123440666532327bfdace6cb26353e4e795945df96e2beb5c9f0d46c7fe5e",
+      "recorded_assessment_revalidated": true,
+      "recorded_assessment": "operator_review"
+    },
+    {
+      "name": "stale_conflicting_data",
+      "request_body_byte_identical": true,
+      "v3_request_body_sha256": "48346a5ea6fb035c99f69a1bdc5dbaaf39d49e99e663e735896c2c2b2c1368e8",
+      "v4_request_body_sha256": "48346a5ea6fb035c99f69a1bdc5dbaaf39d49e99e663e735896c2c2b2c1368e8",
+      "recorded_assessment_revalidated": true,
+      "recorded_assessment": "insufficient_evidence"
+    },
+    {
+      "name": "canceled_overlap_healthy",
+      "request_body_byte_identical": true,
+      "v3_request_body_sha256": "91834c2d2bcc66ecb48f0cb9913a24091d62de60fd953c3158caa89bf8616385",
+      "v4_request_body_sha256": "91834c2d2bcc66ecb48f0cb9913a24091d62de60fd953c3158caa89bf8616385",
+      "recorded_assessment_revalidated": true,
+      "recorded_assessment": "no_additional_issue"
+    }
+  ],
+  "passed": true,
+  "request_bodies_identical": true,
+  "recorded_model_results_replay_passed": true,
+  "model_test_image_id": "sha256:1ad9a4fa512e969cb193f50dab25e6f4ff2a1588b605554cc6544c64be250608",
+  "runtime_image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+  "transport_timeout_change": {
+    "previous_seconds": 180,
+    "current_seconds": 240,
+    "request_body_changed": false
+  },
+  "review_deadline_seconds": 245,
+  "self_test_deadline_seconds": 1720,
+  "once_wait_seconds": 245,
+  "actual_model_tests_repeated_for_runtime_image": false,
+  "runtime_changes": "Defer completed AI candidates until current valid evidence digest matches; transport and job timing only."
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "observed_at": 1793208114.9474921,
+  "scope": "diagnostics_of_existing_pilot_database",
+  "production_enabled": false,
+  "services": [
+    {
+      "role": "keeper",
+      "running": true,
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "restart_policy": "unless-stopped",
+      "existing_process_preserved": true
+    },
+    {
+      "role": "collector",
+      "running": true,
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "restart_policy": "unless-stopped",
+      "existing_process_preserved": true
+    },
+    {
+      "role": "analyzer",
+      "running": true,
+      "health": "starting",
+      "image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+      "restart_policy": "unless-stopped"
+    }
+  ],
+  "status": {
+    "diagnostics_only": true,
+    "email_configured": false,
+    "finding_count": 4,
+    "finding_details_limited": false,
+    "healthy": false,
+    "last_alert_status": "smtp_not_configured",
+    "last_model_ok": true,
+    "last_model_self_test_at": 1793208293.542082,
+    "last_model_self_test_ok": false,
+    "last_model_started_at": 1793208112.0304015,
+    "model": "qwen3.5:4b",
+    "model_review_pending": true,
+    "repairs_enabled": false,
+    "schema_version": 1,
+    "updated_at": 1793208593.8314328
+  },
+  "qwen_process_unchanged": true,
+  "pilot_processes_unchanged": true,
+  "collector_database_read_only": true,
+  "analyzer_has_bridge_database": false,
+  "administrator_credentials_transferred": false,
+  "booking_writes": 0,
+  "emails_sent_by_rollout": 0,
+  "smtp_password_present": false,
+  "no_blanket_compose_up": true,
+  "latest_runtime_observed_at": 1793208639.6039073,
+  "outbox_states": {
+    "pending": 1
+  },
+  "smtp_attempts": 0
+}

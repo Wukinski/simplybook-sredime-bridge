@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-28T16:40:55.514493+00:00",
+  "scope": "pilot_database_diagnostics_only",
+  "rollout_verified": true,
+  "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+  "compose_sha256": "48313d7b59dc6c094229fc5636dc36334624c27ec9b9067cd756dd7e707a0454",
+  "services": {
+    "keeper": {
+      "id": "bd99be25dd7467d472edf3e37e7621629a0c3b5ec9110af47ab9875b24bb9c22",
+      "name": "/booking-bridge-diagnostics-keeper-1",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z",
+      "restart_count": 0,
+      "user": "10001:10001",
+      "read_only_root": true,
+      "network_mode": "none",
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "booking-bridge-pilot_bridge_state",
+          "Destination": "/bridge-state",
+          "RW": true
+        }
+      ],
+      "running": true,
+      "health": "healthy"
+    },
+    "collector": {
+      "id": "881d01b8e5ac962c2c595b21fd8080c15874486f11422833e318385fdbb02401",
+      "name": "/booking-bridge-diagnostics-collector-1",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z",
+      "restart_count": 0,
+      "user": "10001:10001",
+      "read_only_root": true,
+      "network_mode": "none",
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "booking-bridge-pilot_bridge_state",
+          "Destination": "/bridge-state",
+          "RW": false
+        },
+        {
+          "Type": "volume",
+          "Name": "booking-bridge-diagnostics_observations",
+          "Destination": "/observations",
+          "RW": true
+        }
+      ],
+      "running": true,
+      "health": "healthy"
+    }
+  },
+  "projection": {
+    "collected_at": 1793205648.42905,
+    "age_seconds": 6.115,
+    "database_status": "ok",
+    "scan_complete": true,
+    "snapshot_statuses": {
+      "bookings": "stale",
+      "buffers": "stale",
+      "heartbeat": "fresh"
+    },
+    "finding_codes": [
+      "booking_evidence_insufficient",
+      "booking_snapshot_stale",
+      "open_runtime_incident",
+      "service_buffers_stale"
+    ],
+    "projection_sha256": "e27b6e5ff0073e19673e338b85a9970a995a6ec0dd0ae1bdcef21682b61b026a"
+  },
+  "qwen_identity_before": {
+    "id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "name": "/booking-bridge-diagnostics-qwen-1",
+    "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0
+  },
+  "qwen_identity_after": {
+    "id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "name": "/booking-bridge-diagnostics-qwen-1",
+    "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0
+  },
+  "pilot_identity_before": [
+    {
+      "id": "f39503bbb68a4e25b63a2c7144b44fbf287d677741399e5e9d6f45a7907b7a5b",
+      "name": "/booking-bridge-pilot-api-1",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0
+    },
+    {
+      "id": "8b412e68604a92a3838c55b2b89a233efaf37f80cc9a421390fe78072f8fc7fd",
+      "name": "/booking-bridge-pilot-worker-1",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0
+    }
+  ],
+  "pilot_identity_after": [
+    {
+      "id": "f39503bbb68a4e25b63a2c7144b44fbf287d677741399e5e9d6f45a7907b7a5b",
+      "name": "/booking-bridge-pilot-api-1",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0
+    },
+    {
+      "id": "8b412e68604a92a3838c55b2b89a233efaf37f80cc9a421390fe78072f8fc7fd",
+      "name": "/booking-bridge-pilot-worker-1",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0
+    }
+  ],
+  "qwen_container_unchanged": true,
+  "pilot_services_unchanged": true,
+  "analyzer_started_by_this_operation": false,
+  "analyzer_running": false,
+  "model_inference_requests": 0,
+  "booking_writes": 0,
+  "application_sql_writes": 0,
+  "production_enabled": false,
+  "emails_sent": 0
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "status": "complete",
+  "started_at_utc": "2026-10-30T11:32:15.222030+00:00",
+  "completed_at_utc": "2026-10-30T11:47:58.870456+00:00",
+  "expected_rows": 678,
+  "completed_rows": 678,
+  "attempted_gets": 678,
+  "active_count": 507,
+  "inactive_count": 171,
+  "source_posts": 0,
+  "customer_or_booking_reads": 0,
+  "http_retries": 0,
+  "original_successful_gets_repeated": 0,
+  "minimum_start_spacing_seconds": 1.0,
+  "initial_interruption_cause": "unknown_exception_after_621_successful_reads",
+  "initial_manifest": {
+    "path": "manifest.json",
+    "sha256": "16e19a703affec6dcbadd2d1e74d74c9f2fb96d774fb550cb49270ad4027b099"
+  },
+  "continuation_manifest": {
+    "path": "continuation-57/manifest.json",
+    "sha256": "c115be75e3a8b5a3a1fdbbf1dbdbefee7ea6e09325f1278d1dcbf47250443eb2"
+  },
+  "combined_file": {
+    "path": "source-service-details-complete.json",
+    "sha256": "baa9473119019510f28cbff659d2573d71305e54d3ecf35add14ec932f0ef82d"
+  },
+  "local_filesystem_sharing_retries_in_continuation": 0,
+  "source_services_with_selected_assets": 35,
+  "source_services_with_observed_variant_controls": 0,
+  "source_services_with_positive_cleanup": 0,
+  "source_services_with_positive_start_or_end_extensions": 0,
+  "source_services_with_missing_base_duration": 0,
+  "source_services_requiring_multiple_employees": 0,
+  "raw_html_csrf_contact_or_export_urls_saved": false,
+  "scope": "complete_native_source_service_metadata_after_explicit_unread_only_continuation",
+  "protected_directory": "booking_bridge/state/catalog-full-details-20261030",
+  "business_mutations": 0,
+  "runtime_changes": 0,
+  "production_enabled_by_collection": false
+}

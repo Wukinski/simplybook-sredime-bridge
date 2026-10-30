@@ -1,0 +1,12 @@
+{
+  "read_only_account_access": true,
+  "account_mutations": 0,
+  "booking_worker_mode": "simulation",
+  "source_employee_id": "11772",
+  "outbound_occupancy_events": 16,
+  "capture_seconds": 4.003,
+  "remote_import_confirmed": false,
+  "phase": "moved",
+  "feed_version": "066ef5b9a9e45c25a1722c250cdc0f817a1a8ef62385ef39c43e684ad60071ae",
+  "remote_credentials_transferred": false
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T09:55:51.870688+00:00",
+  "sender": "wukinski021@gmail.com",
+  "recipient": "aaaazzzz.5226@gmail.com",
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 465,
+  "verified_tls_required": true,
+  "password_values_or_hashes_recorded": false,
+  "metadata_keys_whitelisted": true,
+  "local_private_acl_verified": true,
+  "booking_writes": 0,
+  "production_configuration_changes": 0,
+  "explicit_test_model_inference_requests": 0,
+  "existing_outbox_reused": true,
+  "existing_watchdog_and_sender_locks_used": true,
+  "test_selected_exact_alert_id": true,
+  "inbox_delivery_verified": false,
+  "protected_before": {
+    "booking-bridge-pilot-api-1": {
+      "container_id": "f39503bbb68a4e25b63a2c7144b44fbf287d677741399e5e9d6f45a7907b7a5b",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-pilot-worker-1": {
+      "container_id": "8b412e68604a92a3838c55b2b89a233efaf37f80cc9a421390fe78072f8fc7fd",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-qwen-1": {
+      "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-keeper-1": {
+      "container_id": "bd99be25dd7467d472edf3e37e7621629a0c3b5ec9110af47ab9875b24bb9c22",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-collector-1": {
+      "container_id": "881d01b8e5ac962c2c595b21fd8080c15874486f11422833e318385fdbb02401",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z",
+      "restart_count": 0,
+      "running": true
+    }
+  },
+  "stage": "complete",
+  "outbox_before_test": {
+    "states": {
+      "pending": 2
+    },
+    "attempts": 0,
+    "accepted_attempts": 0,
+    "uncertain_attempts": 0
+  },
+  "destination_password_previously_empty": true,
+  "host_private_permissions_verified": true,
+  "credentials_transferred": true,
+  "controlled_test_invocations": 1,
+  "test_command_exit_code": 0,
+  "test_result": {
+    "id": "e1da6ad607e842e887fad5bc5907654c",
+    "state": "accepted",
+    "reason": "smtp_accepted",
+    "smtp_accepted": true,
+    "inbox_delivery_verified": false
+  },
+  "outbox_after_test": {
+    "states": {
+      "accepted": 1,
+      "pending": 2
+    },
+    "attempts": 1,
+    "accepted_attempts": 1,
+    "uncertain_attempts": 0
+  },
+  "test_smtp_attempt_delta": 1,
+  "test_smtp_accepted_delta": 1,
+  "test_outbox_row": {
+    "id": "e1da6ad607e842e887fad5bc5907654c",
+    "state": "accepted",
+    "attempts": 1,
+    "last_reason": "smtp_accepted"
+  },
+  "analyzer_running": true,
+  "analyzer_image_unchanged": true,
+  "analyzer_health": "starting",
+  "daemon_status": {
+    "schema_version": 1,
+    "updated_at": 1793354189.9987047,
+    "diagnostics_only": true,
+    "repairs_enabled": false,
+    "healthy": false,
+    "email_configured": true,
+    "model_review_pending": true,
+    "last_model_ok": false,
+    "last_model_started_at": 1793354189.9987047,
+    "last_model_self_test_at": 0,
+    "last_model_self_test_ok": false,
+    "finding_count": 4,
+    "last_alert_status": "accepted"
+  },
+  "outbox_final": {
+    "states": {
+      "accepted": 2,
+      "pending": 1
+    },
+    "attempts": 2,
+    "accepted_attempts": 2,
+    "uncertain_attempts": 0
+  },
+  "actual_smtp_accepted_messages_during_setup": 2,
+  "actual_smtp_attempts_during_setup": 2,
+  "protected_after": {
+    "booking-bridge-pilot-api-1": {
+      "container_id": "f39503bbb68a4e25b63a2c7144b44fbf287d677741399e5e9d6f45a7907b7a5b",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-pilot-worker-1": {
+      "container_id": "8b412e68604a92a3838c55b2b89a233efaf37f80cc9a421390fe78072f8fc7fd",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-qwen-1": {
+      "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-keeper-1": {
+      "container_id": "bd99be25dd7467d472edf3e37e7621629a0c3b5ec9110af47ab9875b24bb9c22",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-collector-1": {
+      "container_id": "881d01b8e5ac962c2c595b21fd8080c15874486f11422833e318385fdbb02401",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z",
+      "restart_count": 0,
+      "running": true
+    }
+  },
+  "pilot_model_keeper_collector_unchanged": true,
+  "smtp_accepted": true,
+  "completed_at_utc": "2026-10-30T09:56:31.949764+00:00",
+  "successful": true
+}

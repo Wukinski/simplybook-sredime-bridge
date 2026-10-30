@@ -1,0 +1,74 @@
+# Dormant preparation. Copy reviewed private inputs into ./secrets only.
+# Both services require explicit production profile selection (or explicit targeting).
+# The worker independently requires a complete readiness gate on every start.
+name: booking-bridge-production
+x-logs: &production_logs
+  driver: json-file
+  options:
+    max-size: 5m
+    max-file: "3"
+services:
+  api:
+    profiles: [production]
+    image: andjelija-bridge:production-reviewed
+    restart: unless-stopped
+    logging: *production_logs
+    user: "10001:10001"
+    environment:
+      BRIDGE_ENV_FILE: /run/secrets/ingress_env
+      BRIDGE_CONFIG_FILE: /run/bridge/production-config.json
+      BRIDGE_STATE: /state
+    secrets: [ingress_env]
+    volumes:
+      - bridge_state:/state
+      - ./secrets/production-config.json:/run/bridge/production-config.json:ro
+    ports: ["127.0.0.1:8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live', timeout=2).close()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  worker:
+    profiles: [production]
+    image: andjelija-bridge:production-reviewed
+    command: ["python", "-m", "booking_bridge.server_worker", "--config", "/run/bridge/production-config.json", "--readiness", "/run/bridge/production-evidence/readiness.json"]
+    restart: unless-stopped
+    logging: *production_logs
+    user: "10001:10001"
+    depends_on:
+      api:
+        condition: service_healthy
+    environment:
+      BRIDGE_ENV_FILE: /run/secrets/worker_env
+      BRIDGE_CONFIG_FILE: /run/bridge/production-config.json
+      BRIDGE_PRODUCTION_READINESS_FILE: /run/bridge/production-evidence/readiness.json
+      BRIDGE_STATE: /state
+    secrets: [worker_env]
+    volumes:
+      - bridge_state:/state
+      - provider_state:/app/provider_assignment/state
+      - ./secrets/production-config.json:/run/bridge/production-config.json:ro
+      - ./secrets/production-evidence:/run/bridge/production-evidence:ro
+    healthcheck:
+      test: ["CMD", "python", "-m", "booking_bridge.production_monitor", "--local-state", "/state/bridge.sqlite"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+volumes:
+  bridge_state:
+  provider_state:
+secrets:
+  ingress_env:
+    file: ./secrets/ingress.env
+  worker_env:
+    file: ./secrets/worker.env

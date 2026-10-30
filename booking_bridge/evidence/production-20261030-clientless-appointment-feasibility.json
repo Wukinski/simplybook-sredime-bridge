@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T11:19:30.083350+00:00",
+  "scope": "offline_feasibility_of_full_appointments_without_real_customer_storage",
+  "owner_requirement": {
+    "full_appointments_both_directions": true,
+    "no_real_customer_storage_in_simplybook": true,
+    "no_placeholder_customer_approval_inferred": true
+  },
+  "sources": {
+    "official_admin_schema": {
+      "path": "provider_assignment\\evidence\\admin-openapi.json",
+      "sha256": "fac14a69aa94d4f539d54dccf2a040206ad6a9c6d8a49c37f60dd0292ac739cb",
+      "public_url": "https://simplybook.me/api/swagger-admin"
+    },
+    "actual_client_field_metadata": "production-20261030-client-required-fields-corrected.json",
+    "supplied_source_guide": {
+      "path": "C:\\Users\\aaaaz\\Downloads\\SrediMe for Developers.html",
+      "sha256": "2a9c05f463c85c629c6c060b42cb9ff7bcb454e668b4a2ba6e088baf30380013"
+    }
+  },
+  "simplybook": {
+    "booking_build_required": [
+      "service_id",
+      "provider_id",
+      "start_datetime"
+    ],
+    "client_id_property_documented": true,
+    "client_id_in_booking_schema_required_list": false,
+    "anonymous_booking_success_proven": false,
+    "actual_client_creation_required_fields": [
+      "name",
+      "email",
+      "phone"
+    ],
+    "client_creation_requirements_prove_booking_without_client_impossible": false,
+    "existing_worker_requires_positive_mapped_client_id": true,
+    "anonymous_full_appointment_adapter_implemented": false,
+    "shared_or_pseudonymous_client_object_approved": false,
+    "calendar_note_block_alternative_documented": true,
+    "calendar_note_is_full_appointment": false
+  },
+  "sredime": {
+    "documented_general_public_api": false,
+    "guide_identifies_not_general_public_api": true,
+    "documented_supported_integration_kinds": [
+      "ics_import_availability",
+      "ics_export_appointments",
+      "outbound_booking_webhooks",
+      "post_employee_ical_refresh_queue"
+    ],
+    "full_booking_write_endpoint_documented_in_supplied_guide": false,
+    "current_ics_import_full_booking_record": false,
+    "native_controlled_ui_trial_equivalent_to_unattended_supported_write_contract": false
+  },
+  "account_calls_by_this_review": 0,
+  "source_live_requests": 0,
+  "writes": 0,
+  "configuration_changed": false,
+  "remaining_evidence": [
+    "Verify supported anonymous SB appointment behavior through a newly scoped controlled test, without any client POST or fabricated contact fields.",
+    "Establish a supported SrediMe booking write contract, including customerless/native identity behavior, before promising full reverse appointments.",
+    "Any shared technical customer object remains an explicit owner decision and is distinct from zero client objects."
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-30T08:56:16.999715+00:00",
+  "scope": "saved_inventory_and_recorded_import_assignment_provenance_review_only",
+  "live_account_validation_performed": false,
+  "account_api_calls": 0,
+  "account_mutations": 0,
+  "runtime_configuration_changed": false,
+  "production_activation_performed": false,
+  "mappings_applied": false,
+  "owner_name_reconfirmation_adds_new_inventory_fact": false,
+  "native_to_target_basis": "unique_inventory_inference_not_native_id_creation_crosswalk",
+  "authoritative_native_to_webhook_crosswalk_present": false,
+  "opaque_webhook_identity_status": "unknown",
+  "original_workbook_hash_matches_import_checkpoint": true,
+  "native_identifiers_present_in_original_workbook_xml": false,
+  "original_import_retains_native_id_crosswalk": false,
+  "raw_api_creation_response_retained_in_checkpoint": false,
+  "creation_evidence_kind": "confirmed_import_checkpoint_with_original_workbook_and_row_fingerprints",
+  "staff_candidate": {
+    "native_employee_id": 10142,
+    "target_provider_id": 5,
+    "normalized_names_equal": true,
+    "source_same_normalized_name_count": 1,
+    "target_same_normalized_name_count": 1,
+    "source_active": true,
+    "source_bookable": true,
+    "native_external_id_present": false,
+    "source_import_url_configured": false,
+    "opaque_webhook_identity_status": "unknown",
+    "identity_review": "pending"
+  },
+  "service_candidates": [
+    {
+      "native_service_id": 128316,
+      "target_service_id": 36,
+      "basis": "unique_inventory_inference_not_native_id_creation_crosswalk",
+      "opaque_webhook_id_status": "unknown",
+      "native_external_id_present": false,
+      "normalized_service_names_equal": true,
+      "source_same_normalized_name_count": 1,
+      "import_same_normalized_name_count": 1,
+      "source_active": true,
+      "source_duration_minutes": 30,
+      "target_duration_minutes": 30,
+      "source_cleanup_minutes": 0,
+      "source_start_extension_minutes": 0,
+      "source_end_extension_minutes": 0,
+      "source_required_employee_count": 1,
+      "source_asset_count": 0,
+      "source_assigned_native_employee_ids": [
+        10142
+      ],
+      "target_after_buffer_minutes": 0,
+      "target_provider_specific_timing_verified": false,
+      "physical_resource_semantics_verified": false,
+      "verified_target_provider_ids": [
+        5,
+        6
+      ],
+      "planned_provider_ids": [
+        5,
+        6
+      ],
+      "import": {
+        "excel_row": 32,
+        "status": "confirmed",
+        "row_sha256": "3cb8680060574ffdfa1dccecb6597c345964b181ddfdce26eebbbcf3669af1d2",
+        "normalized_row_sha256_recalculated": "3cb8680060574ffdfa1dccecb6597c345964b181ddfdce26eebbbcf3669af1d2",
+        "attempts": 1
+      },
+      "assignment_status": "verified",
+      "assignment_observed_snapshot": {
+        "path": "provider_assignment/state/observed-7474d9546dc400e9ce850400907c40b17ad0b0fd31ae1bc0f6053d1c7bcc71bd-bulk-36.json",
+        "sha256": "c264094ec6d3c74793cd7ed322170b8310c1143f891d4b03a99cc5865cbb4770"
+      },
+      "review_status": "inventory_matched_webhook_pending",
+      "identity_review": "pending",
+      "timing_review": "pending",
+      "resources_review": "pending",
+      "notifications_review": "pending"
+    },
+    {
+      "native_service_id": 128275,
+      "target_service_id": 31,
+      "basis": "unique_inventory_inference_not_native_id_creation_crosswalk",
+      "opaque_webhook_id_status": "unknown",
+      "native_external_id_present": false,
+      "normalized_service_names_equal": true,
+      "source_same_normalized_name_count": 1,
+      "import_same_normalized_name_count": 1,
+      "source_active": true,
+      "source_duration_minutes": 15,
+      "target_duration_minutes": 15,
+      "source_cleanup_minutes": 0,
+      "source_start_extension_minutes": 0,
+      "source_end_extension_minutes": 0,
+      "source_required_employee_count": 1,
+      "source_asset_count": 0,
+      "source_assigned_native_employee_ids": [
+        10142
+      ],
+      "target_after_buffer_minutes": 0,
+      "target_provider_specific_timing_verified": false,
+      "physical_resource_semantics_verified": false,
+      "verified_target_provider_ids": [
+        5,
+        6
+      ],
+      "planned_provider_ids": [
+        5,
+        6
+      ],
+      "import": {
+        "excel_row": 27,
+        "status": "confirmed",
+        "row_sha256": "9964923a700a382b79455f4a42e4ba0605a44b00b4391cbeea017ff3f5eba9dd",
+        "normalized_row_sha256_recalculated": "9964923a700a382b79455f4a42e4ba0605a44b00b4391cbeea017ff3f5eba9dd",
+        "attempts": 1
+      },
+      "assignment_status": "verified",
+      "assignment_observed_snapshot": {
+        "path": "provider_assignment/state/observed-7474d9546dc400e9ce850400907c40b17ad0b0fd31ae1bc0f6053d1c7bcc71bd-bulk-31.json",
+        "sha256": "40cd205b6bde1b19d031a374dd669691e37ed4d92b61d09a76f53d33df4937e6"
+      },
+      "review_status": "inventory_matched_webhook_pending",
+      "identity_review": "pending",
+      "timing_review": "pending",
+      "resources_review": "pending",
+      "notifications_review": "pending"
+    }
+  ],
+  "actual_duration_conflicts": [
+    {
+      "native_service_id": 116145,
+      "target_service_id": 404,
+      "source_duration_minutes": 45,
+      "target_duration_minutes": 30
+    },
+    {
+      "native_service_id": 222405,
+      "target_service_id": 472,
+      "source_duration_minutes": 60,
+      "target_duration_minutes": 75
+    },
+    {
+      "native_service_id": 116156,
+      "target_service_id": 5,
+      "source_duration_minutes": 90,
+      "target_duration_minutes": 60
+    },
+    {
+      "native_service_id": 189001,
+      "target_service_id": 434,
+      "source_duration_minutes": 60,
+      "target_duration_minutes": 40
+    },
+    {
+      "native_service_id": 222383,
+      "target_service_id": 438,
+      "source_duration_minutes": 30,
+      "target_duration_minutes": 5
+    },
+    {
+      "native_service_id": 207951,
+      "target_service_id": 6,
+      "source_duration_minutes": 90,
+      "target_duration_minutes": 60
+    },
+    {
+      "native_service_id": 149351,
+      "target_service_id": 15,
+      "source_duration_minutes": 60,
+      "target_duration_minutes": 50
+    },
+    {
+      "native_service_id": 195282,
+      "target_service_id": 162,
+      "source_duration_minutes": 70,
+      "target_duration_minutes": 60
+    },
+    {
+      "native_service_id": 176064,
+      "target_service_id": 14,
+      "source_duration_minutes": 30,
+      "target_duration_minutes": 50
+    }
+  ],
+  "unique_normalized_name_service_pairs": 18,
+  "unique_pairs_equal_duration": 9,
+  "unique_pairs_conflicting_duration": 9,
+  "unresolved_staff_label_difference": {
+    "native_employee_id": 6873,
+    "target_provider_id": 3,
+    "normalized_names_equal": false,
+    "equivalence_proven": false
+  },
+  "source_references": {
+    "original_workbook": {
+      "path": "service_importer/cenovnik oktobar 26 (1).xlsx",
+      "sha256": "4313bb7cdae8f9f785dd7f4c8ffc956ff0a676164f25da729614488bdaa1ec15"
+    },
+    "import_checkpoint": {
+      "path": "service_importer/progress_log.json",
+      "sha256": "47933e7a657be2a45d4f00b620bd0baebbc2d67118c748469c8237964269c956"
+    },
+    "import_implementation": {
+      "path": "service_importer/import_services.py",
+      "sha256": "16c99a0cbf515ed5f3fb2b85dfd95726ef4acca8408192dcaf7a37be6f98114e"
+    },
+    "native_staff_inventory": {
+      "path": "booking_bridge/state/sredime-employees-private.json",
+      "sha256": "8f3d5e19a8607a6cc645024827c74a4ad547dea0ab9beb58550922a8bab4b8fd"
+    },
+    "native_service_catalog": {
+      "path": "booking_bridge/state/sredime-services-private.json",
+      "sha256": "d5c2647f84dcc5ee838ba89ffe9afc3b88a77ac727c5971d020b8c0427effcd2"
+    },
+    "native_service_details": {
+      "path": "booking_bridge/state/sredime-service-details-private.json",
+      "sha256": "44c4f5f428d4b3875836f6b1a3f6bdb2de602e392640164f8bb1b0be9016c81d"
+    },
+    "target_provider_review": {
+      "path": "provider_assignment/state/provider-resolution-review.json",
+      "sha256": "0ca4a8082ecf3313c697c6237fd361e31a8b1d2f2b36231001d4c279df129f9c"
+    },
+    "target_inventory_baseline": {
+      "path": "booking_bridge/state/diagnostics.json",
+      "sha256": "08aa8300db6bf8f4d310076bb9f13ff91a47756a04fbf8738bd7d1a94c6c36e5"
+    },
+    "assignment_plan": {
+      "path": "provider_assignment/state/plan-7474d9546dc400e9ce850400907c40b17ad0b0fd31ae1bc0f6053d1c7bcc71bd.json",
+      "sha256": "6142b90715bd2fd537381de818ed3f21c51148aa503db95305672fca481c667c"
+    },
+    "verified_assignment_journal": {
+      "path": "provider_assignment/state/run-7474d9546dc400e9ce850400907c40b17ad0b0fd31ae1bc0f6053d1c7bcc71bd-bulk.json",
+      "sha256": "c944776383a329e7d11baf70ff52c0d3414ab1d5e11d1b366273f956dc1327f6"
+    },
+    "service_candidate_comparison": {
+      "path": "booking_bridge/state/source-review/service-candidates.csv",
+      "sha256": "11bc7e877dadf9e0c318e0c6f82e9e4c2689779a0bff94cc5ea46254e0623a47"
+    }
+  },
+  "review_csv": {
+    "path": "booking_bridge/mappings/production-review.csv",
+    "before_sha256": "fcefae98d2f5e4435835d99de9ab066a7f86102fabc90a01ad77634d86204c84",
+    "sha256": "f94c817cfcadac53887648a57aa554b8d5be165a06e8868fb0de7d3388cfc97a",
+    "row_count": 3,
+    "status": "inventory_matched_webhook_pending",
+    "identity_timing_resources_notifications_remain_pending": true,
+    "runtime_mapping_source_unchanged": true
+  },
+  "remaining_limits": [
+    "saved_snapshots_are_historical_not_fresh_live_account_checks",
+    "opaque_webhook_identifiers_require_authoritative_technical_evidence",
+    "unique_inventory_inference_is_not_protocol_identity_authority",
+    "provider_specific_timing_and_physical_resource_semantics_not_proven",
+    "notification_behavior_and_new_customer_rules_not_proven",
+    "actual_duration_and_staff_eligibility_conflicts_require_factual_resolution"
+  ]
+}

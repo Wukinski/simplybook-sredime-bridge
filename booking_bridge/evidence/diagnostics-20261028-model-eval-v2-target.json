@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+  "tests": [
+    {
+      "actual_assessment": "operator_review",
+      "confidence": "high",
+      "elapsed_seconds": 105.572,
+      "error_code": null,
+      "expected_assessment": "operator_review",
+      "finding_references": [
+        "3ef957ec9074b2b6"
+      ],
+      "name": "source_canceled_target_active",
+      "passed": true,
+      "validated_recommendation_codes": [
+        "review_source_target_mismatch"
+      ]
+    }
+  ],
+  "oom_kill_delta": 0,
+  "model_eval_passed": true,
+  "observed_at": 1793205283.652547,
+  "started_at": 1793205088.9032736,
+  "completed_at": 1793205194.490322,
+  "elapsed_seconds": 105.587,
+  "synthetic_only": true,
+  "diagnostics_only": true,
+  "repairs_enabled": false,
+  "completed_cases": 1,
+  "total_cases": 1,
+  "fixture_sha256": "fa9df053cfce53a81cce4c8cf36a72738fd805f3d249903f8ac6801cc3edb7d2",
+  "observed_request_num_batches": [
+    64
+  ],
+  "model_memory_before": {
+    "captured_at": 1793205082.545819,
+    "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0,
+    "historical_oom_killed": true,
+    "memory_limit_bytes": 8589934592,
+    "memswap_limit_bytes": 8589934592,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 1344,
+      "oom": 1,
+      "oom_kill": 1,
+      "oom_group_kill": 0
+    },
+    "memory_current_bytes": 4523098112,
+    "memory_peak_bytes": 7318581248
+  },
+  "model_memory_after": {
+    "captured_at": 1793205283.6523929,
+    "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0,
+    "historical_oom_killed": true,
+    "memory_limit_bytes": 8589934592,
+    "memswap_limit_bytes": 8589934592,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 1344,
+      "oom": 1,
+      "oom_kill": 1,
+      "oom_group_kill": 0
+    },
+    "memory_current_bytes": 4699684864,
+    "memory_peak_bytes": 7318581248,
+    "runner_numeric_configuration": {
+      "batch_size": 64,
+      "microbatch_size": 64,
+      "context_length": 4096,
+      "threads": 2
+    }
+  },
+  "model_container_image_start_and_restarts_unchanged": true,
+  "client_isolation": {
+    "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+    "user": "10001:10001",
+    "read_only_root": true,
+    "memory_limit_bytes": 268435456,
+    "nano_cpus": 500000000,
+    "restart_policy": "no",
+    "networks": [
+      "booking-bridge-diagnostics_diagnostics"
+    ],
+    "mounts": [
+      {
+        "destination": "/results",
+        "type": "bind",
+        "rw": true
+      }
+    ],
+    "cap_drop": [
+      "ALL"
+    ],
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "exit_code": 0,
+    "client_oom_killed": false
+  },
+  "account_reads": 0,
+  "account_mutations": 0,
+  "emails_sent": 0,
+  "evaluation_container_removed": true
+}

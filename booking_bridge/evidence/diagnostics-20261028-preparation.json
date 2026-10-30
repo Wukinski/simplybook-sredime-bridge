@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-28T17:33:07.682171+00:00",
+  "authorization": {
+    "production_requested": true,
+    "diagnostics_requested_before_production": true,
+    "model_must_never_repair": true
+  },
+  "production_enabled": false,
+  "booking_writes": 0,
+  "administrator_credentials_transferred": false,
+  "model": {
+    "name": "qwen3.5:4b",
+    "quantization": "Q4_K_M",
+    "resident": true,
+    "cloud_inference": false,
+    "memory_limit_gib": 8,
+    "cpu_limit": 2,
+    "context": 4096,
+    "request_batch": 64,
+    "request_timeout_seconds": 240,
+    "review_deadline_seconds": 245,
+    "self_test_deadline_seconds": 1720,
+    "historical_oom_kills": 1,
+    "new_oom_kills_in_final_validation": 0,
+    "synthetic_cases": 7,
+    "synthetic_passed": true,
+    "actual_model_test_image_id": "sha256:1ad9a4fa512e969cb193f50dab25e6f4ff2a1588b605554cc6544c64be250608"
+  },
+  "validation": {
+    "windows": {
+      "tests": 756,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 756,
+      "sha256": "a25ed8cbdb9795a266df9c5dfe978839826a12e8eedf9f2af9f68b9f38240580"
+    },
+    "linux": {
+      "tests": 756,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 10,
+      "passed": 746,
+      "sha256": "f03f331334eddceddecf1efa44909dc29d100832e70a1d50fcca27bd761262eb"
+    },
+    "linux_http": {
+      "mode": "simulation",
+      "external_reads": false,
+      "external_writes": false,
+      "ack_ms": 10,
+      "accepted_status": 202,
+      "deduplicated_rows": 1,
+      "final_state": "test",
+      "invalid_signature_status": 401,
+      "readiness_status": 200,
+      "status": "passed"
+    },
+    "runtime_code_matches_reviewed_source": true,
+    "diagnostic_image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+    "model_protocol_unchanged": true,
+    "source_archive_sha256": "337c91f7bc2d78d759adb1152ce3043bc11ced1d80c9178d37f0530377b5e6c1"
+  },
+  "runtime": {
+    "scope": "existing_pilot_database_only",
+    "status": {
+      "diagnostics_only": true,
+      "email_configured": false,
+      "finding_count": 4,
+      "finding_details_limited": false,
+      "healthy": false,
+      "last_alert_status": "smtp_not_configured",
+      "last_model_ok": true,
+      "last_model_self_test_at": 1793208293.542082,
+      "last_model_self_test_ok": false,
+      "last_model_started_at": 1793208112.0304015,
+      "model": "qwen3.5:4b",
+      "model_review_pending": true,
+      "repairs_enabled": false,
+      "schema_version": 1,
+      "updated_at": 1793208593.8314328
+    },
+    "qwen_process_unchanged": true,
+    "pilot_processes_unchanged": true,
+    "smtp_password_present": false,
+    "email_delivery_verified": false
+  },
+  "recovery": {
+    "historical_trial_reconciliation_checks": 8,
+    "encrypted_off_host_restore_checks": 14,
+    "held_restores_only": true,
+    "unattended_off_host_backup_configured": false
+  },
+  "production_prerequisites_remaining": [
+    "actual_identity_mappings_and_occupied_durations_resources",
+    "production_scope_and_unknown_client_handling",
+    "smtp_credentials_and_actual_diagnostic_email_delivery",
+    "booking_notification_behavior_and_original_created_evidence",
+    "native_feed_removal_and_measured_transport_latency",
+    "external_monitoring_and_unattended_off_host_backup",
+    "reviewed_private_production_profile_and_readiness_artifacts",
+    "current_soak_72h_gate_and_weekly_certification_review"
+  ],
+  "readiness_policy_proposal": {
+    "applied": false,
+    "automatic_approval_rejected": true,
+    "specific_user_approval_pending": true,
+    "current_controls_unchanged": true
+  },
+  "proofs": [
+    "diagnostics-20261028-model-eval-final.json",
+    "diagnostics-20261028-v3-v4-protocol-equivalence.json",
+    "diagnostics-20261028-python-rollout.json",
+    "diagnostics-20261028-runtime-status.json",
+    "diagnostics-20261028-final-collector-rollout.json",
+    "diagnostics-20261028-memory-fix.json",
+    "diagnostics-20261028-tls.json",
+    "offhost-restore-drill-20261028-6e619251.json",
+    "activation-staging-20261028-2eb16604-reconciliation.json"
+  ]
+}

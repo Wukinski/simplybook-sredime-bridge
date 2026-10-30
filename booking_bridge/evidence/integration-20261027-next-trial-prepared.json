@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-27",
+  "scope": {
+    "source_employee_id": "11772",
+    "source_service_id": "233160",
+    "target_provider_id": 9,
+    "target_service_id": 496,
+    "existing_approved_target_client_id": 1,
+    "controlled_contact_only": true,
+    "production_enabled": false
+  },
+  "private_native_trial": {
+    "implemented_actions": ["inspect", "status", "customer", "prepare", "create", "move", "cancel", "restore"],
+    "offline_tests_passed": 17,
+    "read_only_native_review_passed": true,
+    "read_only_review_posts_dispatched": 0,
+    "secondary_real_employee_control_excluded_from_booking_submission": true,
+    "per_operation_intent_before_post": true,
+    "uncertain_operations_not_retried": true,
+    "exact_contact_and_native_parent_binding_readback_required": true,
+    "owned_flags_finally_restored": true,
+    "live_create_gate_open": false
+  },
+  "automatic_approval_review": {
+    "simplybook_three_subscription_command": "rejected_before_process_start",
+    "source_customer_only_command": "rejected_before_process_start",
+    "subscription_rejection_reason": "separate_external_account_mutation_not_explicitly_included_in_transfer_approval",
+    "customer_rejection_reason": "separate_contact_disclosure_and_customer_creation_not_explicitly_included_in_transfer_approval",
+    "workaround_attempted": false
+  },
+  "live_results": {
+    "simplybook_subscriptions_created": 0,
+    "source_customer_created": false,
+    "source_customer_binding_confirmed": false,
+    "source_booking_created": false,
+    "target_booking_created": false,
+    "source_customer_or_booking_post_attempted": false,
+    "source_callback_enabled": false,
+    "source_employee_bookable": false,
+    "source_employee_all_seven_days_off": true,
+    "source_service_active": false
+  },
+  "contacts_in_evidence": false,
+  "private_plan": "state/integration-20261027/NATIVE_TRIAL_PLAN_PRIVATE.md"
+}

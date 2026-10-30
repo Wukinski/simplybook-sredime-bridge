@@ -1,0 +1,43 @@
+{
+  "mode": "simulation",
+  "salon": "studioandjelija",
+  "reads_enabled": false,
+  "require_subminute_availability": true,
+  "refresh_coalesce_seconds": 5,
+  "allowed_employees": [],
+  "employees": {},
+  "services": {},
+  "clients": {},
+  "expected_rest_base": "",
+  "pilot_client_ids": [],
+  "pilot_service_ids": [],
+  "schedule_service_ids": {},
+  "policies": {
+    "pending": "review",
+    "no_show": "review",
+    "source_edits": "buker",
+    "conflict": "manual_review",
+    "notifications": "unapproved"
+  },
+  "approvals": {
+    "live_writes": false,
+    "business_rules": false,
+    "notification_behavior": false,
+    "account_booking_trial": false,
+    "calendar_blocks_trial": false,
+    "empty_feed_trial": false,
+    "hosting": false,
+    "privacy": false,
+    "client_mapping": false,
+    "customer_contacts": false,
+    "pilot_isolation": false,
+    "pilot_scope_reviewed": false,
+    "account_identity_verified": false,
+    "schedule_reference_verified": false,
+    "sredime_refresh": false
+  },
+  "horizon_days": 60,
+  "snapshot_max_age": 900,
+  "schedule_max_age": 4500,
+  "max_attempts": 8
+}

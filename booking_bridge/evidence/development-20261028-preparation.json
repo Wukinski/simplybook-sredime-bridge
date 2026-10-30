@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "scope": "offline_local_development_and_disabled_task_preparation",
+  "validation": {
+    "command": "python -m pytest booking_bridge/tests -q --junitxml=booking_bridge/evidence/development-20261028-windows-tests.xml",
+    "platform": "Windows",
+    "passed": 446,
+    "failed": 0,
+    "warnings": 1,
+    "warning_category": "StarletteDeprecationWarning",
+    "junit": "development-20261028-windows-tests.xml",
+    "new_linux_validation": false
+  },
+  "implemented": [
+    "local_read_only_occupancy_supervisor",
+    "durable_retry_reservations_and_restart_cooldown",
+    "remote_packet_and_source_timestamp_health",
+    "read_boundary_capture_deadline_and_interruptible_wait",
+    "owned_target_drift_fence_before_snapshot_publication",
+    "explicit_webhook_keys_and_separate_native_metadata",
+    "disabled_current_user_windows_task_preparation"
+  ],
+  "local_task_artifact": {
+    "path": "booking_bridge/deploy/publisher-task.local.xml",
+    "task_enabled": false,
+    "trigger_enabled": false,
+    "run_level": "LeastPrivilege",
+    "tasks_registered_by_this_change": 0,
+    "tasks_started_by_this_change": 0,
+    "excluded_from_release": true
+  },
+  "live_changes": {
+    "deployed": false,
+    "vps_changed": false,
+    "supervisor_started": false,
+    "booking_cycle_repeated": false,
+    "private_profiles_migrated": false,
+    "historical_binding_expanded": false,
+    "credentials_transferred": false,
+    "messages_sent": 0
+  },
+  "not_proven": [
+    "continuous_24x7_operation",
+    "automatic_booking_execution",
+    "native_import_from_supervisor",
+    "subminute_end_to_end_latency",
+    "inbox_delivery"
+  ]
+}

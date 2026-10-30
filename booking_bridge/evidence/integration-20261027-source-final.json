@@ -1,0 +1,85 @@
+{
+  "observed_at_utc": "2026-10-27T14:45:13.702811+00:00",
+  "read_only": true,
+  "readback_native_posts_dispatched": 0,
+  "source_booking": {
+    "id": "9VPLV6E",
+    "native_status": -101,
+    "native_status_label": "Salon otkazao",
+    "date": "2026-10-28",
+    "start": "15:00",
+    "end": "15:30",
+    "employee_id": "11772",
+    "service_id": "233160",
+    "customer_id": "873710",
+    "record_retained_not_deleted": true
+  },
+  "customer": {
+    "source_id": "873710",
+    "record_re_read_exists": true,
+    "exact_email_phone_match_approved_contact": true,
+    "contact_values_excluded": true
+  },
+  "closed_scope": {
+    "callback6_active": false,
+    "employee_bookable": false,
+    "all_seven_work_days_off": true,
+    "test_service_public_active": false,
+    "required_employees": 1,
+    "resources": 0,
+    "duration_minutes": 30,
+    "buffer_minutes": 0
+  },
+  "callback_owner": {
+    "status": "closed",
+    "active_at": "2026-10-27T14:41:06.078832+00:00",
+    "closed_at": "2026-10-27T14:44:10.807873+00:00",
+    "stop_requested": true,
+    "native_posts_dispatched": 2
+  },
+  "source_journal": {
+    "create": {
+      "status": "confirmed",
+      "booking_id": "9VPLV6E",
+      "date": "2026-10-28",
+      "start": "14:00",
+      "end": "14:30",
+      "at": "2026-10-27T13:55:51.442298+00:00",
+      "confirmed_at": "2026-10-27T13:58:52.705821+00:00",
+      "http_status": 200
+    },
+    "resync": {
+      "status": "confirmed",
+      "booking_id": "9VPLV6E",
+      "date": "2026-10-28",
+      "start": "14:00",
+      "end": "14:30",
+      "at": "2026-10-27T14:20:21.727014+00:00",
+      "confirmed_at": "2026-10-27T14:20:23.308655+00:00",
+      "http_status": 200
+    },
+    "move": {
+      "status": "confirmed",
+      "booking_id": "9VPLV6E",
+      "date": "2026-10-28",
+      "start": "15:00",
+      "end": "15:30",
+      "at": "2026-10-27T14:36:59.419650+00:00",
+      "confirmed_at": "2026-10-27T14:37:00.350445+00:00",
+      "http_status": 200
+    },
+    "cancel": {
+      "status": "confirmed",
+      "booking_id": "9VPLV6E",
+      "date": "2026-10-28",
+      "start": "15:00",
+      "end": "15:30",
+      "at": "2026-10-27T14:41:32.047108+00:00",
+      "confirmed_at": "2026-10-27T14:41:33.012535+00:00",
+      "http_status": 200,
+      "native_status_value": "-101"
+    }
+  },
+  "target_mutations_owned_by_root": true,
+  "no_further_source_booking_writes": true
+}

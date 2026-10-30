@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source": "connected_simplybook_admin_readonly_plugin_metadata",
+  "plugin": {
+    "id": "resources",
+    "name": "Related resources",
+    "is_enabled": false,
+    "is_configured": false,
+    "settings_link": "https://studioandjelija.secure.simplybook.me/v2/management/#resources",
+    "actions": [
+      {
+        "name": "Manage",
+        "link": "https://studioandjelija.secure.simplybook.me/v2/management/#resources"
+      },
+      {
+        "name": "Tretmani",
+        "link": "https://studioandjelija.secure.simplybook.me/v2/management/#services/edit/resources/any"
+      }
+    ]
+  },
+  "enabled_plugin_count": 7,
+  "enabled_plugin_ids": [
+    "paid_events",
+    "description",
+    "event_category",
+    "any_unit",
+    "api",
+    "gallery",
+    "mcp"
+  ],
+  "business_mutations": 0,
+  "customer_or_booking_reads": 0,
+  "feature_enable_or_purchase_attempts": 0,
+  "resource_management_tools_exposed": []
+}

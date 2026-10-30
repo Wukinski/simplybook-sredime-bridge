@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-30T09:37:17.266036+00:00",
+  "read_only": true,
+  "source_http_gets": 2,
+  "source_post_requests": 0,
+  "source_changes": 0,
+  "raw_html_saved": false,
+  "secrets_emitted": false,
+  "callback": {
+    "status_code": 200,
+    "active": false,
+    "expected_existing_endpoint_matches": true,
+    "employee_scope_control_observed": false,
+    "selected_employee_count": 0,
+    "selected_scope_is_only_known_test_employee": false
+  },
+  "test_employee": {
+    "status_code": 200,
+    "bookable": false
+  }
+}

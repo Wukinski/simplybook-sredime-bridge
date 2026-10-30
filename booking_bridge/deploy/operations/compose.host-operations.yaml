@@ -1,0 +1,59 @@
+name: booking-bridge-operations
+x-runtime: &runtime
+  profiles: [operations]
+  image: ${BRIDGE_OPERATIONS_IMAGE:?Set the reviewed immutable operations image}
+  user: "10001:10001"
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  pids_limit: 64
+  tmpfs: ["/tmp:rw,nosuid,nodev,size=64m,uid=10001,gid=10001,mode=1777"]
+  logging:
+    driver: json-file
+    options: {max-size: 2m, max-file: "2"}
+services:
+  backup:
+    <<: *runtime
+    command: [python, -m, booking_bridge.deploy.offhost_backup, --config, /run/config/backup.json]
+    mem_limit: 1g
+    cpus: 0.5
+    secrets: [recovery_key, s3_credentials]
+    volumes:
+      - {type: volume, source: bridge_state, target: /bridge-state, read_only: true}
+      - {type: volume, source: provider_state, target: /provider-state, read_only: true}
+      - {type: volume, source: backup_spool, target: /backup-spool}
+      - type: bind
+        source: ./secrets/backup.json
+        target: /run/config/backup.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ./secrets/budget-floor.json
+        target: /run/config/budget-floor.json
+        read_only: true
+        bind: {create_host_path: false}
+  host-monitor:
+    <<: *runtime
+    command: [python, -m, booking_bridge.deploy.operations_monitor, --config, /run/config/monitor.host.json, --send-alert]
+    mem_limit: 256m
+    cpus: 0.25
+    secrets: [smtp_env, smtp_password]
+    volumes:
+      - {type: volume, source: bridge_state, target: /bridge-state, read_only: true}
+      - {type: volume, source: backup_spool, target: /backup-spool, read_only: true}
+      - {type: volume, source: host_monitor_state, target: /monitor-state}
+      - type: bind
+        source: ./secrets/monitor.host.json
+        target: /run/config/monitor.host.json
+        read_only: true
+        bind: {create_host_path: false}
+volumes:
+  bridge_state: {external: true, name: booking-bridge-production_bridge_state}
+  provider_state: {external: true, name: booking-bridge-production_provider_state}
+  backup_spool:
+  host_monitor_state:
+secrets:
+  recovery_key: {file: ./secrets/recovery-key.bin}
+  s3_credentials: {file: ./secrets/s3-credentials.json}
+  smtp_env: {file: ./secrets/diagnostic-smtp.env}
+  smtp_password: {file: ./secrets/diagnostic-smtp-password.txt}

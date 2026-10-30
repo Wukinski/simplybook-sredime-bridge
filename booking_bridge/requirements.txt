@@ -1,0 +1,3 @@
+-r ../provider_assignment/requirements.txt
+icalendar==6.3.2
+cryptography==50.0.2

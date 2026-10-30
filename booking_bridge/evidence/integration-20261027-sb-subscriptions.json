@@ -1,0 +1,27 @@
+{
+  "observed_at_utc": "2026-10-27T13:22:44.622953+00:00",
+  "url": "https://vmi3688215.contaboserver.net/simplybook/webhook",
+  "subscriptions": [
+    {
+      "event": "new_booking",
+      "id": 1,
+      "active": true
+    },
+    {
+      "event": "change_booking",
+      "id": 2,
+      "active": true
+    },
+    {
+      "event": "cancel_booking",
+      "id": 3,
+      "active": true
+    }
+  ],
+  "active_inventory_count": 3,
+  "signature_guard_http": 401,
+  "administrator_credentials_transferred": false,
+  "actual_provider_delivery_confirmed": false,
+  "production_enabled": false,
+  "official_contract": "https://help.simplybook.me/wiki/REST_API_webhooks"
+}

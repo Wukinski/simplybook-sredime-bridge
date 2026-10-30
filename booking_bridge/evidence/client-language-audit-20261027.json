@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-10-27T08:20:25.964886+00:00",
+  "account": "studioandjelija",
+  "method": "supported_native_settings_UI_and_authoritative_readback",
+  "full_serbian_customer_journey_verified": false,
+  "production_enabled": false,
+  "application_runtime_code_changed": false,
+  "changes": {
+    "distinct_client_wording_fields_changed": 695,
+    "client_wording_save_batches": [
+      {
+        "changed_fields": 382,
+        "confirmed_at": "2026-10-27T00:21:50.495009+00:00"
+      },
+      {
+        "changed_fields": 315,
+        "confirmed_at": "2026-10-27T00:31:59.562584+00:00"
+      }
+    ],
+    "shared_duration_fields_changed": 8,
+    "shared_system_fields_compared": 12583,
+    "basic_client_template_fields_changed": 22,
+    "payment_template_fields_changed": 9,
+    "sbpay_invoice_template_fields_changed": 4,
+    "total_template_fields_changed": 35,
+    "unplanned_control_changes": 0,
+    "notification_switches_timings_preserved": true,
+    "payment_settings_preserved": true,
+    "system_language_reset": false,
+    "features_enabled_or_purchased": false,
+    "original_invalid_change_subject_variable_removed": "[event]",
+    "shared_email_footer_and_branding_fields_changed": 10,
+    "total_shared_system_fields_changed": 18,
+    "shared_system_save_batches": [
+      {
+        "changed_fields": 8,
+        "confirmed_at": "2026-10-27T00:38:11.811984+00:00"
+      },
+      {
+        "changed_fields": 10,
+        "confirmed_at": "2026-10-27T08:26:30.336162+00:00"
+      }
+    ]
+  },
+  "coverage_limits": {
+    "client_wording_fields_in_editor": 1249,
+    "nonempty_values_equal_default_after_changes": 425,
+    "equality_count_is_not_a_language_coverage_metric": true,
+    "english_labels_in_disabled_features_still_exist": true,
+    "html_lang": "en",
+    "serbian_available_in_system_language_menu": false,
+    "language_options_count": 22,
+    "english_official_client_terms_url": "https://simplybook.me/en/terms-and-conditions#tab-for-clients",
+    "default_email_wrapper_verified": false,
+    "delivered_email_sms_whatsapp_content_verified": false,
+    "whatsapp_template_language_verified": false,
+    "source_notification_templates_verified": false,
+    "client_ical_attachment_enabled": false,
+    "default_email_wrapper_before_footer_fix": {
+      "serbian_subject_and_body": true,
+      "english_footer": true,
+      "evidence": "pilot-cancellation-message-log-20261027.json"
+    },
+    "shared_email_footer_translation_readback": "passed",
+    "email_render_after_footer_fix_verified": false
+  },
+  "public_read_checks": {
+    "home_contact_title": "Kontaktirajte nas",
+    "home_location_title": "Na?a lokacija",
+    "calendar_month": "Oktobar",
+    "previous_month": "PRETHODNI MESEC",
+    "next_month": "SLEDE?I MESEC",
+    "customer_details_labels": [
+      "Ime i prezime",
+      "Imejl",
+      "Telefon"
+    ],
+    "duration": "30 min",
+    "new_public_booking_submitted": false,
+    "source_public_html_lang": "sr-RS",
+    "source_untranslated_carousel_labels": [
+      "Previous",
+      "Next"
+    ]
+  },
+  "provider_editor_rejection": {
+    "error": "lang.po.tmp:2310: keyword \"to\" unknown",
+    "remote_changes_from_rejected_saves": 0,
+    "blocked_msgids": [
+      "Don't have an account? <a class=\"to-sign-up__link\" tabindex=\"0\">Sign up</a>"
+    ],
+    "other_changes_saved_after_exclusion": true
+  },
+  "controlled_cancellation": {
+    "booking_id": 2,
+    "provider_status": "canceled",
+    "existing_client_id": 1,
+    "approved_email_matches": true,
+    "approved_phone_matches": true,
+    "reviewed_serbian_cancellation_fields_match": true,
+    "client_email_notifications_enabled": true,
+    "client_sms_cancellation_enabled": false,
+    "whatsapp_cancellation_enabled": true,
+    "sms_credits_at_precheck": 0,
+    "whatsapp_credits_at_precheck": 0,
+    "precheck_at": "2026-10-27T00:53:00.951212+00:00",
+    "notification_delivery": "unknown",
+    "readback_evidence": "pilot-booking-cancelled-20261027.json",
+    "native_email_log_evidence": "pilot-cancellation-message-log-20261027.json",
+    "native_email_log_is_inbox_delivery_proof": false
+  },
+  "validation": {
+    "native_settings_readback": "passed",
+    "unrelated_field_comparisons": "passed",
+    "json_duplicate_key_and_utf8_checks": "passed",
+    "application_pytest_rerun": false,
+    "linux_runtime_tests_rerun": false
+  },
+  "assets": [
+    {
+      "path": "booking_bridge/localization/sr-Latn-additional.json",
+      "sha256": "bb11527716f48d6958b9708b53e2ddd7bbe1a111bd0e70e2a2ae90059cb1b6cf"
+    },
+    {
+      "path": "booking_bridge/localization/sr-Latn-payments.json",
+      "sha256": "bd30cda7c2106d447248342a934ff1d4b436127fb536061c3eea454616e19dff"
+    },
+    {
+      "path": "booking_bridge/localization/sr-Latn-sbpay.json",
+      "sha256": "25d43183c036f381ba31f14d53cd6e902fcb665e13121201aa44bcb100ee5aef"
+    },
+    {
+      "path": "booking_bridge/localization/sr-Latn-system.json",
+      "sha256": "b4a6beabb8694b6fa8b3bb125a75411fd44a9e33fedac36e7cca444bbf7a2e55"
+    },
+    {
+      "path": "booking_bridge/localization/sr-Latn.json",
+      "sha256": "5922932030a45209c8f8dcba0465125134759d791fea7f0c3376cae3fd247d59"
+    }
+  ],
+  "support_requests_sent": false,
+  "private_evidence_directory": "booking_bridge/state/language-audit-20261027/"
+}

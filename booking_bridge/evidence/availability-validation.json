@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-22",
+  "availability_requirement_seconds_exclusive": 60,
+  "requirement_met": false,
+  "remote_import_confirmation_available": false,
+  "external_account_reads": 0,
+  "external_business_writes": 0,
+  "mode": "simulation",
+  "production_enabled": false,
+  "tests": {
+    "windows": {
+      "tests": 316,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "linux": {
+      "tests": 184,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "windows_smoke": {
+    "mode": "simulation",
+    "external_reads": false,
+    "external_writes": false,
+    "ack_ms": 31,
+    "accepted_status": 202,
+    "deduplicated_rows": 1,
+    "final_state": "test",
+    "invalid_signature_status": 401,
+    "readiness_status": 200,
+    "status": "passed"
+  },
+  "linux_smoke": {
+    "status": "passed",
+    "ack_ms": 11,
+    "network": "none",
+    "root_filesystem": "read-only",
+    "uid": 10001,
+    "external_reads": false,
+    "external_writes": false
+  },
+  "image_id": "sha256:9d1f575a3e6707bf8e2234c94af105b9d092385b408676e23d0d9996672209aa",
+  "production_preflight_exit_code": 2,
+  "source_hashes": {
+    "booking_bridge/api.py": "bad4d5cedc39acb267884351f7305279ae794467ddc453b3c41dd7a256cec91d",
+    "booking_bridge/calendar.py": "f9d37bf8452f1e33b5e7ff23ac5560a352c580e71a8e871d49042ccd9163f3f6",
+    "booking_bridge/model.py": "72370863721fb9b111ac5574aea483f517f8f996ebc6e497d7800ed9fd8fdb3d",
+    "booking_bridge/scheduler.py": "51d3a27d29d5b1e15ba349c25a82963bcf242969cacda9c72d4cf0fb410856c4",
+    "booking_bridge/store.py": "0686119538efe84c637444943a3e8510542680e8a8ebc68b55dee67c82c8ab4a",
+    "booking_bridge/preflight.py": "f200cb58006898d1baa1c4963e72a569a639a457010a9253a329477a6461d333",
+    "booking_bridge/__main__.py": "eb60b2011cd0fdae7da07d1853dd71d201307a898d747303ca6a112e0bc40a6a",
+    "booking_bridge/tests/test_availability_latency.py": "42473407531d637cd21d072fe026b9a8c9dcc9747a7a55c946e52b9d9c20f1c7"
+  },
+  "notes": [
+    "Windows smoke initially encountered a transient temporary SQLite SHM cleanup PermissionError; no surviving bridge processes were found; subsequent unchanged run passed.",
+    "Existing FastAPI test-client deprecation warning remains.",
+    "All latency behavior tests use synthetic data; smoke acknowledgement time is not cross-system availability latency."
+  ],
+  "remaining": [
+    "SrediMe access/configuration and supported bounded availability interface",
+    "SimplyBook manual schedule change event coverage and provider isolation",
+    "Public host and isolated end-to-end pilot"
+  ],
+  "supplied_sredime_guide_sha256": "2a9c05f463c85c629c6c060b42cb9ff7bcb454e668b4a2ba6e088baf30380013"
+}

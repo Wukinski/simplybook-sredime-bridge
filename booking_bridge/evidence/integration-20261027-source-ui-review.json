@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-27",
+  "review_mode": "authenticated_native_ui_read_only",
+  "account_mutations": 0,
+  "customer_created": false,
+  "booking_created": false,
+  "native_flow": {
+    "full_calendar_context_required": true,
+    "booking_modal_opened": true,
+    "booking_form_visible": true,
+    "inline_customer_fields_hidden": true,
+    "native_new_customer_modal_opened": true,
+    "customer_form_visible": true,
+    "customer_save_post_attempted": false,
+    "marketing_subscription_default": false,
+    "customer_blocked_default": false
+  },
+  "final_native_readback": {
+    "employee_id": "11772",
+    "external_id": "9",
+    "bookable": false,
+    "all_seven_days_off": true,
+    "selected_service_ids": ["233160"],
+    "callback_id": "6",
+    "callback_active": false,
+    "test_employee_booking_count_in_reviewed_window": 0,
+    "reviewed_booking_window": ["2026-10-27", "2026-10-31"]
+  },
+  "private_trial_script": {
+    "deployed_in_release": false,
+    "prepare_and_create_disabled": true,
+    "reason": "native_customer_modal_post_and_binding_readback_not_implemented",
+    "status_and_owned_restore_available": true
+  },
+  "remaining_work": [
+    "Implement the observed native new-customer POST and independent exact-contact readback without enabling marketing.",
+    "Verify source booking customer ID binding before mapping to the existing approved target client 1.",
+    "Run the controlled source create/move/cancel trial only after the required transport approval and reconciliation gates."
+  ],
+  "new_user_contact_details_requested": false,
+  "contacts_in_evidence": false,
+  "production_enabled": false
+}

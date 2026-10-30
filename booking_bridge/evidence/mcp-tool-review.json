@@ -1,0 +1,273 @@
+{
+  "review_date": "2026-10-22",
+  "source": "session tool catalogue and declared argument schemas",
+  "read_only_annotations_available": false,
+  "notes": "Classification is based on declared operations; no client-wide permission settings were changed.",
+  "tools": [
+    {
+      "name": "mcp__simplybook_admin__book",
+      "operation": "Create a new booking. Requires service_id, provider_id, start_datetime and client information.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__call_support",
+      "operation": "Open the live support chat so the user can talk to a human support agent. Use this when the user explicitly asks to speak with support, a human, or an agent.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__cancel_booking",
+      "operation": "Cancel an existing booking by its ID.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__create_category",
+      "operation": "Create a new service category in the system. Plugin: \"event_category\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__create_client",
+      "operation": "Create a new client. Use get_client_fields first to get available fields if custom client fields are enabled.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__create_intake_form",
+      "operation": "Create a new intake form field that clients must fill in when booking. Plugin: \"event_field\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__create_location",
+      "operation": "Create a new location in the system. Plugin: \"location\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__create_provider",
+      "operation": "Create a new provider in the system",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__create_service",
+      "operation": "Create a new service in the system",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__delete_category",
+      "operation": "Delete a service category from the system. Plugin: \"event_category\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__delete_client",
+      "operation": "Delete a client by ID. This action cannot be undone.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__delete_intake_form",
+      "operation": "Delete an intake form field and all its collected values. Plugin: \"event_field\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__delete_location",
+      "operation": "Delete a location from the system. Plugin: \"location\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__delete_provider",
+      "operation": "Delete a provider from the system. If the provider has been used in bookings, it will be set as inactive instead of being permanently deleted.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__delete_service",
+      "operation": "Delete a service from the system. If the service has been used in bookings, it will be set as inactive instead of being permanently deleted.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__delete_special_day",
+      "operation": "Clears (cancel) a special day for company, provider, or service so the date reverts to the regular weekly schedule.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__disable_plugin",
+      "operation": "Disable a custom feature(plugin)ss",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__edit_booking",
+      "operation": "Edit an existing booking. Allows changing service, provider, category, location, and datetime.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__enable_plugin",
+      "operation": "Enable a custom feature(plugin)",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__fallback_ai_help",
+      "operation": "Returns AI generated help content from the Help Center, according to user query.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__finish_session",
+      "operation": "Finish session to clean session and disconnect user",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_bookings",
+      "operation": "Search bookings by various filters. Returns matching bookings and a link to full report.",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_categories_list",
+      "operation": "Get a list of all service categories with optional filtering. Plugin: \"event_category\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_category_item",
+      "operation": "Get a single service category by its ID. Plugin: \"event_category\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_client",
+      "operation": "Get detailed information about a specific client by ID, including custom fields if enabled.",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_client_fields",
+      "operation": "Get available client fields including custom fields if the client_field plugin is enabled. Use this to know which fields to include when creating or updating clients.",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_company_info",
+      "operation": "Get company information including social links, hide email setting and WhatsApp",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_first_available_time",
+      "operation": "Get the first available date and time for booking. Can optionally filter by provider and/or service.",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_intake_form_item",
+      "operation": "Get a single intake form field by its ID. Plugin: \"event_field\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_intake_forms_list",
+      "operation": "Get a list of all intake form fields configured for this company. Plugin: \"event_field\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_invoice_list",
+      "operation": "List invoices with optional filters. Returns matching rows, total count and a link to the invoices list. Plugin: \"paid_events\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_location_item",
+      "operation": "Get a single location by its ID. Plugin: \"location\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_locations_list",
+      "operation": "Get a list of all locations with optional filtering. Plugin: \"location\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_outstanding_balance_list",
+      "operation": "Get a list of clients with outstanding (unpaid) balances. Supports filtering by client and amount range. Returns matching rows, total count and a link to the full report. Plugin: \"paid_events\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_plugin_info",
+      "operation": "Get the info of a custom feature (plugin)",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_plugins_list",
+      "operation": "Get a list of custom features (plugins)",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_provider_item",
+      "operation": "Get a single provider by its ID",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_providers_list",
+      "operation": "Get a list of all providers with optional filtering",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_recommended_plugins_list",
+      "operation": "Get a paginated list of recommended disabled custom features (plugins), ordered by relevance to the company's business category",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_sales_and_tax_report",
+      "operation": "Get a sales and tax report aggregated by date for a given period. Returns daily rows (amount without tax, tax, amount with tax), totals, totals by payment processor, and a link to the full report. Plugin: \"paid_events\"",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_schedule",
+      "operation": "Get schedule (working days and hours) for week. Can retrieve provider, service, or company schedule. Returns schedule information including working hours, breaks, and day-off status.",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_service_item",
+      "operation": "Get a single service by its ID",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_services_list",
+      "operation": "Get a list of all services with optional filtering",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__get_timeline",
+      "operation": "Get available time slots for a specific date. Returns list of available booking times. Can optionally filter by provider and/or service.",
+      "classification": "read"
+    },
+    {
+      "name": "mcp__simplybook_admin__search_clients",
+      "operation": "Search for clients by name, email, or phone number. Returns a list of matching clients.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_category",
+      "operation": "Update an existing service category in the system. Plugin: \"event_category\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_client",
+      "operation": "Update an existing client. Use get_client_fields first to get available fields if custom client fields are enabled.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_company_info",
+      "operation": "Update company information. Supports partial updates — only provided fields are changed.",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_intake_form",
+      "operation": "Update an existing intake form field. Plugin: \"event_field\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_location",
+      "operation": "Update an existing location in the system. Plugin: \"location\"",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_provider",
+      "operation": "Update an existing provider in the system",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_schedule",
+      "operation": "Updates schedule for service/provider/company",
+      "classification": "other"
+    },
+    {
+      "name": "mcp__simplybook_admin__update_service",
+      "operation": "Update an existing service in the system",
+      "classification": "other"
+    }
+  ]
+}

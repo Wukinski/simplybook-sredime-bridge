@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T09:35:56.630168+00:00",
+  "read_only": true,
+  "account_writes": 0,
+  "source_callbacks_changed": false,
+  "model_requests": 0,
+  "max_get_requests": 4,
+  "get_requests": 4,
+  "rows": [
+    {
+      "entity_kind": "employee",
+      "native_id": 11772,
+      "http_status": 200,
+      "route_matched": true,
+      "result": "read",
+      "body_sha256": "dbf9e72544771bc1fc90dd47d1dcfcfb591adfc575c323c1d4e2202b4e1b5354",
+      "id_controls": [
+        {
+          "field": "id",
+          "numeric_value": 11772,
+          "value_length": 5
+        }
+      ],
+      "entity_update_form_present": false,
+      "source_export_control_count": 1,
+      "known_controlled_employee_opaque_id_in_export": true,
+      "export_identity_slot": {
+        "index": 3,
+        "scheme_matches_controlled": true,
+        "host_matches_controlled": true,
+        "segment_count": 5,
+        "controlled_segment_count": 5,
+        "segment_length": 6,
+        "segment_sha256": "919e088248c06c9daeb6b597133d4fc247a3ee65a812f3791d4f63780c70a240",
+        "query_present": false,
+        "path_structure": [
+          "",
+          "buker",
+          "{opaque_or_other_segment}",
+          "{opaque_or_other_segment}",
+          "{opaque_or_other_segment}"
+        ],
+        "different_segment_indexes": [],
+        "candidate_matches_controlled_employee_id": true
+      }
+    },
+    {
+      "entity_kind": "employee",
+      "native_id": 10142,
+      "http_status": 200,
+      "route_matched": true,
+      "result": "read",
+      "body_sha256": "75a276ef4f99321cb31fbab6c5fab5682e7a8135a133cee2e0067c562c08ef1e",
+      "id_controls": [
+        {
+          "field": "id",
+          "numeric_value": 10142,
+          "value_length": 5
+        }
+      ],
+      "entity_update_form_present": false,
+      "source_export_control_count": 1,
+      "known_controlled_employee_opaque_id_in_export": false,
+      "export_identity_slot": {
+        "index": 3,
+        "scheme_matches_controlled": true,
+        "host_matches_controlled": true,
+        "segment_count": 5,
+        "controlled_segment_count": 5,
+        "segment_length": 6,
+        "segment_sha256": "bcea80dcf671db6d8228afac03a2c289bc56e1b15536b94a4e88744e17fa7945",
+        "query_present": false,
+        "path_structure": [
+          "",
+          "buker",
+          "{opaque_or_other_segment}",
+          "{opaque_or_other_segment}",
+          "{opaque_or_other_segment}"
+        ],
+        "different_segment_indexes": [
+          3,
+          4
+        ],
+        "candidate_matches_controlled_employee_id": false
+      }
+    },
+    {
+      "entity_kind": "service",
+      "native_id": 128316,
+      "http_status": 200,
+      "route_matched": true,
+      "result": "read",
+      "body_sha256": "dde65e55804939056a974df364d77bde0b67b3b648e0f2a01d3453cb45d013a1",
+      "id_controls": [],
+      "entity_update_form_present": false,
+      "source_export_control_count": 0,
+      "known_controlled_employee_opaque_id_in_export": false
+    },
+    {
+      "entity_kind": "service",
+      "native_id": 128275,
+      "http_status": 200,
+      "route_matched": true,
+      "result": "read",
+      "body_sha256": "4c58aed7bb42ca2755627ebaf5dfe1e9fcbceee33225d7022f228116b78a78c9",
+      "id_controls": [],
+      "entity_update_form_present": false,
+      "source_export_control_count": 0,
+      "known_controlled_employee_opaque_id_in_export": false
+    }
+  ],
+  "all_four_authenticated_reads_completed": true
+}

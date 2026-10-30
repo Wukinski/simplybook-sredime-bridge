@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T11:26:01.848125+00:00",
+  "completed_at_utc": "2026-10-30T11:26:08.276232+00:00",
+  "scope": "fresh_read_only_catalog_metadata_no_customers",
+  "complete": true,
+  "source_gets": 16,
+  "source_posts": 0,
+  "target_requests": [
+    {
+      "method": "GET",
+      "path": "/admin/services"
+    },
+    {
+      "method": "GET",
+      "path": "/admin/providers"
+    }
+  ],
+  "rows": {
+    "source_services": 678,
+    "source_service_details": 9,
+    "source_employees": 6,
+    "target_services": 495,
+    "target_providers": 7
+  },
+  "files": {
+    "source-services.json": {
+      "sha256": "4a9feddac4b28c372c61e433dfd863e764832c25a1cef1ecc6c41a810aed6073",
+      "bytes": 148516
+    },
+    "source-service-details.json": {
+      "sha256": "1dad7ff3e54ccd03c87bc2751bb5f2265bffe0e0a5af1528aafeb71af06afd8f",
+      "bytes": 3242
+    },
+    "source-employees.json": {
+      "sha256": "cd47b9caf46d7dad526b2e5e312fe4b3e49653a6bc8393484479c10516763ed7",
+      "bytes": 11302
+    },
+    "target-services.json": {
+      "sha256": "2872546d8fbe59d0a7e2509768cecb618448141d09352d07e2122d24aeff93b1",
+      "bytes": 136598
+    },
+    "target-providers.json": {
+      "sha256": "9149a5e3c510404c58dc91f23f6b453d204ead3bf93dae20a8f8e7f1e84a1399",
+      "bytes": 11397
+    }
+  },
+  "protected_local_directory": "booking_bridge/state/catalog-current-20261030",
+  "service_detail_forms_current": 9,
+  "employee_forms_current": 6,
+  "all_source_service_details_verified": false,
+  "raw_pages_or_contacts_saved": false,
+  "source_credentials_or_export_urls_copied": false,
+  "customer_or_booking_reads": 0,
+  "business_mutations": 0,
+  "runtime_maps_changed": false,
+  "production_enabled": false
+}

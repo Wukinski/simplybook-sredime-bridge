@@ -1,0 +1,140 @@
+{
+  "target": "pilot",
+  "current_mode": "pilot",
+  "configuration_ready": true,
+  "checks": [
+    {
+      "code": "runtime_configuration",
+      "ok": true
+    },
+    {
+      "code": "approval_live_writes",
+      "ok": true
+    },
+    {
+      "code": "approval_business_rules",
+      "ok": true
+    },
+    {
+      "code": "approval_hosting",
+      "ok": true
+    },
+    {
+      "code": "approval_privacy",
+      "ok": true
+    },
+    {
+      "code": "approval_account_identity_verified",
+      "ok": true
+    },
+    {
+      "code": "approval_schedule_reference_verified",
+      "ok": true
+    },
+    {
+      "code": "approval_client_mapping",
+      "ok": true
+    },
+    {
+      "code": "approval_pilot_scope_reviewed",
+      "ok": true
+    },
+    {
+      "code": "live_reads",
+      "ok": true
+    },
+    {
+      "code": "sredime_signing_secret",
+      "ok": true
+    },
+    {
+      "code": "simplybook_signing_secret",
+      "ok": true
+    },
+    {
+      "code": "admin_key",
+      "ok": true
+    },
+    {
+      "code": "rest_credentials",
+      "ok": true
+    },
+    {
+      "code": "rest_company",
+      "ok": true
+    },
+    {
+      "code": "rest_region",
+      "ok": true
+    },
+    {
+      "code": "employee_allowlist",
+      "ok": true
+    },
+    {
+      "code": "employee_mappings",
+      "ok": true
+    },
+    {
+      "code": "unique_employee_targets",
+      "ok": true
+    },
+    {
+      "code": "service_mappings",
+      "ok": true
+    },
+    {
+      "code": "service_timing_and_resources",
+      "ok": true
+    },
+    {
+      "code": "schedule_references",
+      "ok": true
+    },
+    {
+      "code": "private_feed_tokens",
+      "ok": true
+    },
+    {
+      "code": "source_export_endpoints",
+      "ok": true
+    },
+    {
+      "code": "local_state_readable",
+      "ok": true
+    },
+    {
+      "code": "remote_intents_resolved",
+      "ok": true
+    },
+    {
+      "code": "client_mappings",
+      "ok": true
+    },
+    {
+      "code": "pilot_client_ids",
+      "ok": true
+    },
+    {
+      "code": "pilot_service_ids",
+      "ok": true
+    },
+    {
+      "code": "pilot_service_scope",
+      "ok": true
+    },
+    {
+      "code": "pilot_client_scope",
+      "ok": true
+    }
+  ],
+  "external_validation_performed": false,
+  "observed_at_utc": "2026-10-27T13:25:19.027527+00:00",
+  "native_customer_binding_verified": true,
+  "existing_target_client_id": 1,
+  "target_contact_readback_verified": true,
+  "capture_and_server_profiles_unchanged": true,
+  "source_webhook_customer_identity_still_requires_match": true,
+  "account_mutations": 0,
+  "production_enabled": false
+}

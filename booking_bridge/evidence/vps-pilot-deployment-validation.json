@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-23T12:25:11.143136+00:00",
+  "host": "169.58.118.33",
+  "os": "Ubuntu 24.04.5 LTS",
+  "application_directory": "/opt/booking-bridge-pilot",
+  "image_id": "sha256:c03d960d9a2b0c86640d6d74ee668f5c7f9380644662a7e7c242eafc6dcba566",
+  "runtime_mode": "simulation",
+  "live_background_reads": false,
+  "production_enabled": false,
+  "docker_engine": "29.9.2",
+  "compose": "5.6.1",
+  "tls": {
+    "trusted_ip_certificate_verified_by_external_client": true,
+    "issuer": "Lets Encrypt YE2",
+    "not_after_utc": "2026-10-30T03:16:29Z",
+    "renewal_timer": "active",
+    "certbot": "5.8.0",
+    "renewal_dry_run_exit_code": 0
+  },
+  "public_checks": {
+    "/health/live": 200,
+    "/ops/events": 404,
+    "/health/ready": 404,
+    "/ics/11772/not-a-token.ics": 404,
+    "unsigned_sredime_webhook": 401,
+    "unsigned_simplybook_webhook": 401
+  },
+  "linux_tests": {
+    "tests": 249,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "linux_smoke": {
+    "mode": "simulation",
+    "external_reads": false,
+    "external_writes": false,
+    "ack_ms": 22,
+    "accepted_status": 202,
+    "deduplicated_rows": 1,
+    "final_state": "test",
+    "invalid_signature_status": 401,
+    "readiness_status": 200,
+    "status": "passed"
+  },
+  "local_backup": {
+    "online_backup_integrity": "ok",
+    "hourly_timer": "active",
+    "encrypted": false,
+    "off_host": false
+  },
+  "monitoring": {
+    "private_readiness": "ok",
+    "minute_timer": "active",
+    "external_alert_destination": null
+  },
+  "credentials": {
+    "root_password_saved_to_project": false,
+    "dedicated_pilot_ssh_key_prepared": true,
+    "host_key_pinned": true
+  },
+  "source_callback": {
+    "create_attempts": 1,
+    "confirmed_created": false,
+    "actual_remote_outcome": "unresolved; endpoint not visible in list after inactive-create request",
+    "requested_active": false,
+    "automatic_create_retry_performed": false,
+    "private_journal": "state/vps-source-webhook-provisioning.json"
+  },
+  "real_booking_writes": 0,
+  "real_customer_messages_sent": 0,
+  "end_to_end_availability_delay": null,
+  "remaining": [
+    "Controlled test contact",
+    "Resolve source endpoint creation outcome and obtain real signing secrets",
+    "Run signed source Test then controlled booking/import trials",
+    "Off-host backup destination and external alerts before real use"
+  ],
+  "runtime_source_hashes_match_workspace": true,
+  "runtime_source_hashes": {
+    "booking_bridge/model.py": "7737e9cb65d189f2b76b0dcba8e1214092e1b8d80e48f6f836bdd438985e30ad",
+    "booking_bridge/preflight.py": "29fa7e1d702706867b3642e60aca6f985fabdefb2f01c190c18e21ddfd58b21e",
+    "booking_bridge/pilot_setup.py": "79b1f58ef54abed342e192224325cf6bb481c6e9874a6709e0801b8840b4f64e",
+    "booking_bridge/provision_pilot.py": "e0c87fc4515b7d4ee092385f04dd0be7be23486e79dd6b915c84d089745a30b7",
+    "booking_bridge/controlled_pilot.py": "9ab32f26addeae978cdde964502ef26578495011ea61f3298ec291553c739862",
+    "booking_bridge/__main__.py": "2b740c1879dfac1a30f23de7dae84000708ee092f692fb7552b9b47caeea0bac"
+  }
+}

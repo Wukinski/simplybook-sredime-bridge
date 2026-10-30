@@ -1,0 +1,309 @@
+{
+  "provider_ids": [
+    9
+  ],
+  "service_ids": [
+    496
+  ],
+  "provider_service_ids": [
+    2,
+    3,
+    5,
+    13,
+    29,
+    47,
+    312,
+    444,
+    452,
+    462,
+    472,
+    474,
+    496
+  ],
+  "existing_catalog_preserved": true,
+  "existing_to_existing_assignments_preserved": true,
+  "existing_service_assignment_changes": [
+    {
+      "service_id": 2,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 3,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 5,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 13,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 29,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 47,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 312,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 444,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 452,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 462,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 472,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    },
+    {
+      "service_id": 474,
+      "before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "after": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "added_test_providers": [
+        9
+      ]
+    }
+  ],
+  "client_writes": 0,
+  "booking_writes": 0,
+  "production_enabled": false,
+  "setup_elapsed_seconds": 11.328,
+  "observed_at": "2026-10-23",
+  "scope": "Actual SimplyBook test-record provisioning; no SrediMe writes or bookings"
+}

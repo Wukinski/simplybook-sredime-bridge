@@ -1,0 +1,45 @@
+# Template only. No infrastructure is created until explicitly approved.
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: booking_bridge/deploy/Dockerfile
+    image: andjelija-bridge:reviewed
+    restart: on-failure:5
+    environment:
+      BRIDGE_ENV_FILE: /run/secrets/bridge_env
+      BRIDGE_STATE: /state
+    secrets: [bridge_env]
+    volumes:
+      - bridge_state:/state
+      - ../config.local.json:/app/booking_bridge/config.local.json:ro
+      - ../mappings:/app/booking_bridge/mappings:ro
+    ports: ["127.0.0.1:8000:8000"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  worker:
+    image: andjelija-bridge:reviewed
+    restart: on-failure:5
+    depends_on: [api]
+    command: ["python", "-m", "booking_bridge", "worker"]
+    environment:
+      BRIDGE_ENV_FILE: /run/secrets/bridge_env
+      BRIDGE_STATE: /state
+    secrets: [bridge_env]
+    volumes:
+      - bridge_state:/state
+      - provider_state:/app/provider_assignment/state
+      - ../config.local.json:/app/booking_bridge/config.local.json:ro
+      - ../mappings:/app/booking_bridge/mappings:ro
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+volumes:
+  bridge_state:
+  provider_state:
+secrets:
+  bridge_env:
+    file: ../secrets/production.env

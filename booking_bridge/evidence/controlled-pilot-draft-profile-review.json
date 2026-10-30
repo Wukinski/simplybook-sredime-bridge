@@ -1,0 +1,14 @@
+{
+  "mode": "simulation",
+  "live_background_reads": false,
+  "pilot_under_60_is_entry_gate": false,
+  "source_employee_id": "11772",
+  "provider_id": 9,
+  "source_service_id": "233160",
+  "service_id": 496,
+  "controlled_contact_present": false,
+  "signing_secrets_obtained": false,
+  "hosting_ready": false,
+  "timing_resources_flags": false,
+  "production_approvals_supplied": false
+}

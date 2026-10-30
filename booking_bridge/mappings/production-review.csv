@@ -1,0 +1,4 @@
+kind,source_native_id,source_webhook_id,target_id,name,source_staff_native_id,target_provider_id,source_duration_minutes,target_duration_minutes,identity_review,timing_review,resources_review,notifications_review,status,evidence
+employee,10142,,5,Tamara,,,,,pending,pending,pending,pending,inventory_matched_webhook_pending,PILOT_MAPPING_REVIEW.md
+service,128316,,36,Probiotski tretman lica,10142,5,30,30,pending,pending,pending,pending,inventory_matched_webhook_pending,PILOT_MAPPING_REVIEW.md
+service,128275,,31,Mikrodermoabrazija lica,10142,5,15,15,pending,pending,pending,pending,inventory_matched_webhook_pending,PILOT_MAPPING_REVIEW.md

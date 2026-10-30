@@ -1,0 +1,465 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-10-30T10:39:30.630797+00:00",
+  "read_only_audit": true,
+  "inference_requests": 0,
+  "service_changes": 0,
+  "emails_sent_by_audit": 0,
+  "account_reads": 0,
+  "account_writes": 0,
+  "services": [
+    {
+      "name": "booking-bridge-diagnostics-analyzer-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "analyzer",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+      "started_at": "2026-10-30T09:56:18.762127155Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-diagnostics-collector-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "collector",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": true,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-keeper-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "keeper",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-qwen-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "qwen",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-pilot-worker-1",
+      "project": "booking-bridge-pilot",
+      "role": "worker",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-pilot-api-1",
+      "project": "booking-bridge-pilot",
+      "role": "api",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    }
+  ],
+  "port_8001": {
+    "tcp_listener_present": false,
+    "running_docker_port_claim_present": false,
+    "free": true
+  },
+  "diagnostics_status": {
+    "schema_version": 1,
+    "updated_at": 1793356715.5270295,
+    "diagnostics_only": true,
+    "repairs_enabled": false,
+    "healthy": true,
+    "email_configured": true,
+    "model_review_pending": false,
+    "last_model_ok": true,
+    "last_model_started_at": 1793356595.4770143,
+    "last_model_self_test_at": 1793354250.978557,
+    "last_model_self_test_ok": true,
+    "finding_count": 4,
+    "finding_details_limited": false,
+    "last_alert_status": "idle"
+  },
+  "diagnostics_status_age_seconds": 54.567,
+  "smtp_outbox_states": {
+    "accepted": 4
+  },
+  "smtp_attempt_count": 4,
+  "smtp_accepted_attempt_count": 4,
+  "smtp_password_file_present": true,
+  "smtp_password_present": true,
+  "smtp_metadata_file_present": true,
+  "named_project_directories": {
+    "/opt/booking-bridge-production": true,
+    "/opt/booking-bridge-pilot": true,
+    "/opt/booking-bridge": false,
+    "/opt/booking-bridge-diagnostics": true
+  },
+  "production_directory_entries": [
+    "CREDENTIALS_INSTALLED.json",
+    "PENDING-CUTOVER.txt",
+    "STAGED_WITHOUT_CREDENTIALS.json",
+    "blank-template-backups-20261030-53f91059c68740e59c3c266057636a52",
+    "compose.yaml",
+    "preflight-blocked.json",
+    "secrets",
+    "staging-receipt.json"
+  ],
+  "named_project_files": [
+    {
+      "path": "/opt/booking-bridge-production/compose.yaml",
+      "present": true,
+      "size_bytes": 2663
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-config.json",
+      "present": true,
+      "size_bytes": 1110,
+      "mode": "production"
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-evidence/readiness.json",
+      "present": true,
+      "size_bytes": 3454
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/ingress.env",
+      "present": true,
+      "size_bytes": 291
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/worker.env",
+      "present": true,
+      "size_bytes": 537
+    },
+    {
+      "path": "/opt/booking-bridge-pilot/compose.yaml",
+      "present": true,
+      "size_bytes": 1298
+    },
+    {
+      "path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "present": true,
+      "size_bytes": 5261
+    }
+  ],
+  "production_containers_present": false,
+  "production_containers_running": false,
+  "production_profile": {
+    "mode": "production",
+    "reads_enabled": true,
+    "counts": {
+      "employees": 0,
+      "services": 0,
+      "clients": 0,
+      "allowed_employees": 0,
+      "schedule_service_ids": 0
+    },
+    "notification_policy": "unapproved"
+  },
+  "reviewed_gates": 6,
+  "pending_gates": [
+    "state_reconciliation",
+    "identity_mappings",
+    "business_rules",
+    "notification_delivery",
+    "original_created_delivery",
+    "availability_latency",
+    "empty_feed_removal",
+    "external_monitoring",
+    "soak_72h",
+    "diagnostic_email_delivery"
+  ],
+  "profile_sha256": "8ea31386deb537952a984cc9281b82b9a9d2492b1f7b9e957b4ef09cc6de05ee",
+  "manifest_sha256": "1ea78d7d852d3d52c848ae14dcfe259cae90da901555385a5a958ac9b1d7291e",
+  "production_volume_count": 0,
+  "preflight": {
+    "target": "production",
+    "current_mode": "production",
+    "configuration_ready": false,
+    "checks": [
+      {
+        "code": "runtime_configuration",
+        "ok": false
+      },
+      {
+        "code": "approval_live_writes",
+        "ok": true
+      },
+      {
+        "code": "approval_business_rules",
+        "ok": false
+      },
+      {
+        "code": "approval_hosting",
+        "ok": true
+      },
+      {
+        "code": "approval_privacy",
+        "ok": false
+      },
+      {
+        "code": "approval_account_identity_verified",
+        "ok": false
+      },
+      {
+        "code": "approval_schedule_reference_verified",
+        "ok": false
+      },
+      {
+        "code": "approval_client_mapping",
+        "ok": false
+      },
+      {
+        "code": "approval_notification_behavior",
+        "ok": false
+      },
+      {
+        "code": "approval_account_booking_trial",
+        "ok": false
+      },
+      {
+        "code": "approval_calendar_blocks_trial",
+        "ok": false
+      },
+      {
+        "code": "approval_empty_feed_trial",
+        "ok": false
+      },
+      {
+        "code": "live_reads",
+        "ok": true
+      },
+      {
+        "code": "sredime_signing_secret",
+        "ok": true
+      },
+      {
+        "code": "simplybook_signing_secret",
+        "ok": true
+      },
+      {
+        "code": "admin_key",
+        "ok": true
+      },
+      {
+        "code": "rest_credentials",
+        "ok": true
+      },
+      {
+        "code": "rest_company",
+        "ok": true
+      },
+      {
+        "code": "rest_region",
+        "ok": true
+      },
+      {
+        "code": "employee_allowlist",
+        "ok": false
+      },
+      {
+        "code": "employee_mappings",
+        "ok": false
+      },
+      {
+        "code": "unique_employee_targets",
+        "ok": true
+      },
+      {
+        "code": "service_mappings",
+        "ok": false
+      },
+      {
+        "code": "service_timing_and_resources",
+        "ok": false
+      },
+      {
+        "code": "schedule_references",
+        "ok": false
+      },
+      {
+        "code": "private_feed_tokens",
+        "ok": false
+      },
+      {
+        "code": "source_export_endpoints",
+        "ok": false
+      },
+      {
+        "code": "local_state_readable",
+        "ok": true
+      },
+      {
+        "code": "restore_reconciliation_complete",
+        "ok": true
+      },
+      {
+        "code": "remote_intents_resolved",
+        "ok": true
+      },
+      {
+        "code": "client_mappings",
+        "ok": false
+      },
+      {
+        "code": "production_evidence_manifest",
+        "ok": true,
+        "status": "reviewed"
+      },
+      {
+        "code": "production_state_reconciliation",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_identity_mappings",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_business_rules",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_notification_delivery",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_original_created_delivery",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_availability_latency",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_empty_feed_removal",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_external_monitoring",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_encrypted_off_host_restore",
+        "ok": true,
+        "status": "reviewed"
+      },
+      {
+        "code": "production_tls_renewal",
+        "ok": true,
+        "status": "reviewed"
+      },
+      {
+        "code": "production_linux_http_validation",
+        "ok": true,
+        "status": "reviewed"
+      },
+      {
+        "code": "production_soak_72h",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_server_credentials_review",
+        "ok": true,
+        "status": "reviewed"
+      },
+      {
+        "code": "production_diagnostic_qwen_readonly",
+        "ok": true,
+        "status": "reviewed"
+      },
+      {
+        "code": "production_diagnostic_email_delivery",
+        "ok": false,
+        "status": "pending"
+      },
+      {
+        "code": "production_activation",
+        "ok": true,
+        "status": "reviewed"
+      },
+      {
+        "code": "production_state_present",
+        "ok": false
+      }
+    ],
+    "external_validation_performed": false
+  },
+  "preflight_exit_code": 2,
+  "preflight_failure_count": 29,
+  "configuration_ready": false,
+  "production_activated_by_check": false,
+  "booking_writes_by_check": 0,
+  "policy_guards_changed": false,
+  "credentials_transferred_by_check": false,
+  "inference_requests_by_check": 0,
+  "server_profile_matches_reviewed_local": true,
+  "server_manifest_matches_reviewed_local": true
+}

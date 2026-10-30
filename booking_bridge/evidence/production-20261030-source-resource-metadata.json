@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T11:51:38.391584+00:00",
+  "complete": false,
+  "maximum_gets": 4,
+  "minimum_start_spacing_seconds": 1,
+  "automatic_retries": 0,
+  "requests": [
+    {
+      "id": "48",
+      "requested_at_utc": "2026-10-30T11:51:38.957712+00:00",
+      "http_status": 200
+    }
+  ],
+  "source_posts": 0,
+  "customer_or_booking_reads": 0,
+  "raw_html_tokens_cookie_or_export_urls_saved": false,
+  "reason": "native_resource_read_requires_review_no_retry",
+  "completed_at_utc": "2026-10-30T11:51:39.289236+00:00",
+  "attempted_gets": 1,
+  "projected_rows": 0,
+  "rows": [],
+  "metadata_sha256": "bc7443a4df7e18e10ad4e588297bbd143eac9c5626bd6fc80fffe727b5d0c2f8",
+  "business_mutations": 0,
+  "runtime_mappings_changed": false
+}

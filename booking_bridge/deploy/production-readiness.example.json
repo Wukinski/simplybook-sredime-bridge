@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "profile_digest": null,
+  "checks": {
+    "state_reconciliation": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "identity_mappings": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "business_rules": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "notification_delivery": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "original_created_delivery": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "availability_latency": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "empty_feed_removal": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "external_monitoring": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "encrypted_off_host_restore": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "tls_renewal": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "linux_http_validation": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "soak_72h": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "server_credentials_review": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "diagnostic_qwen_readonly": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "diagnostic_email_delivery": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    },
+    "activation": {
+      "status": "pending",
+      "reviewed": false,
+      "artifact": null,
+      "sha256": null,
+      "observed_at": null
+    }
+  }
+}

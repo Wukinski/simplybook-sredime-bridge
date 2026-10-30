@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-28",
+  "read_only": true,
+  "inference_requests_sent": 0,
+  "configuration_changes": 0,
+  "model": "qwen3.5:4b",
+  "ollama_version": "0.40.12",
+  "actual_show_metadata": {
+    "template": "{{ .Prompt }}",
+    "renderer": "qwen3.5",
+    "parser": "qwen3.5",
+    "template_source": "renderer_parser",
+    "thinking": {"values": [false, true], "default": true},
+    "capabilities": ["completion", "vision", "tools", "thinking"]
+  },
+  "actual_manifest_config": {
+    "model_format": "gguf",
+    "model_family": "qwen35",
+    "model_type": "4.2B",
+    "file_type": "Q4_K_M",
+    "renderer": "qwen3.5",
+    "parser": "qwen3.5",
+    "requires": "0.30.0"
+  },
+  "source_findings": {
+    "nonempty_renderer_bypasses_go_template": true,
+    "qwen35_renderer_emits_system_and_user_chatml_turns": true,
+    "think_false_emits_empty_think_block": true,
+    "render_only_json_field": "_debug_render_only",
+    "render_only_precedes_completion": true
+  },
+  "sources": [
+    "https://github.com/ollama/ollama/blob/v0.40.12/server/prompt.go",
+    "https://github.com/ollama/ollama/blob/v0.40.12/model/renderers/renderer.go",
+    "https://github.com/ollama/ollama/blob/v0.40.12/model/renderers/qwen35.go",
+    "https://github.com/ollama/ollama/blob/v0.40.12/model/parsers/qwen35.go",
+    "https://github.com/ollama/ollama/blob/v0.40.12/api/types.go",
+    "https://github.com/ollama/ollama/blob/v0.40.12/server/routes.go"
+  ],
+  "actual_render_only_probe_performed": false,
+  "conclusion": "The placeholder template alone does not establish ignored chat messages. The installed model selects the built-in qwen3.5 renderer/parser. No derived ChatML model alias or configuration change is justified by this audit.",
+  "semantic_model_evaluation_passed": false
+}

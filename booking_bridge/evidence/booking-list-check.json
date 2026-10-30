@@ -1,0 +1,15 @@
+{
+  "read_only": true,
+  "keys": [
+    "data",
+    "metadata"
+  ],
+  "metadata": {
+    "items_count": 0,
+    "pages_count": 0,
+    "page": 1,
+    "on_page": 100
+  },
+  "row_count": 0,
+  "first_row_keys": []
+}

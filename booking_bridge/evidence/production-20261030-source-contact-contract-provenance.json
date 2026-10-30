@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T10:51:42.239463+00:00",
+  "scope": "offline_supplied_original_developer_guide_contact_contract",
+  "source_public_url": "https://www.sredime.com/developers/partner-integrations.html",
+  "local_supplied_guide": "C:\\Users\\aaaaz\\Downloads\\SrediMe for Developers.html",
+  "guide_sha256": "2a9c05f463c85c629c6c060b42cb9ff7bcb454e668b4a2ba6e088baf30380013",
+  "source_live_requests": 0,
+  "account_requests": 0,
+  "normalized_pilot_db_used_as_absence_proof": false,
+  "default_customer_contacts_excluded_documented": true,
+  "separately_authorized_integration_contacts_possible_documented": true,
+  "separate_data_protection_terms_documented": true,
+  "example_customer_key_sets": [
+    [
+      "id"
+    ]
+  ],
+  "source_ics_excludes_contact_fields_documented": true,
+  "actual_current_endpoint_contact_entitlement_verified": false,
+  "actual_raw_current_delivery_customer_keys_verified": false,
+  "limitations": [
+    "Supplied saved guide; no fresh source retrieval or account contract confirmation.",
+    "Normalized inbox projections cannot prove which raw customer keys arrived.",
+    "Owner consent to local processing alone does not demonstrate that source enables its separate authorized-contact payload."
+  ]
+}

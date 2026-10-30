@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "prepared_at_utc": "2026-10-30T11:02:55.956230+00:00",
+  "scope": "offline_candidate_review_saved_inventory_only",
+  "source_saved_service_count": 677,
+  "target_saved_service_count": 494,
+  "source_active_scope_established": false,
+  "strict_unique_name_candidates": 18,
+  "additional_unique_word_sequence_candidates": 32,
+  "candidate_total": 50,
+  "word_sequence_preserves_treatment_meaning": false,
+  "all_candidates_pending": true,
+  "webhook_identity_authority_established": false,
+  "mappings_applied": 0,
+  "live_reads": 0,
+  "booking_writes": 0,
+  "worksheet_private": "booking_bridge/state/catalog-alignment-20261030/punctuation-candidates.csv",
+  "worksheet_sha256": "19cc4259c045b8f6e54984dc748c5e22cb43e1fbdfc17261e7bb31f3239dba8c",
+  "notes": [
+    "Punctuation may change meaning (e.g. combination vs alternatives); every candidate needs review.",
+    "677 saved source rows are not a verified current active-service scope.",
+    "A matching name or word sequence never supplies a missing webhook ID."
+  ]
+}

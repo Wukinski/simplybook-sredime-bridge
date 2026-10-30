@@ -1,0 +1,86 @@
+{
+  "checked_at_utc": "2026-10-27T09:13:04.849155+00:00",
+  "source": "current_native_sredime_forms_and_live_simplybook_mcp_reads",
+  "read_only": true,
+  "business_mutations": 0,
+  "source_service": {
+    "id": "233160",
+    "external_id": "496",
+    "duration_minutes": 30,
+    "cleanup_minutes": 0,
+    "start_work_minutes": 0,
+    "end_work_minutes": 0,
+    "required_employees": 1,
+    "selected_resource_ids": [],
+    "active": false,
+    "visible_employee_selector_has_test_employee": false,
+    "selected_visible_employee_ids": []
+  },
+  "source_employee": {
+    "id": "11772",
+    "external_id": "9",
+    "active": true,
+    "bookable": false,
+    "all_seven_workdays_off": true,
+    "selected_service_ids": [
+      "233160"
+    ]
+  },
+  "target_service": {
+    "id": 496,
+    "active": true,
+    "visible": false,
+    "duration_minutes": 30,
+    "buffer_after_minutes": 0,
+    "provider_ids": [
+      9
+    ],
+    "price": 0
+  },
+  "target_provider": {
+    "id": 9,
+    "active": true,
+    "visible": false,
+    "capacity": 1,
+    "assigned_test_service": true,
+    "other_preexisting_service_links_count": 12
+  },
+  "target_resource_plugin": {
+    "enabled": false,
+    "configured": false
+  },
+  "contract_checks": {
+    "duration_matches_30_minutes": true,
+    "cleanup_matches_zero_buffer": true,
+    "no_split_work_periods": true,
+    "single_source_employee_required": true,
+    "no_selected_source_shared_resources": true,
+    "target_shared_resource_feature_disabled": true,
+    "source_test_employee_owns_test_service": true,
+    "target_test_service_exclusively_assigned_to_provider_9": true
+  },
+  "recommendation": {
+    "timing_verified": true,
+    "resources_verified": true,
+    "applies_only_to_source_service": "233160",
+    "applies_only_to_target_service": 496,
+    "flags_changed_by_this_check": false,
+    "actual_live_booking_trial_performed": false,
+    "limitations": [
+      "The source service editor omits nonbookable employees; its empty visible employee selection is not evidence that the test relationship is absent.",
+      "No complete reverse-assignment audit of other hidden employees was performed; test-employee assignment and absence of selected visible employees were checked.",
+      "Provider 9 retains 12 previously documented links to original target services; complete provider isolation is not claimed."
+    ]
+  },
+  "exact_approved_contact_search": {
+    "observed_native_route": "/buker/studio-andjelija-sg/customer/list",
+    "query_field": "query",
+    "email_candidates": 0,
+    "international_phone_candidates": 0,
+    "equivalent_national_phone_candidates": 0,
+    "customer_details_fetched": 0,
+    "customer_created": false,
+    "contacts_excluded": true
+  },
+  "raw_evidence_retained_privately": true
+}

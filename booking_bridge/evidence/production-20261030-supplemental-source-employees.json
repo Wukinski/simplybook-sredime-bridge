@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T11:48:37.188519+00:00",
+  "complete": true,
+  "expected_rows": 3,
+  "request_cap": 3,
+  "attempted_gets": 3,
+  "source_posts": 0,
+  "customer_or_booking_reads": 0,
+  "raw_html_or_export_urls_saved": false,
+  "source_service_pass_finished_before_employee_reads": true,
+  "service_pass_manifest_sha256": "6c04adc85d4478de8297922a3580953045432a107e937833df21bf6c6c32c0d4",
+  "completed_at_utc": "2026-10-30T11:48:40.211116+00:00",
+  "observed_rows": 3,
+  "verified_rows": 3,
+  "output_sha256": "7ee95dfb7797bc3d0eadd936e9fe0f5c5e3c06d713fbbf8c3451fb006788cc44",
+  "scope": "supplemental_three_source_employee_metadata_gets_only",
+  "runtime_changes": 0
+}

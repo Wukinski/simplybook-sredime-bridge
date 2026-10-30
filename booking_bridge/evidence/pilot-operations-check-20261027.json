@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-10-27T00:50:56.684301+00:00",
+  "scope": "existing_pilot_only",
+  "mode": "simulation",
+  "reads_enabled": false,
+  "production_enabled": false,
+  "processes_observed_running": [
+    "api",
+    "worker"
+  ],
+  "tls": {
+    "not_before_utc": "2026-10-26T22:34:02Z",
+    "not_after_utc": "2026-11-02T14:34:01Z",
+    "source": "openssl_x509_over_pinned_ssh"
+  },
+  "timers": {
+    "booking-bridge-certbot.timer": "active",
+    "booking-bridge-pilot-check.timer": "active",
+    "booking-bridge-pilot-backup.timer": "active"
+  },
+  "last_private_check_result": "Result=exit-code\nExecMainStatus=1",
+  "last_backup_result": "Result=success\nExecMainStatus=0",
+  "on_server_backups_count_at_observation": 84,
+  "newest_backup_mtime": 1793059216.0,
+  "off_host_backup_verified": false,
+  "private_readiness": {
+    "error_type": "HTTPError",
+    "http_status": 503
+  },
+  "private_feed_staleness_probe": {
+    "operation": "private_feed_staleness_check",
+    "production_enabled": false,
+    "status": 503,
+    "error_type": "HTTPError",
+    "observed_at_epoch": 1793061284.1325269
+  },
+  "feed_state": {
+    "availability_target_seconds": 60,
+    "subminute_verified": false,
+    "employees": [
+      {
+        "employee": "11772",
+        "feed_ready_at": 1792764298.374925,
+        "refresh_scheduled_at": null,
+        "feed_fetched_at": 1792764388.4070325,
+        "current_version_fetched": true,
+        "feed_ready_age_seconds": 296713.84192943573,
+        "import_confirmed": false,
+        "latency": {
+          "latest": {
+            "id": 1,
+            "employee": "11772",
+            "version": "d0509829320671130467f91f5b445f004a46c7362c4b82aea6c1059c60df1fa2",
+            "kind": "baseline",
+            "ready": 1792764298.374925,
+            "scheduled": null,
+            "fetched": 1792764388.4070325,
+            "clock_anomaly": false,
+            "ready_to_fetch_seconds": 90.03210759162903,
+            "ready_to_refresh_seconds": null,
+            "fetch_deadline_missed": true,
+            "import_confirmed": false
+          },
+          "seven_day_observations": {
+            "changes": 0,
+            "fetched_under_60": 0,
+            "fetched_at_or_over_60": 0,
+            "superseded_without_observed_fetch": 0,
+            "pending_at_or_over_60": 0
+          },
+          "measurement_scope": "feed_ready_to_http_fetch",
+          "source_commit_time_known": false,
+          "remote_import_time_known": false
+        }
+      }
+    ]
+  },
+  "cache_metadata": [
+    {
+      "key": "bookings",
+      "updated": 1792764206.8730679
+    },
+    {
+      "key": "buffers",
+      "updated": 1792764208.547473
+    },
+    {
+      "key": "feed-last-served:11772",
+      "updated": 1792764388.4070325
+    },
+    {
+      "key": "feed-ready:11772",
+      "updated": 1792764298.374925
+    },
+    {
+      "key": "schedule:11772",
+      "updated": 1792764209.3861182
+    }
+  ],
+  "source_scope": {
+    "employee_id": 11772,
+    "bookable": false,
+    "all_working_days_off": true,
+    "external_id": "9",
+    "own_service_id": 233160,
+    "private_import_configured": true,
+    "import_points_to_expected_test_employee": true,
+    "service_id": 233160,
+    "service_active": false,
+    "service_external_id": "496",
+    "service_duration_minutes": "30",
+    "callback_id": 6,
+    "callback_deactivated": true
+  },
+  "source_settings_mutated_this_session": false,
+  "account_credentials_transferred": false,
+  "new_booking_or_webhook_created": false,
+  "import_completion_confirmed": false,
+  "fresh_snapshot_published": false
+}

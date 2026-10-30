@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-30T08:53:45.436166+00:00",
+  "unit": "booking-bridge-certbot.service",
+  "normal_configured_service_only": true,
+  "forced_renewal": false,
+  "configuration_changes": 0,
+  "route_changes": 0,
+  "application_restarts_by_audit": 0,
+  "inference_requests": 0,
+  "booking_writes": 0,
+  "start_result": {
+    "start_submitted": true,
+    "systemctl_exit_code": 0,
+    "reason": "normal_unit_start_submitted",
+    "service": {
+      "MainPID": "809635",
+      "Result": "success",
+      "ExecMainStartTimestamp": "Fri 2026-10-30 09:52:52 CET",
+      "ExecMainExitTimestamp": "",
+      "ExecMainStatus": "0",
+      "ActiveState": "activating",
+      "SubState": "start"
+    }
+  },
+  "command_review": {
+    "executable": "/opt/booking-bridge-certbot/bin/certbot",
+    "renew_command": true,
+    "force_flags_present": false,
+    "quiet_mode": true,
+    "deploy_hook_configured": false,
+    "webroot_argument_present": false,
+    "explicit_challenge_changes_requested": false,
+    "expected_existing_service": true
+  },
+  "service_before": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStartTimestamp": "Fri 2026-10-30 00:27:12 CET",
+    "ExecMainExitTimestamp": "Fri 2026-10-30 00:27:59 CET",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive",
+    "SubState": "dead"
+  },
+  "service_after": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStartTimestamp": "Fri 2026-10-30 09:52:52 CET",
+    "ExecMainExitTimestamp": "Fri 2026-10-30 09:53:37 CET",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive",
+    "SubState": "dead"
+  },
+  "fixed_log_findings": {
+    "renewal_success_mentioned": false,
+    "not_due_mentioned": false,
+    "no_renewals_attempted_mentioned": false,
+    "renewal_failure_mentioned": false,
+    "journal_read_ok": true
+  },
+  "public_tls_before": [
+    {
+      "host": "169.58.118.33",
+      "chain_and_hostname_verified": true,
+      "not_before_utc": "2026-10-26T22:34:02+00:00",
+      "not_after_utc": "2026-11-02T14:34:01+00:00",
+      "sha256": "e9b5e97532412b81c1e458acf78a213bcf5ce4174ae9b8a74fc29dc9dc9d4598",
+      "issuer": {
+        "organizationName": "Let's Encrypt",
+        "commonName": "YE1"
+      }
+    },
+    {
+      "host": "vmi3688215.contaboserver.net",
+      "chain_and_hostname_verified": true,
+      "not_before_utc": "2026-10-26T22:34:02+00:00",
+      "not_after_utc": "2026-11-02T14:34:01+00:00",
+      "sha256": "e9b5e97532412b81c1e458acf78a213bcf5ce4174ae9b8a74fc29dc9dc9d4598",
+      "issuer": {
+        "organizationName": "Let's Encrypt",
+        "commonName": "YE1"
+      }
+    }
+  ],
+  "public_tls_after": [
+    {
+      "host": "169.58.118.33",
+      "chain_and_hostname_verified": true,
+      "not_before_utc": "2026-10-30T07:55:04+00:00",
+      "not_after_utc": "2026-11-05T23:55:03+00:00",
+      "sha256": "5425cf77b155f7594028001a8bb3af8077d699ba90348c74b8a6fc0785324697",
+      "issuer": {
+        "organizationName": "Let's Encrypt",
+        "commonName": "YE2"
+      },
+      "certificate_changed": true
+    },
+    {
+      "host": "vmi3688215.contaboserver.net",
+      "chain_and_hostname_verified": true,
+      "not_before_utc": "2026-10-30T07:55:04+00:00",
+      "not_after_utc": "2026-11-05T23:55:03+00:00",
+      "sha256": "5425cf77b155f7594028001a8bb3af8077d699ba90348c74b8a6fc0785324697",
+      "issuer": {
+        "organizationName": "Let's Encrypt",
+        "commonName": "YE2"
+      },
+      "certificate_changed": true
+    }
+  ],
+  "pilot_and_model_containers_unchanged": true,
+  "containers_before": {
+    "booking-bridge-pilot-api-1": {
+      "container_id": "f39503bbb68a4e25b63a2c7144b44fbf287d677741399e5e9d6f45a7907b7a5b",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-pilot-worker-1": {
+      "container_id": "8b412e68604a92a3838c55b2b89a233efaf37f80cc9a421390fe78072f8fc7fd",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-qwen-1": {
+      "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "running": true
+    }
+  },
+  "containers_after": {
+    "booking-bridge-pilot-api-1": {
+      "container_id": "f39503bbb68a4e25b63a2c7144b44fbf287d677741399e5e9d6f45a7907b7a5b",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-pilot-worker-1": {
+      "container_id": "8b412e68604a92a3838c55b2b89a233efaf37f80cc9a421390fe78072f8fc7fd",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "running": true
+    },
+    "booking-bridge-diagnostics-qwen-1": {
+      "container_id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "running": true
+    }
+  },
+  "renewal_service_success": true,
+  "public_certificate_updated": true,
+  "public_tls_valid": true
+}

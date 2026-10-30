@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T10:49:48.038931+00:00",
+  "scope": "one_authorized_corrected_client_schema_read",
+  "endpoint": "GET /admin/clients/fields",
+  "same_saved_account_identity_verified": true,
+  "existing_persistent_budget_used": true,
+  "previous_projection_report": "production-20261030-client-required-fields-read.json",
+  "corrected_identifier_key": "id",
+  "field_count": 3,
+  "fields": [
+    {
+      "field_code": "name",
+      "custom_field_id_sha256": null,
+      "required": true,
+      "is_optional": false
+    },
+    {
+      "field_code": "email",
+      "custom_field_id_sha256": null,
+      "required": true,
+      "is_optional": false
+    },
+    {
+      "field_code": "phone",
+      "custom_field_id_sha256": null,
+      "required": true,
+      "is_optional": false
+    }
+  ],
+  "client_field_get_requests": 1,
+  "authentication_requests": 0,
+  "budget_request_delta": 1,
+  "client_or_customer_records_read": 0,
+  "account_mutations": 0,
+  "metadata_values_defaults_labels_or_contacts_recorded": false,
+  "api_get_count_total_this_metadata_task": 2
+}

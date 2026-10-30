@@ -1,0 +1,16 @@
+{
+  "employee_id": "11772",
+  "state": "verified",
+  "previous_import_url_empty": true,
+  "at": "2026-10-23T14:06:16.978162+00:00",
+  "verified_at": "2026-10-23T14:06:18.949799+00:00",
+  "bookable": false,
+  "all_days_off": true,
+  "refresh_acceptance": {
+    "success": true,
+    "refresh_scheduled": true
+  },
+  "refresh_request_at": "2026-10-23T14:06:19.674679+00:00",
+  "refresh_roundtrip_seconds": 0.422,
+  "remote_import_confirmed": false
+}

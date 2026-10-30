@@ -1,0 +1,56 @@
+{
+  "synthetic_only": true,
+  "passed": true,
+  "tests": [
+    {
+      "name": "healthy_adjacency",
+      "expected": "no_additional_issue",
+      "response": {
+        "assessment": "no_additional_issue",
+        "confidence": "high",
+        "finding_references": [],
+        "recommendation_codes": []
+      },
+      "passed": true,
+      "seconds": 80.58
+    },
+    {
+      "name": "verified_overlap",
+      "expected": "operator_review",
+      "response": {
+        "assessment": "operator_review",
+        "confidence": "high",
+        "finding_references": [
+          "d27cd2852fcb61d2"
+        ],
+        "recommendation_codes": [
+          "review_booking_overlap",
+          "review_booking_overlap"
+        ]
+      },
+      "passed": true,
+      "seconds": 91.92
+    },
+    {
+      "name": "stale_conflicting_data",
+      "expected": "insufficient_evidence",
+      "response": {
+        "assessment": "insufficient_evidence",
+        "confidence": "high",
+        "finding_references": [
+          "67169736334cf3ee",
+          "dfcd85e628677bdc",
+          "a359191dc7ba617f",
+          "f9312ca324476ff2"
+        ],
+        "recommendation_codes": [
+          "review_booking_overlap",
+          "review_queue",
+          "review_intent"
+        ]
+      },
+      "passed": true,
+      "seconds": 149.06
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "read_only": true,
+  "business_writes": 0,
+  "employees": [
+    {
+      "read_only": true,
+      "employee_id": "5919",
+      "response_bytes": 431,
+      "calendar_version": "2.0",
+      "events": 0,
+      "property_names": [],
+      "statuses": [],
+      "business_writes": 0,
+      "parser_compatible": true,
+      "parsed_count": 0,
+      "service_ids_present": 0
+    },
+    {
+      "read_only": true,
+      "employee_id": "6873",
+      "business_writes": 0,
+      "response_bytes": 431,
+      "events": 0,
+      "property_names": [],
+      "statuses": [],
+      "parser_compatible": true,
+      "parsed_count": 0,
+      "service_ids_present": 0
+    },
+    {
+      "read_only": true,
+      "employee_id": "5571",
+      "business_writes": 0,
+      "response_bytes": 1006,
+      "events": 1,
+      "property_names": [
+        "DESCRIPTION",
+        "DTEND",
+        "DTSTAMP",
+        "DTSTART",
+        "HTTPS",
+        "LAST-MODIFIED",
+        "LOCATION",
+        "SEQUENCE",
+        "STATUS",
+        "SUMMARY",
+        "UID",
+        "URL"
+      ],
+      "statuses": [
+        "CANCELLED"
+      ],
+      "parser_compatible": true,
+      "parsed_count": 1,
+      "service_ids_present": 0
+    },
+    {
+      "read_only": true,
+      "employee_id": "10142",
+      "business_writes": 0,
+      "response_bytes": 431,
+      "events": 0,
+      "property_names": [],
+      "statuses": [],
+      "parser_compatible": true,
+      "parsed_count": 0,
+      "service_ids_present": 0
+    },
+    {
+      "read_only": true,
+      "employee_id": "6633",
+      "business_writes": 0,
+      "response_bytes": 431,
+      "events": 0,
+      "property_names": [],
+      "statuses": [],
+      "parser_compatible": true,
+      "parsed_count": 0,
+      "service_ids_present": 0
+    },
+    {
+      "read_only": true,
+      "employee_id": "10857",
+      "business_writes": 0,
+      "response_bytes": 431,
+      "events": 0,
+      "property_names": [],
+      "statuses": [],
+      "parser_compatible": true,
+      "parsed_count": 0,
+      "service_ids_present": 0
+    }
+  ]
+}

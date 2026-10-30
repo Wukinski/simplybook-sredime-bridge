@@ -1,0 +1,24 @@
+{
+  "bookable": false,
+  "contacts_supplied": false,
+  "external_id": "9",
+  "id": "11772",
+  "name": "TEST integracija A",
+  "role": "10",
+  "services": [],
+  "started_at": "2026-10-23T09:19:16.876814+00:00",
+  "state": "verified",
+  "vendor_id": "1404",
+  "working_days": [],
+  "correction": {
+    "state": "verified",
+    "reason": "Create readback retained default bookable/working-day toggles",
+    "started_at": "2026-10-23T09:20:38.934799+00:00"
+  },
+  "verified_at": "2026-10-23T09:20:45.170165+00:00",
+  "existing_employee_settings_preserved": true,
+  "export_url_present": true,
+  "existing_employees_checked": 12,
+  "bookings_created": 0,
+  "webhooks_configured": 0
+}

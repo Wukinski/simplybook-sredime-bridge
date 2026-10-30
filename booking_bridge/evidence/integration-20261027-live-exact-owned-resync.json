@@ -1,0 +1,58 @@
+{
+  "observed_at_epoch": 1793110900.9319398,
+  "mode": "simulation",
+  "reads_enabled": false,
+  "source_events": [
+    {
+      "id": "ce3fa625c5a6e6bf73f2f3dfd01c1026",
+      "booking": "9VPLV6E",
+      "created": 1793110822.0,
+      "received": 1793110826.7564368,
+      "state": "queued",
+      "reason": null,
+      "attempts": 0,
+      "type": "booking.updated",
+      "status": 1,
+      "employee_id": "39VLN1",
+      "service_id": "V2N8N4",
+      "customer_id": "7E9514"
+    }
+  ],
+  "cache": {
+    "feed-last-served:11772": {
+      "value": {
+        "events": 15,
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919"
+      },
+      "updated": 1793110171.300972
+    },
+    "feed-ready:11772": {
+      "value": {
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+        "events": 15
+      },
+      "updated": 1793095307.5715902
+    },
+    "health": {
+      "value": {
+        "open_issues": 1,
+        "old_queued": 1
+      },
+      "updated": 1793110900.0650096
+    },
+    "heartbeat": {
+      "value": true,
+      "updated": 1793110900.0650096
+    }
+  },
+  "open_issues": [
+    {
+      "key": "queue-age",
+      "reason": "webhook_processing_delayed"
+    }
+  ],
+  "observed_at_utc": "2026-10-27T14:21:40.850237+00:00",
+  "phase": "exact-owned-resync",
+  "contacts_in_evidence": false,
+  "provider_delivery_claim_based_on_actual_receipt_only": true
+}

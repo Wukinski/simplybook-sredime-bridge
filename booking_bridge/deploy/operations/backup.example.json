@@ -1,0 +1,16 @@
+{
+  "source_database": "/bridge-state/bridge.sqlite",
+  "key_file": "/run/secrets/recovery_key",
+  "spool_directory": "/backup-spool",
+  "credentials_file": "/run/secrets/s3_credentials",
+  "endpoint_url": "https://s3.example.invalid",
+  "region": "auto",
+  "bucket": "replace-with-private-backup-bucket",
+  "prefix": "booking-bridge-production/backups/",
+  "destination_independent_of_source": false,
+  "retention_days": 30,
+  "keep_last": 48,
+  "delete_expired": false,
+  "budget_files": ["/provider-state/budget.json", "/provider-state/last-request.json"],
+  "budget_floors": ["/run/config/budget-floor.json"]
+}

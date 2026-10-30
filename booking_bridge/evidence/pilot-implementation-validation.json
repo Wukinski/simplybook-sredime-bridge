@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-22T11:35:03.467435+00:00",
+  "command": "python -m pytest -q --junitxml=booking_bridge/evidence/pilot-implementation-test-results.xml",
+  "errors": 0,
+  "failures": 0,
+  "live_pilot_passed": false,
+  "production_enabled": false,
+  "skipped": 0,
+  "tests": 269
+}

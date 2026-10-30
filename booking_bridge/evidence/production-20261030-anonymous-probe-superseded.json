@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-30T11:43:56.253209+00:00",
+  "status": "superseded_by_owner_policy_change",
+  "owner_decision_summary": "SrediMe catalog takes priority; SimplyBook may store clients when needed for the project.",
+  "anonymous_booking_probe_required": false,
+  "anonymous_probe_live_prepare_reads": 0,
+  "anonymous_probe_live_business_writes": 0,
+  "dormant_code_and_fake_tests_preserved": true,
+  "original_preparation_proof_sha256": "2f63a1cd54085568ecf16466483d996ed907014d602be9b05925627f9f1f9ac8",
+  "runtime_worker_profile_readiness_changes": false,
+  "scope": "policy_update_note_only_not_a_client_mapping_or_notification_proof"
+}

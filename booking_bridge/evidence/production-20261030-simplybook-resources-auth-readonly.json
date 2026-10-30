@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T12:10:24.045332+00:00",
+  "scope": "ordinary_login_and_readonly_resource_ui",
+  "auth_posts_allowed": [],
+  "blocked_posts": [
+    {
+      "method": "POST",
+      "path": "/content-policy/report"
+    },
+    {
+      "method": "POST",
+      "path": "/content-policy/report"
+    },
+    {
+      "method": "POST",
+      "path": "/server/he-man_main"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/widget/log"
+    }
+  ],
+  "blocked_customer_calendar_reads": [],
+  "resource_gets": [],
+  "resource_json": [],
+  "api_get_count": 2,
+  "max_api_gets": 45,
+  "credentials_in_argv_logs_or_receipts": false,
+  "source_requests": 0,
+  "account_business_mutations": 0,
+  "feature_enable_or_purchase_attempts": 0,
+  "existing_bookings_6_7_modified": false,
+  "login_form_initially_visible": false,
+  "mfa_or_code_challenge_visible": false,
+  "password_form_still_visible": false,
+  "private_session_saved_with_restricted_acl": true,
+  "resource_labels": [],
+  "resource_related_link_fragments": [],
+  "final_path": "/v2/management/",
+  "final_fragment": "resources",
+  "completed_at_utc": "2026-10-30T12:10:42.726809+00:00",
+  "auth_post_count": 0,
+  "native_resource_inventory_route_observed": false,
+  "public_resource_api_crud_not_documented": true
+}

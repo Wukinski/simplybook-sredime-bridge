@@ -1,0 +1,642 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T10:44:25.445299+00:00",
+  "source": "https://simplybook.me/api/swagger-admin",
+  "sha256": "4a32d474d6550ff8eb3c3f1af753cbc99e34bd9ae038028c2d136c7449e6ff28",
+  "account_requests": 0,
+  "client_paths": {
+    "/admin/clients": {
+      "get": {
+        "summary": "Get clients list",
+        "description": "Return clients list <a href=\"#model-AdminListClientEntity\">(AdminListClientEntity)</a>.<br>Please note that result is wrapped into paginated result.<br>In GET parameters you can pass <b>page</b>, <b>on_page</b> and <b>filter</b> with following parameters:<br><b>search</b> - search string\n\n**Return Description:** Response data",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "page in list",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "on_page",
+            "in": "query",
+            "required": false,
+            "description": "items per page",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "filter[search]",
+            "in": "query",
+            "required": false,
+            "description": "search string",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": null,
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminListClientEntity"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized: invalid token, or token expired (code 419 in the response body)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create client",
+        "description": "Create new client and return it.<br>Accepts <a href=\"#model-ClientEntity\">ClientEntity</a> data as body of request and returns <a href=\"#model-AdminClientEntity\">AdminClientEntity</a>.<br>Throws AccessDenied error in case user does not have access to perform this action.<br>Throws BadRequest error in case invalid data was provided with detailed errors per field.<br>Throws NotFound error in case client is not found.\n\n**Return Description:** Response data",
+        "parameters": [],
+        "body": {
+          "required": true,
+          "description": "client data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClientEntity"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminClientEntity"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized: invalid token, or token expired (code 419 in the response body)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Access denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/clients/{id}": {
+      "get": {
+        "summary": "Get client",
+        "description": "Return client item <a href=\"#model-AdminClientEntity\">(AdminClientEntity)</a> by id.<br>Throws AccessDenied error in case user does not have access to perform this action.<br>Throws NotFound error in case client is not found.\n\n**Return Description:** Response data",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Path parameter `id` : client id",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": null,
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminClientEntity"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized: invalid token, or token expired (code 419 in the response body)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Access denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Edit client",
+        "description": "Modify client by id and return it <a href=\"#model-AdminClientEntity\">(AdminClientEntity)</a>.<br>Throws AccessDenied error in case user does not have access to perform this action.<br>Throws BadRequest error in case invalid data was provided with detailed errors per field.<br>Throws NotFound error in case client is not found.\n\n**Return Description:** Response data",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Path parameter `id` : client id",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": {
+          "required": true,
+          "description": "client data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClientEntity"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminClientEntity"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized: invalid token, or token expired (code 419 in the response body)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Access denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete client",
+        "description": "Delete client by id. Return empty response<br>Throws AccessDenied error in case user does not have access to perform this action.<br>Throws NotFound error in case client is not found.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Path parameter `id` : client id",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "body": null,
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "401": {
+            "description": "Unauthorized: invalid token, or token expired (code 419 in the response body)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Access denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/clients/fields": {
+      "get": {
+        "summary": "Get client fields list",
+        "description": "Returns client fields list <a href=\"#model-Client_FieldDetailsEntity\">(Client_FieldDetailsEntity)</a>, including name, email, phone and address fields.<br>You can also use Client fields custom feature.\n\n**Return Description:** Response data",
+        "parameters": [],
+        "body": null,
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Client_FieldDetailsEntity"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized: invalid token, or token expired (code 419 in the response body)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/clients/field-values": {
+      "post": {
+        "summary": "Make client with fields",
+        "description": "Makes new client from fields list and returns it <a href=\"#model-Client_DetailsEntity\">(Client_DetailsEntity)</a>.<br>Returns client fields list, including name, email and phone field.<br>Note: name and email are required; phone may also be required depending on company settings.<br>You can also use Client fields custom feature.<br>Throws AccessDenied error in case user does not have access to perform this action.<br>Throws BadRequest error in case invalid data was provided with detailed errors per field.<br><br>For each field in the \"fields\" array, use the field <b>name</b> (not numeric id) as the identifier.<br>For built-in fields use: \"name\", \"email\", \"phone\". For custom fields use the UUID name from GET /admin/clients/fields.<br>Example: {\"fields\": [{\"name\": \"email\", \"value\": \"user@example.com\"}, {\"name\": \"fa27a8fc098...\", \"value\": \"custom value\"}]}\n\n**Return Description:** Response data",
+        "parameters": [],
+        "body": {
+          "required": true,
+          "description": "client data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Client_EditDetailsEntity"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Client_DetailsEntity"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized: invalid token, or token expired (code 419 in the response body)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Access denied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorEntity"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "client_schemas": {
+    "ClientEntity": {
+      "type": "object",
+      "description": "Entity that contains client information",
+      "properties": {
+        "id": {
+          "description": "Client id. Auto-generated value.",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client name",
+          "type": "string"
+        },
+        "email": {
+          "description": "Client email",
+          "type": "string"
+        },
+        "phone": {
+          "description": "Client phone",
+          "type": "string"
+        },
+        "address1": {
+          "description": "Client address fields<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "address2": {
+          "description": "Client address fields<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "city": {
+          "description": "Client city<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "zip": {
+          "description": "Client zip code<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "country_id": {
+          "description": "Client country id<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "state_id": {
+          "description": "Client state id<br>These fields related to Client login custom feature and can be null.",
+          "type": "integer",
+          "nullable": true
+        }
+      }
+    },
+    "AdminClientEntity": {
+      "type": "object",
+      "description": "Entity that contains client information",
+      "properties": {
+        "can_be_edited": {
+          "description": "Indicates whether the client can be edited",
+          "type": "boolean"
+        },
+        "is_deleted": {
+          "description": "Indicates whether the client is deleted",
+          "type": "boolean"
+        },
+        "email_promo_subscribed": {
+          "description": "Indicates whether the client is subscribed to email promotions",
+          "type": "boolean"
+        },
+        "sms_promo_subscribed": {
+          "description": "Indicates whether the client is subscribed to SMS promotions",
+          "type": "boolean"
+        },
+        "id": {
+          "description": "Client id. Auto-generated value.",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client name",
+          "type": "string"
+        },
+        "email": {
+          "description": "Client email",
+          "type": "string"
+        },
+        "phone": {
+          "description": "Client phone",
+          "type": "string"
+        },
+        "address1": {
+          "description": "Client address fields<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "address2": {
+          "description": "Client address fields<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "city": {
+          "description": "Client city<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "zip": {
+          "description": "Client zip code<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "country_id": {
+          "description": "Client country id<br>These fields related to Client login custom feature and can be null.",
+          "type": "string",
+          "nullable": true
+        },
+        "state_id": {
+          "description": "Client state id<br>These fields related to Client login custom feature and can be null.",
+          "type": "integer",
+          "nullable": true
+        }
+      }
+    },
+    "ClientFieldEntity": null
+  },
+  "booking_mutations": {
+    "POST /admin/bookings": {
+      "exists": true,
+      "parameters": [],
+      "body": {
+        "required": true,
+        "description": "booking data",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AdminBookingBuildEntity"
+            }
+          }
+        }
+      },
+      "description": "Make new booking and return booking result <a href=\"#model-BookingResultEntity\">(BookingResultEntity)</a>.<br>Accepts <a href=\"#model-AdminBookingBuildEntity\">AdminBookingBuildEntity</a> data as body of request.<br>Throws AccessDenied error in case user does not have access to booking.<br>Throws BadRequest error in case invalid data was provided with detailed errors per field.\n\n**Return Description:** Response data"
+    },
+    "PUT /admin/bookings/{id}": {
+      "exists": true,
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "Path parameter `id` : booking id",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "body": {
+        "required": true,
+        "description": "booking data",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AdminBookingBuildEntity"
+            }
+          }
+        }
+      },
+      "description": "Modify booking and return booking result <a href=\"#model-BookingResultEntity\">(BookingResultEntity)</a>.<br>Accepts <a href=\"#model-AdminBookingBuildEntity\">AdminBookingBuildEntity</a> data as body of request.<br>Throws AccessDenied error in case user does not have access to booking.<br>Throws BadRequest error in case invalid data was provided with detailed errors per field.<br>Throws NotFound error in case booking is not found.\n\n**Return Description:** Response data"
+    },
+    "DELETE /admin/bookings/{id}": {
+      "exists": true,
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "Path parameter `id` : booking id",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "body": null,
+      "description": "Cancel booking by booking id and return booking that was canceled <a href=\"#model-AdminBookingDetailsEntity\">(AdminBookingDetailsEntity)</a>.<br>Throws AccessDenied error in case user does not have access to booking.<br>Throws NotFound error in case booking is not found.\n\n**Return Description:** Response data"
+    },
+    "PUT /admin/bookings/{id}/confirm": {
+      "exists": false,
+      "parameters": [],
+      "body": null,
+      "description": null
+    }
+  },
+  "notification_named_admin_routes": [
+    "/admin/auth/sms"
+  ],
+  "booking_build_fields": [
+    "service_id",
+    "provider_id",
+    "start_datetime",
+    "skip_membership",
+    "user_status_id",
+    "accept_payment",
+    "payment_processor",
+    "recurring_settings",
+    "client_membership_id",
+    "count",
+    "additional_fields",
+    "batch_id",
+    "end_datetime",
+    "record_date",
+    "location_id",
+    "category_id",
+    "client_id",
+    "is_sequential"
+  ],
+  "client_entity_fields": [
+    "id",
+    "name",
+    "email",
+    "phone",
+    "address1",
+    "address2",
+    "city",
+    "zip",
+    "country_id",
+    "state_id"
+  ],
+  "no_per_booking_skip_notifications_field_documented": true
+}

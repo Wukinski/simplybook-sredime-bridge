@@ -1,0 +1,11 @@
+{
+  "signing_key_installed": true,
+  "changed": true,
+  "runtime_verified": true,
+  "environment_mode": "0o600",
+  "administrator_credentials_transferred": false,
+  "production_enabled": false,
+  "observed_at_utc": "2026-10-27T10:03:19.685848+00:00",
+  "destination": "existing_vps_169.58.118.33",
+  "authorization": "explicit_user_uradi_to_after_exact_two_transfer_question"
+}

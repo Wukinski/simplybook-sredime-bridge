@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T10:19:00.656478+00:00",
+  "scope": "one_exact_previously_ignored_booking_read",
+  "source_snapshot": "booking_bridge/state/activation-staging-20261028-2eb16604328e4084a36158eb08c6c90c/host-snapshot.sqlite",
+  "source_event_ref": "44fc627d4341bb54c3efe742971b763f79eca8a77f2d6be000e9f727e41c945f",
+  "source_event_stored_hash": "c4595374a4efb00006a050adb4a4f64644c5025ef384e2b0e44d19510b22b4ab",
+  "source_booking_ref": "094e81e608381ecd75dc2ff48fc5df42fe30392c320517bc4e67b76fd833d98d",
+  "input_database_sql_writes": 0,
+  "native_GET_requests": 1,
+  "account_mutations": 0,
+  "source_callbacks_changed": false,
+  "global_decoder_used": false,
+  "identity_binding_created": false,
+  "runtime_configuration_changed": false,
+  "prior_event_processed": false,
+  "request_variants_or_searches": 0,
+  "http_status": 200,
+  "exact_route_matched": true,
+  "response_sha256": "3a6620ade2a7ea468d646a970ac1306eb094d82674fe72584112227dc3fc55c1",
+  "native_booking_hid_matches": true,
+  "native_employee_id_values": [
+    5571
+  ],
+  "native_employee_id_single_numeric": true,
+  "native_service_id_values": [
+    208138
+  ],
+  "native_service_id_single_numeric": true,
+  "native_booking_record_observed": true,
+  "result": "native_record_requires_full_snapshot_correlation",
+  "classification_limit": "native_record_exists_but_complete_signed_snapshot_correspondence_unproven",
+  "offline_signed_inventory_crosschecks": {
+    "native_employee_id": 5571,
+    "native_service_id": 208138,
+    "signed_employee_id_equals_saved_native_employee_export_identity_segment": true,
+    "signed_employee_name_equals_saved_native_employee_label": true,
+    "native_service_present_in_saved_catalog": true,
+    "signed_service_name_equals_native_service_label": true,
+    "native_service_normalized_label_count": 1,
+    "signed_duration_matches_native_catalog_display": true,
+    "read_is_full_snapshot_correlation": false,
+    "identity_binding_created": false
+  }
+}

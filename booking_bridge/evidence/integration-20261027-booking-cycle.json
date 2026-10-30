@@ -1,0 +1,226 @@
+{
+  "observed_at_utc": "2026-10-27T14:46:16.804682+00:00",
+  "source_booking_id": "9VPLV6E",
+  "target_booking_id": 5,
+  "source_native_ids": {
+    "employee": "11772",
+    "service": "233160",
+    "customer": "873710"
+  },
+  "source_signed_ids": {
+    "employee": "39VLN1",
+    "service": "V2N8N4",
+    "customer": "7E9514"
+  },
+  "target_ids": {
+    "provider": 9,
+    "service": 496,
+    "client": 1
+  },
+  "identity_proof": "same_exact_owned_booking_native_parent_readback_and_actual_signed_snapshot_external_ids",
+  "alias_normalization_scope": "this_owned_booking_only_private_local_operator",
+  "original_created_delivery": {
+    "status": "cancelled",
+    "attempts": 0,
+    "received_by_bridge": false
+  },
+  "initial_target_create_source": "actual_booking.updated_resync_same_booking_same_interval",
+  "phases": [
+    {
+      "phase": "resync",
+      "native_confirmed": true,
+      "native_intent_at": "2026-10-27T14:20:21.727014+00:00",
+      "native_confirmed_at": "2026-10-27T14:20:23.308655+00:00",
+      "native_http_status": 200,
+      "actual_target_readback": {
+        "event_id": "ce3fa625c5a6e6bf73f2f3dfd01c1026",
+        "source_booking_id": "9VPLV6E",
+        "local_done_observed_at_utc": "2026-10-27T14:35:02.593493+00:00",
+        "observed_at_utc": "2026-10-27T14:35:03.570665+00:00",
+        "transport": "simplybook_rest_admin",
+        "read_only": true,
+        "booking": {
+          "id": 5,
+          "provider_id": 9,
+          "service_id": 496,
+          "client_id": 1,
+          "start_datetime": "2026-10-28 14:00:00",
+          "end_datetime": "2026-10-28 14:30:00",
+          "status": "confirmed",
+          "is_confirmed": true
+        }
+      },
+      "local_event": {
+        "id": "ce3fa625c5a6e6bf73f2f3dfd01c1026",
+        "state": "done",
+        "reason": null,
+        "attempts": 1,
+        "created": 1793110822.0,
+        "received": 1793110826.7564368
+      },
+      "host_event": {
+        "id": "ce3fa625c5a6e6bf73f2f3dfd01c1026",
+        "booking": "9VPLV6E",
+        "created": 1793110822.0,
+        "received": 1793110826.7564368,
+        "state": "done",
+        "reason": "applied_by_local_pilot_executor",
+        "attempts": 0,
+        "type": "booking.updated",
+        "status": 1,
+        "employee_id": "39VLN1",
+        "service_id": "V2N8N4",
+        "customer_id": "7E9514"
+      },
+      "host_acknowledged": true,
+      "signed_event_to_receiver_seconds": 4.756
+    },
+    {
+      "phase": "move",
+      "native_confirmed": true,
+      "native_intent_at": "2026-10-27T14:36:59.419650+00:00",
+      "native_confirmed_at": "2026-10-27T14:37:00.350445+00:00",
+      "native_http_status": 200,
+      "actual_target_readback": {
+        "event_id": "6f4151881513c9fb71c1028931ca19dd",
+        "source_booking_id": "9VPLV6E",
+        "local_done_observed_at_utc": "2026-10-27T14:39:04.673268+00:00",
+        "observed_at_utc": "2026-10-27T14:39:05.584364+00:00",
+        "transport": "simplybook_rest_admin",
+        "read_only": true,
+        "booking": {
+          "id": 5,
+          "provider_id": 9,
+          "service_id": 496,
+          "client_id": 1,
+          "start_datetime": "2026-10-28 15:00:00",
+          "end_datetime": "2026-10-28 15:30:00",
+          "status": "confirmed",
+          "is_confirmed": true
+        }
+      },
+      "local_event": {
+        "id": "6f4151881513c9fb71c1028931ca19dd",
+        "state": "done",
+        "reason": null,
+        "attempts": 1,
+        "created": 1793111820.0,
+        "received": 1793111846.9807563
+      },
+      "host_event": {
+        "id": "6f4151881513c9fb71c1028931ca19dd",
+        "booking": "9VPLV6E",
+        "created": 1793111820.0,
+        "received": 1793111846.9807563,
+        "state": "done",
+        "reason": "applied_by_local_pilot_executor",
+        "attempts": 0,
+        "type": "booking.updated",
+        "status": 1,
+        "employee_id": "39VLN1",
+        "service_id": "V2N8N4",
+        "customer_id": "7E9514"
+      },
+      "host_acknowledged": true,
+      "signed_event_to_receiver_seconds": 26.981
+    },
+    {
+      "phase": "cancel",
+      "native_confirmed": true,
+      "native_intent_at": "2026-10-27T14:41:32.047108+00:00",
+      "native_confirmed_at": "2026-10-27T14:41:33.012535+00:00",
+      "native_http_status": 200,
+      "actual_target_readback": {
+        "event_id": "ac284a7be11ee144ca7937e486f1f439",
+        "source_booking_id": "9VPLV6E",
+        "local_done_observed_at_utc": "2026-10-27T14:43:06.913193+00:00",
+        "observed_at_utc": "2026-10-27T14:43:07.866526+00:00",
+        "transport": "simplybook_rest_admin",
+        "read_only": true,
+        "booking": {
+          "id": 5,
+          "provider_id": 9,
+          "service_id": 496,
+          "client_id": 1,
+          "start_datetime": "2026-10-28 15:00:00",
+          "end_datetime": "2026-10-28 15:30:00",
+          "status": "canceled",
+          "is_confirmed": false
+        }
+      },
+      "local_event": {
+        "id": "ac284a7be11ee144ca7937e486f1f439",
+        "state": "done",
+        "reason": null,
+        "attempts": 1,
+        "created": 1793112092.0,
+        "received": 1793112147.1549566
+      },
+      "host_event": {
+        "id": "ac284a7be11ee144ca7937e486f1f439",
+        "booking": "9VPLV6E",
+        "created": 1793112092.0,
+        "received": 1793112147.1549566,
+        "state": "done",
+        "reason": "applied_by_local_pilot_executor",
+        "attempts": 0,
+        "type": "booking.updated",
+        "status": -101,
+        "employee_id": "39VLN1",
+        "service_id": "V2N8N4",
+        "customer_id": "7E9514"
+      },
+      "host_acknowledged": true,
+      "signed_event_to_receiver_seconds": 55.155
+    }
+  ],
+  "links": [
+    {
+      "booking": "9VPLV6E",
+      "target": 5,
+      "state": "canceled",
+      "version": 1793112092.0
+    }
+  ],
+  "unresolved_local_intents": 0,
+  "controlled_cycle_verified": true,
+  "cleanup_verified_by_independent_native_readback": true,
+  "final_native_readback_at_utc": "2026-10-27T14:45:13.702811+00:00",
+  "source_callback_active": false,
+  "callback_lease_status": "closed",
+  "callback_closed_at": "2026-10-27T14:44:10.807873+00:00",
+  "source_employee_bookable": false,
+  "all_seven_work_days_off": true,
+  "host_mode": "simulation",
+  "host_reads_enabled": false,
+  "latest_host_observation_at_utc": "2026-10-27T14:45:42.104525+00:00",
+  "host_http_health": {
+    "/health/live": 200,
+    "/health/ready": 200
+  },
+  "host_event_counts": {
+    "done": 3,
+    "ignored": 1
+  },
+  "host_links_count": 0,
+  "host_intents_count": 0,
+  "latest_simplybook_signed_receipt": {
+    "value": {
+      "signature_verified": true,
+      "receipt_count": 3,
+      "received_at": 1793112180.9516609,
+      "json_object": true,
+      "timestamp_present": true,
+      "algorithm_sha256": true,
+      "event_type": null
+    },
+    "updated": 1793112180.9516609
+  },
+  "open_host_issues": [],
+  "production_enabled": false,
+  "automatic_continuous_sync_proven": false,
+  "end_to_end_under_60_seconds_proven": false,
+  "message_delivery_to_user_verified": false,
+  "administrator_credentials_transferred": false,
+  "contacts_in_evidence": false
+}

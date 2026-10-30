@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "subject_evidence": "production-20261030-fresh-held-state-c958f6d1.json",
+  "subject_sha256": "a588d31a8dfa2d34aadbbf814fae617d27366dc93a0d25d55102d09251a58d03",
+  "private_items_checked": 29,
+  "unexpected_acl_entries": 0,
+  "captured_credential_cookie_or_session_files": 0,
+  "private_artifact_acl_verified": true,
+  "public_payload_or_contact_values_emitted": false
+}

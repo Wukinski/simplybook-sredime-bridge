@@ -1,0 +1,79 @@
+{
+  "observed_at_epoch": 1793111983.5295181,
+  "mode": "simulation",
+  "reads_enabled": false,
+  "source_events": [
+    {
+      "id": "6f4151881513c9fb71c1028931ca19dd",
+      "booking": "9VPLV6E",
+      "created": 1793111820.0,
+      "received": 1793111846.9807563,
+      "state": "done",
+      "reason": "applied_by_local_pilot_executor",
+      "attempts": 0,
+      "type": "booking.updated",
+      "status": 1,
+      "employee_id": "39VLN1",
+      "service_id": "V2N8N4",
+      "customer_id": "7E9514"
+    },
+    {
+      "id": "ce3fa625c5a6e6bf73f2f3dfd01c1026",
+      "booking": "9VPLV6E",
+      "created": 1793110822.0,
+      "received": 1793110826.7564368,
+      "state": "done",
+      "reason": "applied_by_local_pilot_executor",
+      "attempts": 0,
+      "type": "booking.updated",
+      "status": 1,
+      "employee_id": "39VLN1",
+      "service_id": "V2N8N4",
+      "customer_id": "7E9514"
+    }
+  ],
+  "cache": {
+    "feed-last-served:11772": {
+      "value": {
+        "events": 15,
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919"
+      },
+      "updated": 1793111970.4663918
+    },
+    "feed-ready:11772": {
+      "value": {
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+        "events": 15
+      },
+      "updated": 1793095307.5715902
+    },
+    "health": {
+      "value": {
+        "open_issues": 0,
+        "old_queued": 0
+      },
+      "updated": 1793111982.8819134
+    },
+    "heartbeat": {
+      "value": true,
+      "updated": 1793111982.8819134
+    },
+    "sb-webhook-receipt": {
+      "value": {
+        "signature_verified": true,
+        "receipt_count": 2,
+        "received_at": 1793111935.9001026,
+        "json_object": true,
+        "timestamp_present": true,
+        "algorithm_sha256": true,
+        "event_type": null
+      },
+      "updated": 1793111935.9001026
+    }
+  },
+  "open_issues": [],
+  "observed_at_utc": "2026-10-27T14:39:42.840709+00:00",
+  "phase": "target-moved",
+  "contacts_in_evidence": false,
+  "provider_delivery_claim_based_on_actual_receipt_only": true
+}

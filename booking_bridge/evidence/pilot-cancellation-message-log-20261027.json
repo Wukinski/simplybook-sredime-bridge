@@ -1,0 +1,56 @@
+{
+  "captured_at_utc": "2026-10-27T08:22:49.627762+00:00",
+  "source": "native_simplybook_email_notifications_report_read_only",
+  "report_route": "/v2/r/#/reports/email-messages",
+  "observation_scope": "existing_logged_cancellation_message_before_shared_footer_translation_fix",
+  "booking": {
+    "booking_id": 2,
+    "client_id": 1,
+    "provider_id": 9,
+    "service_id": 496,
+    "status_readback": "canceled"
+  },
+  "identity_check": {
+    "matching_approved_contact_cancellation_rows": 1,
+    "recipient_matches_private_approved_contact": true,
+    "binding_source": "fresh_scoped_cancelled_bookings_mcp_readback",
+    "booking_code_fingerprint_and_length_match": true,
+    "comparison_fingerprint_bits": 64,
+    "code_or_fingerprint_published": false
+  },
+  "logged_message": {
+    "subject": "Potvrda otkazivanja za TEST integracija 30 min",
+    "subject_language": "sr-Latn",
+    "main_body_language": "sr-Latn",
+    "observed_main_text_redacted": "Poštovani [klijent], Potvrđujemo da je vaš termin za TEST integracija 30 min, zakazan za 26-10-2026, otkazan. Srdačan pozdrav, Studio Andjelija Svoje termine možete pogledati ovde: Moje rezervacije.",
+    "provider_footer_language": "en",
+    "provider_footer_markers": [
+      "This email was sent to",
+      "You are receiving this email as notification",
+      "Client personal data report"
+    ],
+    "displayed_log_date_literal": "27-10-2026 01:54",
+    "displayed_log_date_timezone": "unknown",
+    "message_generation_time_utc": null,
+    "delivery_status_exposed_in_observed_table": false,
+    "sent_status": "unknown",
+    "inbox_delivery_confirmed": false,
+    "new_delivery_after_current_cancellation_call_proven": false
+  },
+  "conclusion": {
+    "observed_logged_message_fully_serbian": false,
+    "remaining_issue_in_observed_message": "english_provider_footer",
+    "historical_log_after_footer_fix_rechecked": false,
+    "changes_to_historical_message_after_footer_fix": "not_verified",
+    "verification_after_footer_fix_requires_separate_authorized_message_trial": true
+  },
+  "actions": {
+    "new_message_requested": false,
+    "resend_requested": false,
+    "settings_changed_by_this_check": false,
+    "client_list_exported": false,
+    "support_contacted": false,
+    "raw_page_retained_privately": true,
+    "contacts_booking_codes_and_private_links_excluded": true
+  }
+}

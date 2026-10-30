@@ -1,0 +1,56 @@
+{
+  "read_only": true,
+  "service_id": 2,
+  "provider_id": 2,
+  "schedule": [
+    {
+      "id": "2026-10-26",
+      "date": "2026-10-26",
+      "time_from": "09:00:00",
+      "time_to": "20:00:00",
+      "is_day_off": false
+    },
+    {
+      "id": "2026-10-27",
+      "date": "2026-10-27",
+      "time_from": "09:00:00",
+      "time_to": "20:00:00",
+      "is_day_off": false
+    },
+    {
+      "id": "2026-10-28",
+      "date": "2026-10-28",
+      "time_from": "09:00:00",
+      "time_to": "20:00:00",
+      "is_day_off": false
+    },
+    {
+      "id": "2026-10-29",
+      "date": "2026-10-29",
+      "time_from": "09:00:00",
+      "time_to": "20:00:00",
+      "is_day_off": false
+    },
+    {
+      "id": "2026-10-30",
+      "date": "2026-10-30",
+      "time_from": "09:00:00",
+      "time_to": "20:00:00",
+      "is_day_off": false
+    },
+    {
+      "id": "2026-10-31",
+      "date": "2026-10-31",
+      "time_from": "10:00:00",
+      "time_to": "16:00:00",
+      "is_day_off": false
+    },
+    {
+      "id": "2026-11-01",
+      "date": "2026-11-01",
+      "time_from": "00:00:00",
+      "time_to": "00:00:00",
+      "is_day_off": true
+    }
+  ]
+}

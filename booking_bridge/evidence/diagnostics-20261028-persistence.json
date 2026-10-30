@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "observed_at": 1793191418.6730185,
+  "diagnostics_only": true,
+  "restart_policy_updates": [
+    {
+      "name": "booking-bridge-diagnostics-keeper-1",
+      "before_policy": "on-failure",
+      "after_policy": "unless-stopped",
+      "process_unchanged": true,
+      "status": "running"
+    },
+    {
+      "name": "booking-bridge-diagnostics-collector-1",
+      "before_policy": "on-failure",
+      "after_policy": "unless-stopped",
+      "process_unchanged": true,
+      "status": "running"
+    }
+  ],
+  "docker_daemon": {
+    "ActiveState": "active",
+    "UnitFileState": "enabled"
+  },
+  "qwen_before": {
+    "name": "booking-bridge-diagnostics-qwen-1",
+    "id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "status": "running",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0,
+    "restart_policy": "unless-stopped",
+    "health": "healthy"
+  },
+  "qwen_after": {
+    "name": "booking-bridge-diagnostics-qwen-1",
+    "id": "30647aabc9072cea5f597dd106da18a503358b8185e40aca112fed7b40b678c6",
+    "status": "running",
+    "started_at": "2026-10-28T11:50:03.675773933Z",
+    "restart_count": 0,
+    "restart_policy": "unless-stopped",
+    "health": "healthy"
+  },
+  "qwen_process_unchanged": true,
+  "compose_sha256": "ffa33e92585017f47198d563c7453b826707a9591c5933d30aedef09b210672d",
+  "compose_mode": "0o600",
+  "previous_compose_backup_preserved": true,
+  "previous_compose_sha256": "fca5f4971c723380c5c6add659e2d3fbf30eb2d8b6ef346c0ec7c9b8f50b7e1a",
+  "new_compose_validated": true,
+  "containers_recreated": false,
+  "model_inference_requests": 0,
+  "account_mutations": 0,
+  "emails_sent": 0,
+  "persistence_ready": true
+}

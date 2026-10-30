@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-22",
+  "scope": "Provider capability, pilot mapping and deployment blocker review",
+  "runtime_code_changed": false,
+  "pipeline_source_hash_mismatches": [],
+  "recorded_and_focused_test_counts": {
+    "subminute-pipeline-windows-tests.xml": {
+      "tests": 373,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "subminute-final-linux-tests.xml": {
+      "tests": 241,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "blocker-review-tests.xml": {
+      "tests": 28,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "blocker-backup-tests.xml": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "new_tests_run": "28 isolation/mapping + 1 backup test, Windows, simulated/offline",
+  "compose_config_validated": true,
+  "caddy_or_public_tls_tested": false,
+  "docker_running_container_count": 0,
+  "account_reads": {
+    "simplybook_mcp_provider_list": 1,
+    "sredime": 0
+  },
+  "business_writes": 0,
+  "support_messages_sent": 0,
+  "provider_baseline_matches_saved_snapshot": true,
+  "public_openapi_http_status": 200,
+  "public_schema_services_empty_clears": true,
+  "pilot_isolation_established": false,
+  "mapping_candidates": {
+    "unique_service_names": 18,
+    "duration_conflicts": 9,
+    "inactive_source_services": 3,
+    "minimal_business_review": {
+      "source_employee": "10142",
+      "target_provider": 5,
+      "source_services": [
+        "128316",
+        "128275"
+      ],
+      "target_services": [
+        36,
+        31
+      ]
+    },
+    "approved": false
+  },
+  "controlled_test_contact_populated": false,
+  "public_host_identified": false,
+  "production_preflight_exit_code": 2,
+  "production_configuration_ready": false,
+  "subminute_transport_check": false,
+  "source_to_effective_availability_measured": false,
+  "production_enabled": false
+}

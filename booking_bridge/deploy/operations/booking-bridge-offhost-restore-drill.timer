@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily independent-backup restore rehearsal
+
+[Timer]
+OnCalendar=*-*-* 03:17:00 UTC
+Persistent=true
+RandomizedDelaySec=60
+AccuracySec=10
+
+[Install]
+WantedBy=timers.target

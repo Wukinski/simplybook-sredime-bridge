@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.236" timestamp="2026-10-22T23:04:45.408687+02:00" hostname="DESKTOP-DP7RJUF"><testcase classname="booking_bridge.tests.test_worker" name="test_backup_includes_committed_wal" time="0.098" /></testsuite></testsuites>

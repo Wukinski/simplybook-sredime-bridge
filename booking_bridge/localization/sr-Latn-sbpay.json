@@ -1,0 +1,6 @@
+{
+  "invoiceEmailSubject": "Vaš račun je u prilogu",
+  "invoiceEmailBody": "Poštovani [customer_name],\n\nU prilogu dostavljamo vaš račun [number].",
+  "creditNoteEmailSubject": "Knjižno odobrenje je u prilogu",
+  "creditNoteEmailBody": "Poštovani [customer_name],\n\nU prilogu dostavljamo knjižno odobrenje [number]."
+}

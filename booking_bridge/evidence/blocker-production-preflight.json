@@ -1,0 +1,132 @@
+{
+  "target": "production",
+  "current_mode": "simulation",
+  "configuration_ready": false,
+  "checks": [
+    {
+      "code": "runtime_configuration",
+      "ok": false
+    },
+    {
+      "code": "subminute_availability_transport",
+      "ok": false
+    },
+    {
+      "code": "approval_live_writes",
+      "ok": false
+    },
+    {
+      "code": "approval_business_rules",
+      "ok": false
+    },
+    {
+      "code": "approval_hosting",
+      "ok": false
+    },
+    {
+      "code": "approval_privacy",
+      "ok": false
+    },
+    {
+      "code": "approval_account_identity_verified",
+      "ok": false
+    },
+    {
+      "code": "approval_schedule_reference_verified",
+      "ok": false
+    },
+    {
+      "code": "approval_client_mapping",
+      "ok": false
+    },
+    {
+      "code": "approval_notification_behavior",
+      "ok": false
+    },
+    {
+      "code": "approval_account_booking_trial",
+      "ok": false
+    },
+    {
+      "code": "approval_calendar_blocks_trial",
+      "ok": false
+    },
+    {
+      "code": "approval_empty_feed_trial",
+      "ok": false
+    },
+    {
+      "code": "live_reads",
+      "ok": false
+    },
+    {
+      "code": "sredime_signing_secret",
+      "ok": false
+    },
+    {
+      "code": "simplybook_signing_secret",
+      "ok": false
+    },
+    {
+      "code": "admin_key",
+      "ok": true
+    },
+    {
+      "code": "rest_credentials",
+      "ok": true
+    },
+    {
+      "code": "rest_company",
+      "ok": true
+    },
+    {
+      "code": "rest_region",
+      "ok": true
+    },
+    {
+      "code": "employee_allowlist",
+      "ok": false
+    },
+    {
+      "code": "employee_mappings",
+      "ok": false
+    },
+    {
+      "code": "unique_employee_targets",
+      "ok": true
+    },
+    {
+      "code": "service_mappings",
+      "ok": false
+    },
+    {
+      "code": "service_timing_and_resources",
+      "ok": false
+    },
+    {
+      "code": "schedule_references",
+      "ok": false
+    },
+    {
+      "code": "private_feed_tokens",
+      "ok": false
+    },
+    {
+      "code": "source_export_endpoints",
+      "ok": false
+    },
+    {
+      "code": "local_state_readable",
+      "ok": true
+    },
+    {
+      "code": "remote_intents_resolved",
+      "ok": true
+    },
+    {
+      "code": "client_mappings",
+      "ok": false
+    }
+  ],
+  "external_validation_performed": false
+}

@@ -1,0 +1,227 @@
+{
+  "report_version": 1,
+  "read_only": true,
+  "inputs_modified": false,
+  "external_validation_performed": false,
+  "automatic_migration_allowed": false,
+  "activation_ready": false,
+  "snapshot_comparison_complete": true,
+  "status": "blocked",
+  "manual_reconciliation_required": true,
+  "snapshots": {
+    "local": {
+      "valid": true,
+      "sha256": "2f3a0d89411fbff3fdc9035ea18f52a16dfd1e4bc4b1cd748feb9e44f7813cde",
+      "schema_version": 1,
+      "tables": {
+        "audit": 0,
+        "availability_observations": 4,
+        "booking_heads": 1,
+        "cache": 18,
+        "clients": 1,
+        "events": 3,
+        "feed_health": 0,
+        "intents": 1,
+        "issues": 0,
+        "links": 1,
+        "rates": 1,
+        "refresh": 1,
+        "source_bindings": 0
+      },
+      "event_states": {
+        "dead": 0,
+        "done": 3,
+        "ignored": 0,
+        "queued": 0,
+        "review": 0,
+        "stale": 0,
+        "test": 0,
+        "working": 0
+      },
+      "conflicted_heads": 0,
+      "terminal_tombstones": 1,
+      "owned_links": 1,
+      "applied_baselines": 1,
+      "unresolved_intents": 0,
+      "open_issues": 0,
+      "cache_guards": 5,
+      "quota_rows": 1,
+      "quota_keys": 1
+    },
+    "host": {
+      "valid": true,
+      "sha256": "b7eb9c3f7ff48859162c3eae3b1bd2abca33ba5d88d5f4f3700ba6880094aea5",
+      "schema_version": 1,
+      "tables": {
+        "audit": 3,
+        "availability_observations": 2,
+        "booking_heads": 2,
+        "cache": 16,
+        "clients": 0,
+        "events": 4,
+        "feed_health": 0,
+        "intents": 0,
+        "issues": 2,
+        "links": 0,
+        "rates": 0,
+        "refresh": 1,
+        "source_bindings": 0
+      },
+      "event_states": {
+        "dead": 0,
+        "done": 3,
+        "ignored": 1,
+        "queued": 0,
+        "review": 0,
+        "stale": 0,
+        "test": 0,
+        "working": 0
+      },
+      "conflicted_heads": 0,
+      "terminal_tombstones": 2,
+      "owned_links": 0,
+      "applied_baselines": 0,
+      "unresolved_intents": 0,
+      "open_issues": 1,
+      "cache_guards": 2,
+      "quota_rows": 0,
+      "quota_keys": 0
+    }
+  },
+  "comparison": {
+    "events": {
+      "shared": 3,
+      "local_only": 0,
+      "host_only": 1,
+      "matching_payload_hashes": 0,
+      "payload_collisions": 3,
+      "host_pending_to_preserve": 0,
+      "host_receipts_to_preserve": 4
+    },
+    "booking_heads": {
+      "shared": 1,
+      "local_only": 0,
+      "host_only": 1
+    },
+    "links": {
+      "shared": 0,
+      "local_only": 1,
+      "host_only": 0
+    },
+    "clients": {
+      "shared": 0,
+      "local_only": 1,
+      "host_only": 0
+    },
+    "source_bindings": {
+      "shared": 0,
+      "local_only": 0,
+      "host_only": 0
+    },
+    "cache": {
+      "shared": 9,
+      "local_only": 9,
+      "host_only": 7,
+      "divergent_values": 2,
+      "divergent_guards": 1,
+      "divergent_guard_timestamps": 2
+    },
+    "rate_quotas": {
+      "local_rows": 1,
+      "host_rows": 0,
+      "conservative_rows_to_retain": 1,
+      "deduplication_allowed": false,
+      "timestamps_must_be_preserved": true
+    }
+  },
+  "blockers": [
+    {
+      "code": "cache_guard_conflict_requires_review",
+      "scope": "both",
+      "count": 1,
+      "references": [
+        "d64fb5ee93a9612b145a725b"
+      ]
+    },
+    {
+      "code": "equal_timestamp_booking_snapshot_conflict",
+      "scope": "both",
+      "count": 1,
+      "references": [
+        "11f4d5d8116c2ce38302ff6f"
+      ]
+    },
+    {
+      "code": "event_id_payload_collision",
+      "scope": "both",
+      "count": 3,
+      "references": [
+        "3c7f383df9f51dfff3a93f00",
+        "ee22a2f1296dbd48caf8010a",
+        "f20d59d57095d1db60ec328b"
+      ]
+    },
+    {
+      "code": "open_incident_requires_review",
+      "scope": "host",
+      "count": 1,
+      "references": [
+        "a499d5811ee9e7e495ba61db"
+      ]
+    },
+    {
+      "code": "ownership_missing_on_other_snapshot",
+      "scope": "local",
+      "count": 1,
+      "references": [
+        "11f4d5d8116c2ce38302ff6f"
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "code": "cache_guard_timestamps_must_be_retained",
+      "scope": "both",
+      "count": 2,
+      "references": [
+        "d64fb5ee93a9612b145a725b",
+        "dee604723f247e06e0cce5ae"
+      ]
+    },
+    {
+      "code": "table_evidence_differs",
+      "scope": "both",
+      "count": 11,
+      "references": [
+        "357e10cdfbf60d5c84be0f8f",
+        "36e140f7049bc1ba912852fa",
+        "3d76f71ef4c9391291bdaecf",
+        "59304c04b7babe915e9e6eb1",
+        "7a913a3860afb829d627d777",
+        "7cc59234f702f721cecd81e2",
+        "845eddeab851e5d917543045",
+        "908f3421ba975a2726412bee",
+        "a099b809ba7cd09514a1d279",
+        "b0cc3cbcf6e07114578fa92c",
+        "e4df0bb3808a3d3fcd5a9d78"
+      ]
+    }
+  ],
+  "plan": [
+    "retain_original_snapshots_and_host_receipts",
+    "preserve_host_queued_events_without_local_state_overwrite",
+    "review_exact_identity_keys_without_namespace_aliases",
+    "preserve_owned_links_applied_baselines_and_client_bindings",
+    "preserve_booking_heads_and_terminal_tombstones",
+    "resolve_uncertain_intents_by_authoritative_readback_before_retry",
+    "retain_both_quota_ledgers_conservatively_until_original_windows_expire",
+    "retain_guard_evidence_and_rebuild_freshness_from_new_reads",
+    "perform_separate_review_before_any_migration_or_activation"
+  ],
+  "limitations": [
+    "offline_snapshots_only",
+    "no_merge_or_sql_generated",
+    "no_remote_ownership_validation",
+    "sqlite_quotas_only_external_credential_budgets_not_compared"
+  ]
+}

@@ -1,0 +1,31 @@
+# Deploy on the selected independent executor, never the booking VPS itself.
+name: booking-bridge-external-monitor
+services:
+  monitor:
+    profiles: [operations]
+    image: ${BRIDGE_OPERATIONS_IMAGE:?Set the reviewed immutable operations image}
+    command: [python, -m, booking_bridge.deploy.operations_monitor, --config, /run/config/monitor.external.json, --send-alert]
+    user: "10001:10001"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 256m
+    cpus: 0.25
+    pids_limit: 64
+    tmpfs: ["/tmp:rw,nosuid,nodev,size=32m,uid=10001,gid=10001,mode=1777"]
+    secrets: [smtp_env, smtp_password]
+    volumes:
+      - monitor_state:/monitor-state
+      - type: bind
+        source: ./secrets/monitor.external.json
+        target: /run/config/monitor.external.json
+        read_only: true
+        bind: {create_host_path: false}
+    logging:
+      driver: json-file
+      options: {max-size: 2m, max-file: "2"}
+volumes:
+  monitor_state:
+secrets:
+  smtp_env: {file: ./secrets/diagnostic-smtp.env}
+  smtp_password: {file: ./secrets/diagnostic-smtp-password.txt}

@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T12:21:22.847057+00:00",
+  "post_contracts_blocked": [
+    {
+      "method": "POST",
+      "scheme": "https",
+      "host": "simplybook.me",
+      "path": "/content-policy/report",
+      "top_level_field_names": [
+        "csp-report"
+      ],
+      "rpc_method_names_only": {}
+    },
+    {
+      "method": "POST",
+      "scheme": "https",
+      "host": "simplybook.me",
+      "path": "/content-policy/report",
+      "top_level_field_names": [
+        "csp-report"
+      ],
+      "rpc_method_names_only": {}
+    },
+    {
+      "method": "POST",
+      "scheme": "https",
+      "host": "srv.motu-teamblue.services",
+      "path": "/server/he-man_main",
+      "top_level_field_names": [
+        "_ashkii",
+        "_wicasa",
+        "tkq"
+      ],
+      "rpc_method_names_only": {}
+    },
+    {
+      "method": "POST",
+      "scheme": "https",
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/api/v1/widget/log",
+      "top_level_field_names": [
+        "client_timestamp",
+        "country",
+        "event_type",
+        "language",
+        "page_url",
+        "site_domain",
+        "widget_version"
+      ],
+      "rpc_method_names_only": {}
+    }
+  ],
+  "console_error_codes": [
+    {
+      "type": "error",
+      "codes": [
+        "Content Security Policy"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": [
+        "Content Security Policy"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": [
+        "Content Security Policy"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": [
+        "net::ERR_FAILED"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": [
+        "Content Security Policy"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": [
+        "net::ERR_FAILED"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": [
+        "net::ERR_FAILED"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": [
+        "net::ERR_FAILED"
+      ]
+    },
+    {
+      "type": "error",
+      "codes": []
+    }
+  ],
+  "api_responses": [],
+  "credential_reads": 0,
+  "auth_posts_sent": 0,
+  "business_mutations": 0,
+  "source_requests": 0,
+  "navigation_status": 200,
+  "main_frame": {
+    "scheme": "https",
+    "host": "studioandjelija.secure.simplybook.me",
+    "path": "/v2/management/"
+  },
+  "title": "Appointment booking service and free online booking service",
+  "frames": [
+    {
+      "scheme": "https",
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/management/"
+    },
+    {
+      "scheme": "https",
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/widget/index.html"
+    }
+  ],
+  "headings": [],
+  "visible_control_schema": [
+    {
+      "tag": "BUTTON",
+      "name": "",
+      "type": "submit",
+      "text": "\n                \n                    \n                \n                Ask Simply\n            "
+    },
+    {
+      "tag": "BUTTON",
+      "name": "",
+      "type": "submit",
+      "text": "\n                        \n                        My booking channels\n                        \n     "
+    },
+    {
+      "tag": "BUTTON",
+      "name": "",
+      "type": "submit",
+      "text": "\n                \n                    \n                \n                \n                    \n      "
+    },
+    {
+      "tag": "BUTTON",
+      "name": "",
+      "type": "button",
+      "text": "\n            Mobile App\n            App\n            \n                \n                    \n         "
+    },
+    {
+      "tag": "BUTTON",
+      "name": "",
+      "type": "submit",
+      "text": "Enable Calendar sync "
+    },
+    {
+      "tag": "BUTTON",
+      "name": "",
+      "type": "button",
+      "text": "×"
+    },
+    {
+      "tag": "BUTTON",
+      "name": "",
+      "type": "button",
+      "text": "\n            .ai-icon { display: inline-block; }\n            .spark { opacity: 0.6; transform-origin"
+    }
+  ],
+  "script_source_hosts_and_paths": [
+    {
+      "host": "cdn.rudderlabs.com",
+      "path": "/v3/modern/rsa.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/translations.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/jquery-1.9.1.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/jquery-migrate-1.2.1.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/jquery-ui/jquery-ui.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/main-jquery.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/common/js/jquery.ie10.fix.js"
+    },
+    {
+      "host": "srv.motu-teamblue.services",
+      "path": "/js/he-man_all.min.js"
+    },
+    {
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/loader/widget-simplybook-gate.Csrk1Cjq.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/maplibrejs/dist/maplibre-gl-csp.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/cache/assetic/926986c-d17b749.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/bootstrap-autocomplete/bootstrap-autocomplete.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/bootstrap-tagsinput/typeahead.jquery.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/popper/simplybook-tooltip/assets/simplybook.tooltip.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/popper/popper.min.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/lib/require.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/v2/js/initDynamicMenu.js"
+    },
+    {
+      "host": "srv.isy-teamblue.services",
+      "path": "/js/skeletor.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/react-chat-widget/public/runtime.js"
+    },
+    {
+      "host": "studioandjelija.secure.simplybook.me",
+      "path": "/react-chat-widget/public/app.js"
+    },
+    {
+      "host": "cdn.hub-prod.team.blue",
+      "path": "/loader/widget-loader.js"
+    }
+  ],
+  "completed_at_utc": "2026-10-30T12:21:50.397306+00:00"
+}

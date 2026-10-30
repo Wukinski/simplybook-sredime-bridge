@@ -1,0 +1,13 @@
+[Unit]
+Description=Independent booking VPS HTTPS and TLS monitoring
+Requires=docker.service
+After=docker.service network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/booking-bridge-external-monitor
+EnvironmentFile=/opt/booking-bridge-external-monitor/operations.env
+ExecStart=/usr/bin/docker compose -f compose.external-monitor.yaml --profile operations run --rm --no-deps -T monitor
+TimeoutStartSec=180
+NoNewPrivileges=true
+UMask=0077

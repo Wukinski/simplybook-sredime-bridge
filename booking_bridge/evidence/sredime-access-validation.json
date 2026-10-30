@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-22",
+  "sredime_authenticated": true,
+  "source_account_verified": {
+    "salon_slug": "studio-andjelija-sg",
+    "vendor_id": "1404"
+  },
+  "source_business_writes": 0,
+  "target_business_writes": 0,
+  "target_read_only_transport_calls": 5,
+  "private_export_urls_saved": 9,
+  "mappings_applied": false,
+  "mode": "simulation",
+  "reads_enabled": false,
+  "production_enabled": false,
+  "subminute_verified": false,
+  "tests": {
+    "windows": {
+      "tests": 335,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "linux": {
+      "tests": 203,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "smoke": {
+    "mode": "simulation",
+    "external_reads": false,
+    "external_writes": false,
+    "ack_ms": 32,
+    "accepted_status": 202,
+    "deduplicated_rows": 1,
+    "final_state": "test",
+    "invalid_signature_status": 401,
+    "readiness_status": 200,
+    "status": "passed"
+  },
+  "container": {
+    "image_id": "sha256:4e0a202ac22887f268f7e72f2da197e79b8f2667f6068c3478f727e81cc3985d",
+    "network": "none",
+    "read_only_root": true,
+    "uid": 10001
+  },
+  "source_hashes": {
+    "booking_bridge/source_review.py": "5d17291f4516e916b6a4dbf4419329ab00b38ad9b58f2f6bbcbe14f3525e9de8",
+    "booking_bridge/__main__.py": "bdee54c93e390d9886a80966bd1f6548b50c909b485cf35d098ebc680085e74e",
+    "booking_bridge/tests/test_source_review.py": "23c10af196cd9c1eadd09f1fc024a9b4088d70f780c7b47e95a9ee7ef5ea7bfd"
+  },
+  "known_limits": [
+    "No confirmed or pending live booking export sample yet; five empty feeds and one cancellation only.",
+    "No webhook registered: approved public HTTPS host absent.",
+    "Nine duration conflicts among 18 unique-name service candidates.",
+    "Sanja/Sara identity unresolved.",
+    "SimplyBook test-provider isolation remains blocked.",
+    "Consistent subminute availability requires a supported provider interface."
+  ]
+}

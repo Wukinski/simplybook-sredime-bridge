@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T11:54:50.061290+00:00",
+  "complete": false,
+  "maximum_gets_this_pass": 4,
+  "prior_projection_failure_gets": 1,
+  "authorized_maximum_total_gets": 5,
+  "minimum_start_spacing_seconds": 1,
+  "automatic_http_retries": 0,
+  "justification": "Correct resource response/form parsing, using observed asset routes and independently verified vendor1404 catalog association; preserve the original stopped pass.",
+  "source_catalog_sha256": "baa9473119019510f28cbff659d2573d71305e54d3ecf35add14ec932f0ef82d",
+  "requests": [
+    {
+      "id": "48",
+      "requested_at_utc": "2026-10-30T11:54:50.496522+00:00",
+      "http_status": 200,
+      "nonsecret_control_names": [
+        "active",
+        "close_1",
+        "close_2",
+        "close_3",
+        "close_4",
+        "close_5",
+        "close_6",
+        "close_7",
+        "id",
+        "name",
+        "open_1",
+        "open_2",
+        "open_3",
+        "open_4",
+        "open_5",
+        "open_6",
+        "open_7",
+        "quantity",
+        "services[]",
+        "vendor_id",
+        "works_1",
+        "works_2",
+        "works_3",
+        "works_4",
+        "works_5",
+        "works_6",
+        "works_7"
+      ],
+      "form_actions": [
+        {
+          "method": "post",
+          "action_matches_current": true
+        }
+      ]
+    }
+  ],
+  "rows": [],
+  "source_posts": 0,
+  "customer_or_booking_reads": 0,
+  "html_tokens_cookies_export_urls_saved": false,
+  "reason": "asset_name_crosscheck_changed",
+  "completed_at_utc": "2026-10-30T11:54:50.979430+00:00",
+  "attempted_gets_this_pass": 1,
+  "total_source_gets": 2,
+  "business_mutations": 0,
+  "runtime_mappings_changed": false
+}

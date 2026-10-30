@@ -1,0 +1,33 @@
+{
+  "provider_id": 9,
+  "service_id": 496,
+  "date": "2026-10-26",
+  "scope": "Actual SimplyBook schedule API readback only",
+  "slot_counts": [
+    22,
+    0,
+    22
+  ],
+  "request_to_first_readback_seconds": {
+    "close": 5.215,
+    "restore": 5.097
+  },
+  "timestamps": {
+    "close_request": "2026-10-23T09:18:17.680Z",
+    "close_ack": "2026-10-23T09:18:20.697Z",
+    "close_observed": "2026-10-23T09:18:22.895Z",
+    "restore_request": "2026-10-23T09:19:05.244Z",
+    "restore_observed": "2026-10-23T09:19:10.341Z"
+  },
+  "source_commit_time": null,
+  "event_receipt": null,
+  "local_processing": null,
+  "feed_readiness": null,
+  "refresh_acceptance": null,
+  "http_fetch": null,
+  "effective_sredime_availability": null,
+  "customer_visible_availability": null,
+  "effective_hours_restored": true,
+  "special_day_override_remains": true,
+  "limitation": "MCP roundtrips included; not source-to-remote or public customer availability latency"
+}

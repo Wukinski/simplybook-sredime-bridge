@@ -1,0 +1,67 @@
+{
+  "mode": "week",
+  "from": "09:00:00",
+  "to": "20:00:00",
+  "columns": [
+    {
+      "id": 1792969200,
+      "date": "2026-10-26 00:00:00",
+      "type": "week",
+      "from": "09:00:00",
+      "to": "20:00:00",
+      "is_day_off": false,
+      "breaks": [],
+      "blocked": []
+    },
+    {
+      "id": 1793055600,
+      "date": "2026-10-27 00:00:00",
+      "type": "week",
+      "from": "09:00:00",
+      "to": "20:00:00",
+      "is_day_off": false,
+      "breaks": [],
+      "blocked": []
+    },
+    {
+      "id": 1793142000,
+      "date": "2026-10-28 00:00:00",
+      "type": "week",
+      "from": "09:00:00",
+      "to": "20:00:00",
+      "is_day_off": false,
+      "breaks": [],
+      "blocked": []
+    },
+    {
+      "id": 1793228400,
+      "date": "2026-10-29 00:00:00",
+      "type": "week",
+      "from": "09:00:00",
+      "to": "20:00:00",
+      "is_day_off": false,
+      "breaks": [],
+      "blocked": []
+    },
+    {
+      "id": 1793314800,
+      "date": "2026-10-30 00:00:00",
+      "type": "week",
+      "from": "09:00:00",
+      "to": "20:00:00",
+      "is_day_off": false,
+      "breaks": [],
+      "blocked": []
+    },
+    {
+      "id": 1793401200,
+      "date": "2026-10-31 00:00:00",
+      "type": "week",
+      "from": "10:00:00",
+      "to": "16:00:00",
+      "is_day_off": false,
+      "breaks": [],
+      "blocked": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "observed_at_utc": "2026-10-27T09:49:09.548053+00:00",
+  "profile": "local_controlled_pilot",
+  "mode": "simulation",
+  "reads_enabled": false,
+  "source_employee_id": "11772",
+  "target_provider_id": 9,
+  "feed_version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+  "occupancy_events": 15,
+  "snapshot_updated_at_utc": {
+    "bookings": "2026-10-27T09:46:15.331524+00:00",
+    "buffers": "2026-10-27T09:46:16.967543+00:00",
+    "schedule:11772": "2026-10-27T09:46:17.995852+00:00"
+  },
+  "minimal_packet_validated": true,
+  "contacts_in_packet": false,
+  "credentials_in_packet": false,
+  "packet_transferred": false,
+  "account_mutations_during_capture": 0,
+  "remote_import_confirmed": false,
+  "transfer_status": "awaiting_explicit_approval_after_auto_review_rejection"
+}

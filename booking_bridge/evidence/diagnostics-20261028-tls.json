@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "observed_at": 1793191523.253421,
+  "read_only": true,
+  "issuer": {
+    "organization": "Let's Encrypt",
+    "common_name": "YE1"
+  },
+  "public_endpoints": [
+    {
+      "host": "169.58.118.33",
+      "chain_and_hostname_verified": true
+    },
+    {
+      "host": "vmi3688215.contaboserver.net",
+      "chain_and_hostname_verified": true
+    }
+  ],
+  "subject_alt_names": [
+    "169.58.118.33",
+    "vmi3688215.contaboserver.net"
+  ],
+  "not_before_utc": "2026-10-26T22:34:02Z",
+  "not_after_utc": "2026-11-02T14:34:01Z",
+  "validity_seconds": 575999,
+  "remaining_seconds_at_observation": 438518,
+  "renewal_configuration": {
+    "authenticator": "webroot",
+    "server": "https://acme-v02.api.letsencrypt.org/directory",
+    "key_type": "ecdsa",
+    "preferred_profile": "shortlived",
+    "dns_credential_fields_present": false
+  },
+  "timer": {
+    "unit": "booking-bridge-certbot.timer",
+    "active": true,
+    "enabled": true,
+    "last_trigger_utc": "2026-10-28T11:12:41Z",
+    "next_trigger_utc": "2026-10-28T23:14:36Z"
+  },
+  "last_renewal_service": {
+    "result": "success",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-28T11:12:41Z",
+    "finished_at_utc": "2026-10-28T11:12:44Z"
+  },
+  "renewal_log_fixed_findings": [
+    "certificate_not_yet_due",
+    "no_renewals_attempted",
+    "no_renewal_failures"
+  ],
+  "explanation": "A successful renewal check does not imply issuance of a new certificate. This legitimate short-lived certificate is not yet due; its remaining lifetime exceeds the standard half-lifetime threshold for certificates valid for ten days or less.",
+  "standard_short_certificate_renewal_threshold_seconds": 287999.5,
+  "monitor_deployment_tls_min_days": 2,
+  "generic_monitor_default_tls_min_days": 7,
+  "generic_default_suitable_for_this_short_certificate": false,
+  "active_project_production_monitor_commands": [],
+  "project_systemd_service_units_checked": 3,
+  "forced_renewal_performed": false,
+  "proxy_or_endpoint_changes": 0,
+  "model_inference_requests": 0,
+  "account_mutations": 0,
+  "emails_sent": 0,
+  "source": "https://eff-certbot.readthedocs.io/en/stable/using.html#renewing-certificates",
+  "external_windows_tls_readback": [
+    {
+      "host": "169.58.118.33",
+      "chain_and_hostname_verified": true,
+      "not_after": "Nov  2 14:34:01 2026 GMT"
+    },
+    {
+      "host": "vmi3688215.contaboserver.net",
+      "chain_and_hostname_verified": true,
+      "not_after": "Nov  2 14:34:01 2026 GMT"
+    }
+  ]
+}

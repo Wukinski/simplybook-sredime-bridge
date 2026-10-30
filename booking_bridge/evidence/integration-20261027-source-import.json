@@ -1,0 +1,113 @@
+{
+  "checked_at_utc": "2026-10-27T10:13:07.739193+00:00",
+  "scope": {
+    "source_employee_id": "11772",
+    "target_provider_id": 9,
+    "target_service_id": 496,
+    "production_enabled": false,
+    "source_flags_changed": false,
+    "source_booking_or_customer_created": false,
+    "source_employee_still_closed_by_test_policy": true
+  },
+  "fresh_host_feed": {
+    "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+    "event_count": 15,
+    "publisher_accepted_before_refresh": true,
+    "local_snapshot_cache_times": [
+      {
+        "key": "bookings",
+        "updated": 1793095298.3296142
+      },
+      {
+        "key": "buffers",
+        "updated": 1793095300.7072592
+      },
+      {
+        "key": "schedule:11772",
+        "updated": 1793095301.6201675
+      }
+    ]
+  },
+  "baseline": {
+    "observed_at_utc": "2026-10-27T10:07:36.669219+00:00",
+    "source_test_busy_block_rows": 10,
+    "future_expected_count_at_comparison": 12,
+    "future_actual_count_at_comparison": 5,
+    "matching_future_intervals": 5,
+    "complete_future_interval_match": false
+  },
+  "refresh": {
+    "attempts": 1,
+    "persistent_rate_key": "sredime-post:11772",
+    "hourly_limit": 60,
+    "quota_reserved_before_request": true,
+    "requested_at_utc": "2026-10-27T10:08:55.517232+00:00",
+    "accepted_at_utc": "2026-10-27T10:08:55.988140+00:00",
+    "accepted_at_epoch": 1793095735.9881406,
+    "roundtrip_seconds": 0.469,
+    "success": true,
+    "refresh_scheduled": true,
+    "automatic_retry": false
+  },
+  "host_fetch": {
+    "observed": true,
+    "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+    "event_count": 15,
+    "served_at_epoch": 1793095774.0509348,
+    "served_at_utc": "2026-10-27T10:09:34.050935+00:00",
+    "source": "root_verified_host_feed_last_served_metadata",
+    "caller_identity_cryptographically_verified": false
+  },
+  "native_import_observation": {
+    "read_only_native_route": "/buker/studio-andjelija-sg/calendar/json",
+    "query_keys": [
+      "start",
+      "end",
+      "timezone"
+    ],
+    "server_side_employee_filter_verified": false,
+    "other_employee_rows_retained_or_printed": false,
+    "first_observed_current_state_at_utc": "2026-10-27T10:10:03.899567+00:00",
+    "first_observed_current_state_at_epoch": 1793095803.8995676,
+    "bounded_after_refresh_polls": 2,
+    "native_test_busy_blocks": 12,
+    "future_expected_intervals": 12,
+    "future_observed_intervals": 12,
+    "matching_future_intervals": 12,
+    "complete_future_interval_match": true,
+    "expected_future_intervals_sha256": "8362979686a34850dbe2edd12dbed40d1f43c95e833dc2bea487aad916900cd4",
+    "observed_future_intervals_sha256": "8362979686a34850dbe2edd12dbed40d1f43c95e833dc2bea487aad916900cd4",
+    "duplicate_intervals": 0,
+    "extra_intervals_in_requested_window": 0,
+    "full_15_interval_match": false,
+    "missing_past_intervals": 3,
+    "all_missing_intervals_ended_before_refresh": true,
+    "native_model_kind": "block",
+    "title_matches_feed_busy_summary": true,
+    "native_feed_version_receipt_available": false,
+    "provider_import_commit_timestamp": null
+  },
+  "measurements": {
+    "refresh_acceptance_to_host_fetch_seconds": 38.063,
+    "refresh_acceptance_to_first_native_current_read_seconds": 67.911,
+    "native_current_read_is_commit_time": false,
+    "actual_source_booking_commit_timestamp": null,
+    "source_booking_change_to_customer_visible_availability_seconds": null,
+    "under_60_second_end_to_end_claim": false
+  },
+  "conclusion": {
+    "future_test_employee_occupancy_import_observed": true,
+    "comparison_scope": "all_future_intervals_in_current_pilot_feed",
+    "full_feed_history_import_claim": false,
+    "customer_visible_available_slots_verified": false,
+    "last_block_deletion_semantics_verified": false,
+    "no_new_source_customer_or_booking_used": true,
+    "automatic_booking_sync_enabled": false,
+    "live_production_enabled": false
+  },
+  "privacy": {
+    "contacts_client_ids_booking_codes_tokens_private_urls_and_native_block_ids_excluded": true,
+    "native_response_other_employees_discarded_immediately": true,
+    "raw_test_rows_retained_privately": true
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "observed_at_epoch": 1793112226.6810637,
+  "mode": "simulation",
+  "reads_enabled": false,
+  "source_events": [
+    {
+      "id": "ac284a7be11ee144ca7937e486f1f439",
+      "booking": "9VPLV6E",
+      "created": 1793112092.0,
+      "received": 1793112147.1549566,
+      "state": "done",
+      "reason": "applied_by_local_pilot_executor",
+      "attempts": 0,
+      "type": "booking.updated",
+      "status": -101,
+      "employee_id": "39VLN1",
+      "service_id": "V2N8N4",
+      "customer_id": "7E9514"
+    },
+    {
+      "id": "6f4151881513c9fb71c1028931ca19dd",
+      "booking": "9VPLV6E",
+      "created": 1793111820.0,
+      "received": 1793111846.9807563,
+      "state": "done",
+      "reason": "applied_by_local_pilot_executor",
+      "attempts": 0,
+      "type": "booking.updated",
+      "status": 1,
+      "employee_id": "39VLN1",
+      "service_id": "V2N8N4",
+      "customer_id": "7E9514"
+    },
+    {
+      "id": "ce3fa625c5a6e6bf73f2f3dfd01c1026",
+      "booking": "9VPLV6E",
+      "created": 1793110822.0,
+      "received": 1793110826.7564368,
+      "state": "done",
+      "reason": "applied_by_local_pilot_executor",
+      "attempts": 0,
+      "type": "booking.updated",
+      "status": 1,
+      "employee_id": "39VLN1",
+      "service_id": "V2N8N4",
+      "customer_id": "7E9514"
+    }
+  ],
+  "cache": {
+    "feed-last-served:11772": {
+      "value": {
+        "events": 15,
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919"
+      },
+      "updated": 1793111970.4663918
+    },
+    "feed-ready:11772": {
+      "value": {
+        "version": "b82a7338bb390d58e1e428980583624cf5837ea300f5deb4832a1a3137b05919",
+        "events": 15
+      },
+      "updated": 1793095307.5715902
+    },
+    "health": {
+      "value": {
+        "open_issues": 0,
+        "old_queued": 0
+      },
+      "updated": 1793112226.576566
+    },
+    "heartbeat": {
+      "value": true,
+      "updated": 1793112226.576566
+    },
+    "sb-webhook-receipt": {
+      "value": {
+        "signature_verified": true,
+        "receipt_count": 3,
+        "received_at": 1793112180.9516609,
+        "json_object": true,
+        "timestamp_present": true,
+        "algorithm_sha256": true,
+        "event_type": null
+      },
+      "updated": 1793112180.9516609
+    }
+  },
+  "open_issues": [],
+  "observed_at_utc": "2026-10-27T14:43:45.985772+00:00",
+  "phase": "target-canceled",
+  "contacts_in_evidence": false,
+  "provider_delivery_claim_based_on_actual_receipt_only": true
+}

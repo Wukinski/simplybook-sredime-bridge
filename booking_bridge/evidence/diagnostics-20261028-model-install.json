@@ -1,0 +1,99 @@
+{
+  "verified": true,
+  "observed_at": 1793188482.2959278,
+  "ollama_version": {
+    "version": "0.40.12"
+  },
+  "model": {
+    "name": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "size": 3324173934,
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "llamacpp"
+    }
+  },
+  "resident_model": {
+    "name": "qwen3.5:4b",
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "size": 3146734631,
+    "size_vram": 0,
+    "expires_at": "2319-02-07T11:41:58.946414978Z",
+    "context_length": 4096
+  },
+  "benchmark": [
+    {
+      "request": 1,
+      "valid_json": true,
+      "elapsed_seconds": 39.902,
+      "load_seconds": 25.799,
+      "prompt_eval_count": 56,
+      "eval_count": 20,
+      "eval_tokens_per_second": 3.18,
+      "thinking_returned": false
+    },
+    {
+      "request": 2,
+      "valid_json": true,
+      "elapsed_seconds": 8.27,
+      "load_seconds": 0.013,
+      "prompt_eval_count": 56,
+      "eval_count": 20,
+      "eval_tokens_per_second": 2.695,
+      "thinking_returned": false
+    }
+  ],
+  "runtime": {
+    "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+    "user": "10002:10002",
+    "read_only_root": true,
+    "memory_limit": 6442450944,
+    "nano_cpus": 2000000000,
+    "pids_limit": 128,
+    "cap_drop": [
+      "ALL"
+    ],
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "configured_port_bindings": {
+      "11434/tcp": [
+        {
+          "HostIp": "127.0.0.1",
+          "HostPort": "11434"
+        }
+      ]
+    },
+    "actual_published_ports": {
+      "11434/tcp": null
+    },
+    "host_loopback_listener_available": false,
+    "host_probe_transport": "private_bridge_ip",
+    "network_internal": true,
+    "networks": [
+      "booking-bridge-diagnostics_diagnostics"
+    ],
+    "mounts": [
+      {
+        "type": "volume",
+        "destination": "/ollama",
+        "rw": true
+      }
+    ],
+    "restart_count": 0,
+    "oom_killed": false
+  },
+  "account_reads": 0,
+  "account_mutations": 0,
+  "emails_sent": 0,
+  "synthetic_input_only": true
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T11:23:06.819609+00:00",
+  "scope": "approved_production_preparation_only",
+  "chosen_architecture": "existing_vps_independent_of_windows",
+  "validation": {
+    "windows": {
+      "tests": 562,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 562,
+      "junit_sha256": "b3d774e401d6dd34af2894eb6a1cb4730b9c83b1594d4f7238b840be039f4b4c",
+      "http_smoke": "passed"
+    },
+    "linux": {
+      "tests": 562,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 4,
+      "passed": 558,
+      "junit_sha256": "53245ba3cc66ffe7ea6585d3c0f8cee32c2edc9a8eeab72b09aa1cf023e98870",
+      "http_smoke": "passed"
+    }
+  },
+  "validation_image": {
+    "tag": "andjelija-bridge:production-preparation-20261028",
+    "id": "sha256:a3f938816314dd3e42ef8db396361a296cc93d9d12cd780582e41a87aaa1a4ea",
+    "deployed": false,
+    "source_archive_sha256": "f9ffed10cac044a5ac10b216e422b17164f8e30e2c294eedd2c626b70a2f7b41",
+    "code_matches_archive": true,
+    "private_paths_excluded": true,
+    "container_network": "none",
+    "container_user": "10001:10001",
+    "container_root_read_only": true
+  },
+  "implemented": [
+    "shared_server_worker_and_scheduler",
+    "profile_bound_reviewed_readiness_ledger_and_cli",
+    "runtime_write_and_restore_guards",
+    "split_ingress_and_worker_secret_templates",
+    "dormant_production_compose",
+    "read_only_snapshot_reconciliation_review",
+    "authenticated_encrypted_online_backup",
+    "isolated_restore_with_embedded_and_adjacent_hold",
+    "conservative_budget_artifact_preservation",
+    "independent_monitor_with_opt_in_alerts",
+    "explicit_sqlite_connection_closure"
+  ],
+  "actual_read_only_checks": {
+    "state_review": "blocked",
+    "shared_event_payload_collisions": 3,
+    "automatic_migration_allowed": false,
+    "tls_evidence": "production-20261028-live-readonly.json"
+  },
+  "production_preflight": {
+    "configuration_ready": false,
+    "checks": 48,
+    "failed_checks": 40
+  },
+  "actions_not_performed": {
+    "deployed_services_changed": false,
+    "administrative_credentials_transferred": false,
+    "production_enabled": false,
+    "booking_cycle_repeated": false,
+    "messages_sent": 0,
+    "automatic_state_merge": false,
+    "off_host_backup_uploaded": false,
+    "external_monitor_installed": false
+  },
+  "remaining_live_evidence": [
+    "review_historical_projection_provenance_before_migration",
+    "confirmed_real_identity_mappings_and_business_rules",
+    "chosen_backup_destination_and_key_custody",
+    "chosen_external_monitor_and_alert_recipient",
+    "separate_credentials_transfer_and_activation_review",
+    "original_created_delivery",
+    "notification_inbox_delivery",
+    "native_last_block_removal",
+    "accepted_and_measured_end_to_end_latency",
+    "72_hour_supervised_limited_operation"
+  ]
+}

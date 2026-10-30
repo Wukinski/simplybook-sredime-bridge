@@ -1,0 +1,68 @@
+{
+  "account_api_calls": 0,
+  "account_business_writes": 0,
+  "checked_at": "2026-10-22T15:02:46.738716+00:00",
+  "container_preflight_did_not_create_database": true,
+  "image_build": "passed",
+  "image_excludes_local_secrets_and_configuration": true,
+  "image_id": "sha256:c98b774286733cd2d0d9c35b439be8cb16947f19d25e24fab96463941875fd95",
+  "image_user": "10001:10001",
+  "linux_smoke": {
+    "accepted_status": 202,
+    "ack_ms": 8,
+    "deduplicated_rows": 1,
+    "external_reads": false,
+    "external_writes": false,
+    "final_state": "test",
+    "invalid_signature_status": 401,
+    "mode": "simulation",
+    "readiness_status": 200,
+    "status": "passed"
+  },
+  "linux_test_constraints": {
+    "capabilities": "all_dropped",
+    "network": "none",
+    "no_new_privileges": true,
+    "root_filesystem": "read_only",
+    "writable_paths": [
+      "temporary /tmp",
+      "temporary /state",
+      "test-result output mount only for pytest"
+    ]
+  },
+  "offline_preflight": "blocked_as_expected",
+  "production_enabled": false,
+  "remaining": [
+    "Buker login",
+    "verified test employee isolation",
+    "controlled test contact and mappings",
+    "approved public HTTPS host",
+    "live pilot and business decisions"
+  ],
+  "tests": {
+    "linux": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 171
+    },
+    "windows": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 303
+    }
+  },
+  "windows_smoke": {
+    "accepted_status": 202,
+    "ack_ms": 16,
+    "deduplicated_rows": 1,
+    "external_reads": false,
+    "external_writes": false,
+    "final_state": "test",
+    "invalid_signature_status": 401,
+    "mode": "simulation",
+    "readiness_status": 200,
+    "status": "passed"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T12:20:23.257422+00:00",
+  "route": "GET /admin/config",
+  "source_requests": 0,
+  "customer_or_booking_reads": 0,
+  "business_mutations": 0,
+  "safe_config": {
+    "company_domain": "simplybook.me",
+    "company_timezone": "Europe/Belgrade",
+    "time_frame": 5,
+    "group_booking_max_participants": 0
+  },
+  "success": true
+}

@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-10-30T08:47:41.700665+00:00",
+  "read_only_audit": true,
+  "inference_requests": 0,
+  "service_changes": 0,
+  "emails_sent_by_audit": 0,
+  "account_reads": 0,
+  "account_writes": 0,
+  "services": [
+    {
+      "name": "booking-bridge-diagnostics-analyzer-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "analyzer",
+      "running": true,
+      "status": "running",
+      "health": "unhealthy",
+      "image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+      "started_at": "2026-10-28T17:21:37.308763253Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-diagnostics-collector-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "collector",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": true,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-keeper-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "keeper",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-qwen-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "qwen",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-pilot-worker-1",
+      "project": "booking-bridge-pilot",
+      "role": "worker",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-pilot-api-1",
+      "project": "booking-bridge-pilot",
+      "role": "api",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    }
+  ],
+  "port_8001": {
+    "tcp_listener_present": false,
+    "running_docker_port_claim_present": false,
+    "free": true
+  },
+  "diagnostics_status": {
+    "schema_version": 1,
+    "updated_at": 1793350008.9543405,
+    "diagnostics_only": true,
+    "repairs_enabled": false,
+    "healthy": false,
+    "email_configured": false,
+    "model_review_pending": false,
+    "last_model_ok": true,
+    "last_model_started_at": 1793349828.8500516,
+    "last_model_self_test_at": 1793294711.7808123,
+    "last_model_self_test_ok": true,
+    "finding_count": 4,
+    "finding_details_limited": false,
+    "last_alert_status": "smtp_not_configured"
+  },
+  "diagnostics_status_age_seconds": 52.188,
+  "smtp_outbox_states": {
+    "pending": 2
+  },
+  "smtp_attempt_count": 0,
+  "smtp_accepted_attempt_count": 0,
+  "smtp_password_file_present": true,
+  "smtp_password_present": false,
+  "smtp_metadata_file_present": true,
+  "named_project_directories": {
+    "/opt/booking-bridge-production": true,
+    "/opt/booking-bridge-pilot": true,
+    "/opt/booking-bridge": false,
+    "/opt/booking-bridge-diagnostics": true
+  },
+  "production_directory_entries": [
+    "PENDING-CUTOVER.txt",
+    "STAGED_WITHOUT_CREDENTIALS.json",
+    "compose.yaml",
+    "preflight-blocked.json",
+    "secrets",
+    "staging-receipt.json"
+  ],
+  "named_project_files": [
+    {
+      "path": "/opt/booking-bridge-production/compose.yaml",
+      "present": true,
+      "size_bytes": 2663
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-config.json",
+      "present": true,
+      "size_bytes": 1110,
+      "mode": "production"
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-evidence/readiness.json",
+      "present": true,
+      "size_bytes": 3172
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/ingress.env",
+      "present": true,
+      "size_bytes": 276
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/worker.env",
+      "present": true,
+      "size_bytes": 428
+    },
+    {
+      "path": "/opt/booking-bridge-pilot/compose.yaml",
+      "present": true,
+      "size_bytes": 1298
+    },
+    {
+      "path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "present": true,
+      "size_bytes": 5261
+    }
+  ],
+  "production_containers_present": false,
+  "production_containers_running": false,
+  "production_stage_permissions": [
+    {
+      "path": "/opt/booking-bridge-production",
+      "mode": "0700",
+      "uid": 0,
+      "gid": 0,
+      "is_symlink": false,
+      "group_or_other_permissions": false
+    },
+    {
+      "path": "/opt/booking-bridge-production/compose.yaml",
+      "mode": "0400",
+      "uid": 0,
+      "gid": 0,
+      "is_symlink": false,
+      "group_or_other_permissions": false,
+      "size_bytes": 2663
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets",
+      "mode": "0700",
+      "uid": 10001,
+      "gid": 10001,
+      "is_symlink": false,
+      "group_or_other_permissions": false
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/worker.env",
+      "mode": "0400",
+      "uid": 10001,
+      "gid": 10001,
+      "is_symlink": false,
+      "group_or_other_permissions": false,
+      "size_bytes": 428,
+      "matches_empty_public_template": true
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/ingress.env",
+      "mode": "0400",
+      "uid": 10001,
+      "gid": 10001,
+      "is_symlink": false,
+      "group_or_other_permissions": false,
+      "size_bytes": 276,
+      "matches_empty_public_template": true
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-config.json",
+      "mode": "0400",
+      "uid": 10001,
+      "gid": 10001,
+      "is_symlink": false,
+      "group_or_other_permissions": false,
+      "size_bytes": 1110
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-evidence",
+      "mode": "0700",
+      "uid": 10001,
+      "gid": 10001,
+      "is_symlink": false,
+      "group_or_other_permissions": false
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-evidence/readiness.json",
+      "mode": "0400",
+      "uid": 10001,
+      "gid": 10001,
+      "is_symlink": false,
+      "group_or_other_permissions": false,
+      "size_bytes": 3172
+    }
+  ],
+  "certbot_timer": {
+    "NextElapseUSecRealtime": "Fri 2026-10-30 12:12:09 CET",
+    "LastTriggerUSec": "Fri 2026-10-30 00:27:12 CET",
+    "ActiveState": "active",
+    "UnitFileState": "enabled"
+  },
+  "certbot_service": {
+    "Result": "success",
+    "ExecMainStartTimestamp": "Fri 2026-10-30 00:27:12 CET",
+    "ExecMainExitTimestamp": "Fri 2026-10-30 00:27:59 CET",
+    "ExecMainStatus": "0"
+  },
+  "certbot_journal_fixed_findings": {
+    "renewed_successfully_mentioned": false,
+    "not_due_mentioned": false,
+    "no_renewals_attempted_mentioned": false,
+    "renewal_failure_mentioned": false,
+    "journal_read_ok": true
+  },
+  "certbot_public_certificate_files": [],
+  "certbot_log_fixed_findings": [],
+  "model_resources": {
+    "memory_limit_bytes": 8589934592,
+    "memory_swap_limit_bytes": 8589934592,
+    "nano_cpus": 2000000000,
+    "historical_oom_killed": true,
+    "memory_current_bytes": 6696701952,
+    "memory_peak_bytes": 7318581248,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 1344,
+      "oom": 1,
+      "oom_kill": 1,
+      "oom_group_kill": 0
+    }
+  },
+  "public_tls": [
+    {
+      "host": "169.58.118.33",
+      "chain_and_hostname_verified": true,
+      "not_before_utc": "2026-10-26T22:34:02+00:00",
+      "not_after_utc": "2026-11-02T14:34:01+00:00",
+      "remaining_seconds": 279982,
+      "validity_seconds": 575999,
+      "issuer": {
+        "organizationName": "Let's Encrypt",
+        "commonName": "YE1"
+      },
+      "sha256": "e9b5e97532412b81c1e458acf78a213bcf5ce4174ae9b8a74fc29dc9dc9d4598"
+    },
+    {
+      "host": "vmi3688215.contaboserver.net",
+      "chain_and_hostname_verified": true,
+      "not_before_utc": "2026-10-26T22:34:02+00:00",
+      "not_after_utc": "2026-11-02T14:34:01+00:00",
+      "remaining_seconds": 279983,
+      "validity_seconds": 575999,
+      "issuer": {
+        "organizationName": "Let's Encrypt",
+        "commonName": "YE1"
+      },
+      "sha256": "e9b5e97532412b81c1e458acf78a213bcf5ce4174ae9b8a74fc29dc9dc9d4598"
+    }
+  ],
+  "secret_values_emitted": false,
+  "credentials_transferred_by_audit": false,
+  "tls_renewal_window": {
+    "standard_half_lifetime_threshold_seconds": 287999.5,
+    "remaining_at_last_check_seconds": 313609,
+    "remaining_at_current_check_seconds": 279982,
+    "last_check_preceded_standard_half_lifetime_window": true,
+    "currently_inside_standard_half_lifetime_window": true,
+    "forced_renewal_performed_by_audit": false,
+    "public_certificate_changed_since_20261028": false,
+    "renewal_log_outcome_not_established": true
+  }
+}

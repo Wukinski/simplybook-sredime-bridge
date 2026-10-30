@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-10-30T10:11:16.698605+00:00",
+  "read_only_audit": true,
+  "inference_requests": 0,
+  "service_changes": 0,
+  "emails_sent_by_audit": 0,
+  "account_reads": 0,
+  "account_writes": 0,
+  "services": [
+    {
+      "name": "booking-bridge-diagnostics-analyzer-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "analyzer",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+      "started_at": "2026-10-30T09:56:18.762127155Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-diagnostics-collector-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "collector",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": true,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-keeper-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "keeper",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/bridge-state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-diagnostics-qwen-1",
+      "project": "booking-bridge-diagnostics",
+      "role": "qwen",
+      "running": true,
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z",
+      "restart_count": 0,
+      "restart_policy": "unless-stopped",
+      "compose_path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "database_mounts": []
+    },
+    {
+      "name": "booking-bridge-pilot-worker-1",
+      "project": "booking-bridge-pilot",
+      "role": "worker",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:17.450180347Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    },
+    {
+      "name": "booking-bridge-pilot-api-1",
+      "project": "booking-bridge-pilot",
+      "role": "api",
+      "running": true,
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "started_at": "2026-10-27T10:03:16.701958333Z",
+      "restart_count": 0,
+      "restart_policy": "on-failure",
+      "compose_path": "/opt/booking-bridge-pilot/compose.yaml",
+      "database_mounts": [
+        {
+          "destination": "/state",
+          "read_only": false,
+          "volume": "booking-bridge-pilot_bridge_state"
+        }
+      ]
+    }
+  ],
+  "port_8001": {
+    "tcp_listener_present": false,
+    "running_docker_port_claim_present": false,
+    "free": true
+  },
+  "diagnostics_status": {
+    "schema_version": 1,
+    "updated_at": 1793355033.8534136,
+    "diagnostics_only": true,
+    "repairs_enabled": false,
+    "healthy": true,
+    "email_configured": true,
+    "model_review_pending": false,
+    "last_model_ok": true,
+    "last_model_started_at": 1793354793.7229612,
+    "last_model_self_test_at": 1793354250.978557,
+    "last_model_self_test_ok": true,
+    "finding_count": 4,
+    "finding_details_limited": false,
+    "last_alert_status": "idle"
+  },
+  "diagnostics_status_age_seconds": 42.473,
+  "smtp_outbox_states": {
+    "accepted": 4
+  },
+  "smtp_attempt_count": 4,
+  "smtp_accepted_attempt_count": 4,
+  "smtp_password_file_present": true,
+  "smtp_password_present": true,
+  "smtp_metadata_file_present": true,
+  "named_project_directories": {
+    "/opt/booking-bridge-production": true,
+    "/opt/booking-bridge-pilot": true,
+    "/opt/booking-bridge": false,
+    "/opt/booking-bridge-diagnostics": true
+  },
+  "production_directory_entries": [
+    "CREDENTIALS_INSTALLED.json",
+    "PENDING-CUTOVER.txt",
+    "STAGED_WITHOUT_CREDENTIALS.json",
+    "blank-template-backups-20261030-53f91059c68740e59c3c266057636a52",
+    "compose.yaml",
+    "preflight-blocked.json",
+    "secrets",
+    "staging-receipt.json"
+  ],
+  "named_project_files": [
+    {
+      "path": "/opt/booking-bridge-production/compose.yaml",
+      "present": true,
+      "size_bytes": 2663
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-config.json",
+      "present": true,
+      "size_bytes": 1110,
+      "mode": "production"
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/production-evidence/readiness.json",
+      "present": true,
+      "size_bytes": 3172
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/ingress.env",
+      "present": true,
+      "size_bytes": 291
+    },
+    {
+      "path": "/opt/booking-bridge-production/secrets/worker.env",
+      "present": true,
+      "size_bytes": 537
+    },
+    {
+      "path": "/opt/booking-bridge-pilot/compose.yaml",
+      "present": true,
+      "size_bytes": 1298
+    },
+    {
+      "path": "/opt/booking-bridge-diagnostics/compose.yaml",
+      "present": true,
+      "size_bytes": 5261
+    }
+  ],
+  "production_containers_present": false,
+  "production_containers_running": false
+}

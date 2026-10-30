@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "observed_at": 1793208639.6039073,
+  "scope": "pilot_database_diagnostics_only",
+  "status": {
+    "diagnostics_only": true,
+    "email_configured": false,
+    "finding_count": 4,
+    "finding_details_limited": false,
+    "healthy": false,
+    "last_alert_status": "smtp_not_configured",
+    "last_model_ok": true,
+    "last_model_self_test_at": 1793208293.542082,
+    "last_model_self_test_ok": false,
+    "last_model_started_at": 1793208112.0304015,
+    "model": "qwen3.5:4b",
+    "model_review_pending": true,
+    "repairs_enabled": false,
+    "schema_version": 1,
+    "updated_at": 1793208593.8314328
+  },
+  "services": {
+    "qwen": {
+      "running": true,
+      "health": "healthy",
+      "restart_count": 0,
+      "image_id": "sha256:20d1bbfbabe1c97ba4b16301f08a20d8484bcf77047742a3cb71c613d8e12d0b",
+      "started_at": "2026-10-28T11:50:03.675773933Z"
+    },
+    "keeper": {
+      "running": true,
+      "health": "healthy",
+      "restart_count": 0,
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:39:26.185668729Z"
+    },
+    "collector": {
+      "running": true,
+      "health": "healthy",
+      "restart_count": 0,
+      "image_id": "sha256:07e13d7e3b6be226866e1a3d7bf6491950a256841563292564284ed028ee4643",
+      "started_at": "2026-10-28T16:40:13.899605112Z"
+    },
+    "analyzer": {
+      "running": true,
+      "health": "unhealthy",
+      "restart_count": 0,
+      "image_id": "sha256:7b11e4fbc5c7335e763677909243553f38f050ead7101271aec723c06c7210b9",
+      "started_at": "2026-10-28T17:21:37.308763253Z"
+    }
+  },
+  "outbox_states": {
+    "pending": 1
+  },
+  "smtp_attempts": 0,
+  "model_oom_kills": 1,
+  "historical_model_oom_baseline": 1,
+  "new_model_oom_kills": 0,
+  "model_memory_bytes": 6590812160,
+  "production_enabled": false,
+  "repairs_enabled": false
+}

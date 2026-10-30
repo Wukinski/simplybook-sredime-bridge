@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-30T09:41:44.763503+00:00",
+  "scope": "readonly_catalog_protocol_identity_research",
+  "live_get_requests": 4,
+  "live_source_mutations": 0,
+  "callbacks_enabled_or_resynced": 0,
+  "new_bookings_created": 0,
+  "runtime_mappings_changed": false,
+  "global_decoder_used": false,
+  "controlled_booking_identity_aliases_extended": false,
+  "employee_identity_lead": {
+    "native_employee_id": 10142,
+    "target_provider_id": 5,
+    "endpoint_derived_candidate_sha256": "bcea80dcf671db6d8228afac03a2c289bc56e1b15536b94a4e88744e17fa7945",
+    "known_controlled_signed_employee_id_matches_same_export_identity_slot": true,
+    "export_access_segment_is_separate": true,
+    "independent_signed_receipt_for_native10142_observed": false,
+    "status": "endpoint_identity_candidate_awaits_webhook_namespace_authority",
+    "private_candidate_reference": {
+      "path": "booking_bridge/state/mapping-identity-20261030/employee-key-candidate-private.json",
+      "sha256": "62822c169f91bf5a1d0a691854c4aee63fdeb9469ad736fe8156d153badaa1fb"
+    }
+  },
+  "service_identity_gap": {
+    "native_service_ids": [
+      128316,
+      128275
+    ],
+    "status": "opaque_webhook_ids_not_exposed_by_observed_read_contracts",
+    "known_controlled_service_opaque_id_occurs_in_native_service_form": false,
+    "existing_webhook_ui_payload_detail_get_route_observed": false,
+    "supported_identifier_read_api_observed": false
+  },
+  "equal_duration_unique_service_pairs": [
+    {
+      "native_service_id": 222386,
+      "target_service_id": 453,
+      "minutes": 30,
+      "source_active": true,
+      "source_employee_ids": [
+        5571
+      ],
+      "unique_normalized_staff_inference_target_ids": [],
+      "target_eligible_provider_ids": [
+        2,
+        3
+      ],
+      "inferred_source_staff_all_target_eligible": false,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": false,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 222397,
+      "target_service_id": 464,
+      "minutes": 60,
+      "source_active": true,
+      "source_employee_ids": [
+        5571
+      ],
+      "unique_normalized_staff_inference_target_ids": [],
+      "target_eligible_provider_ids": [
+        2,
+        3
+      ],
+      "inferred_source_staff_all_target_eligible": false,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": false,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 222398,
+      "target_service_id": 465,
+      "minutes": 60,
+      "source_active": true,
+      "source_employee_ids": [
+        5571
+      ],
+      "unique_normalized_staff_inference_target_ids": [],
+      "target_eligible_provider_ids": [
+        2,
+        3
+      ],
+      "inferred_source_staff_all_target_eligible": false,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": false,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 116152,
+      "target_service_id": 4,
+      "minutes": 60,
+      "source_active": true,
+      "source_employee_ids": [
+        5571
+      ],
+      "unique_normalized_staff_inference_target_ids": [],
+      "target_eligible_provider_ids": [
+        2
+      ],
+      "inferred_source_staff_all_target_eligible": false,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": false,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 222409,
+      "target_service_id": 475,
+      "minutes": 90,
+      "source_active": true,
+      "source_employee_ids": [
+        5571
+      ],
+      "unique_normalized_staff_inference_target_ids": [],
+      "target_eligible_provider_ids": [
+        2,
+        3
+      ],
+      "inferred_source_staff_all_target_eligible": false,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": false,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 128275,
+      "target_service_id": 31,
+      "minutes": 15,
+      "source_active": true,
+      "source_employee_ids": [
+        10142
+      ],
+      "unique_normalized_staff_inference_target_ids": [
+        5
+      ],
+      "target_eligible_provider_ids": [
+        5,
+        6
+      ],
+      "inferred_source_staff_all_target_eligible": true,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": true,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 128316,
+      "target_service_id": 36,
+      "minutes": 30,
+      "source_active": true,
+      "source_employee_ids": [
+        10142
+      ],
+      "unique_normalized_staff_inference_target_ids": [
+        5
+      ],
+      "target_eligible_provider_ids": [
+        5,
+        6
+      ],
+      "inferred_source_staff_all_target_eligible": true,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": true,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 128464,
+      "target_service_id": 76,
+      "minutes": 60,
+      "source_active": true,
+      "source_employee_ids": [
+        6633
+      ],
+      "unique_normalized_staff_inference_target_ids": [
+        7
+      ],
+      "target_eligible_provider_ids": [
+        6
+      ],
+      "inferred_source_staff_all_target_eligible": false,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": false,
+      "webhook_service_identity_status": "unknown"
+    },
+    {
+      "native_service_id": 195281,
+      "target_service_id": 161,
+      "minutes": 60,
+      "source_active": false,
+      "source_employee_ids": [
+        6633
+      ],
+      "unique_normalized_staff_inference_target_ids": [
+        7
+      ],
+      "target_eligible_provider_ids": [
+        6
+      ],
+      "inferred_source_staff_all_target_eligible": false,
+      "source_required_employees": 1,
+      "source_asset_count": 0,
+      "source_cleanup_minutes": 0,
+      "target_after_buffer_minutes": 0,
+      "minimal_inventory_compatible_candidate": false,
+      "webhook_service_identity_status": "unknown"
+    }
+  ],
+  "minimal_inventory_compatible_service_ids": [
+    128275,
+    128316
+  ],
+  "next_proof_plan": [
+    "receive_existing_or_naturally_occurring_signed_source_booking_receipt_into_quarantined_inbox",
+    "read_exact_existing_native_booking_detail_using_observed_route_without_resync_or_edits",
+    "compare_exact_booking_identity_native_employee_native_service_interval_duration_and_version",
+    "record_catalog_identity_proof_separately_from_controlled_customer_or_booking_aliases",
+    "require_independent_namespace_authority_before_any_runtime_mapping_change"
+  ],
+  "capture_prerequisite": "source_callback_is_held_so_root_must_authorize_capture_only_delivery_or_use_documented_vendor_identifier_read_interface",
+  "owner_id_or_name_reconfirmation_required_for_technical_gap": false,
+  "references": {
+    "fresh_source_forms": {
+      "path": "booking_bridge/evidence/production-20261030-source-identity-contract-read.json",
+      "sha256": "d2614b45c78ec810f82c36a4176c4a0d0115e39fbd00f392fa8ff9942f69c863"
+    },
+    "recorded_inventory_provenance": {
+      "path": "booking_bridge/evidence/production-20261030-mapping-provenance.json",
+      "sha256": "75f965301caf056cef9d64e40cfe615b6f8e520d8cdfa1fa8d11ba71fb00b56a"
+    },
+    "controlled_signed_identity_binding": {
+      "path": "booking_bridge/state/integration-20261027/verified-source-identity-binding-private.json",
+      "sha256": "63ba358f35340c51c7c3edf2911f5efa0f69020bcf13170ca8fe36e1ebb995f1"
+    },
+    "source_employee_inventory": {
+      "path": "booking_bridge/state/sredime-employees-private.json",
+      "sha256": "8f3d5e19a8607a6cc645024827c74a4ad547dea0ab9beb58550922a8bab4b8fd"
+    },
+    "source_service_forms": {
+      "path": "booking_bridge/state/sredime-service-details-private.json",
+      "sha256": "44c4f5f428d4b3875836f6b1a3f6bdb2de602e392640164f8bb1b0be9016c81d"
+    },
+    "target_inventory": {
+      "path": "booking_bridge/state/diagnostics.json",
+      "sha256": "08aa8300db6bf8f4d310076bb9f13ff91a47756a04fbf8738bd7d1a94c6c36e5"
+    }
+  }
+}

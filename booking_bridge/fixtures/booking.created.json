@@ -1,0 +1,17 @@
+{
+  "id": "00000000000000000000000000000001",
+  "type": "booking.created",
+  "created_at": "2026-10-21T10:00:00+02:00",
+  "test": false,
+  "data": {
+    "id": "synthetic-booking-A",
+    "status": 1,
+    "start_at": "2026-10-23T10:00:00+02:00",
+    "end_at": "2026-10-23T11:00:00+02:00",
+    "duration": 60,
+    "service": {"id": "synthetic-service-A", "external_id": "test-service-91", "cleanup_duration": 0, "start_duration": 0, "end_duration": 0},
+    "employee": {"id": "synthetic-employee-A", "external_id": "test-provider-81", "requested": false},
+    "customer": {"id": "synthetic-customer-A"},
+    "changes": {}
+  }
+}

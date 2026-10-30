@@ -1,0 +1,35 @@
+{
+  "observed_at": 1793190250.37021,
+  "booking_writes": 0,
+  "emails_sent": 0,
+  "analyzer_started": false,
+  "services": {
+    "keeper": {
+      "running": true,
+      "health": "healthy",
+      "restart_count": 0,
+      "user": "10001:10001",
+      "read_only_root": true
+    },
+    "collector": {
+      "running": true,
+      "health": "healthy",
+      "restart_count": 0,
+      "user": "10001:10001",
+      "read_only_root": true
+    }
+  },
+  "collector_database_status": "ok",
+  "collector_scan_complete": true,
+  "projection_age_seconds": 17.204,
+  "finding_codes": [
+    "booking_evidence_insufficient",
+    "booking_snapshot_stale",
+    "open_runtime_incident",
+    "service_buffers_stale"
+  ],
+  "pilot_images_unchanged": true,
+  "model_restart_count": 0,
+  "model_started_at": "2026-10-28T11:50:03.675773933Z",
+  "collector_rollout_verified": true
+}

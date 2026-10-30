@@ -1,0 +1,44 @@
+{
+  "scope": "offline_historical_snapshots_only_not_current_production_state",
+  "source_snapshot_capture_date": "2026-10-28",
+  "checks_passed": 23,
+  "checks_total": 23,
+  "preservation_passed": true,
+  "inputs_bytes_unchanged": true,
+  "activation_ready": false,
+  "worker_start_allowed": false,
+  "network_calls": 0,
+  "booking_mutations": 0,
+  "profile_or_readiness_changed": false,
+  "operator_review_counts": {
+    "queued_or_working_receipts": 0,
+    "dead_or_review_receipts": 0,
+    "open_incidents": 1,
+    "source_feed_backoff_or_stopped": 0
+  },
+  "schema_version": 1,
+  "validation": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "proofs": [
+    {
+      "artifact": "booking_bridge/cutover_review.py",
+      "sha256": "3118003ade5fade88cce7672c891d3bf80a25e360b8092ad10f87a79b8659a4e"
+    },
+    {
+      "artifact": "booking_bridge/tests/test_cutover_review.py",
+      "sha256": "b92970573f15daf4107095aec5170a533a3cc5376d6280cf57c7d5aa48082f9d"
+    },
+    {
+      "artifact": "booking_bridge/deploy/CUTOVER_STATE_PREPARATION.md",
+      "sha256": "494d818b834b7cd9119f0bf18d615bbeee3b7b2a814064edcc9fad73476147e4"
+    },
+    {
+      "artifact": "booking_bridge/evidence/production-20261030-cutover-review-tests.xml",
+      "sha256": "5cab9a59310230d7f65de19fd8ba895ba8e8b0792be67352fbcc8da3be4f0109"
+    }
+  ]
+}

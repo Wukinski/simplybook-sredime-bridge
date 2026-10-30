@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-23T09:24:34.568787+00:00",
+  "scope": "Actual provider GETs with local feed rendering; no remote import or booking writes",
+  "source_employee_id": "11772",
+  "target_provider_id": 9,
+  "source_service_id": "233160",
+  "target_service_id": 496,
+  "stages": {
+    "source_change": null,
+    "event_receipt": null,
+    "local_event_processing": null,
+    "refresh_acceptance": null,
+    "sredime_http_fetch": null,
+    "effective_remote_availability": null,
+    "customer_visible_availability": null,
+    "feed_readiness": "2026-10-23T09:24:38.561934+00:00"
+  },
+  "snapshot_to_feed_ready_seconds": 4.0,
+  "outbound_occupancy_events": 15,
+  "outbound_version": "2403e0c40fbffa0d0407a86766e4548694d3b1d432c193d5f814db6df06054af",
+  "local_feed_testclient_status": 200,
+  "local_feed_testclient_seconds": 0.078,
+  "source_export_get_seconds": 0.375,
+  "source_export_events": 0,
+  "simplybook_direct_transport_calls": 5,
+  "source_import_configured": false,
+  "production_enabled": false
+}

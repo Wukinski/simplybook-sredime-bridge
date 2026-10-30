@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-30T11:31:33.235425+00:00",
+  "user_decisions": {
+    "sync_choice": "1C",
+    "full_reservations_both_directions": true,
+    "catalog_authority": "individual_owner_decision_for_every_difference",
+    "simplybook_client_storage_statement": "simplybook ne treba da cuva klijente"
+  },
+  "default_enforcement": {
+    "no_new_customer_writes": true,
+    "no_real_contacts_to_simplybook": true,
+    "no_shared_or_technical_client_approval_inferred": true,
+    "no_mass_customer_deletion_inferred": true
+  },
+  "clarification_pending": "zero_client_objects_vs_anonymous_technical_record",
+  "current_worker_supports_requirement": false,
+  "source_full_reverse_write_contract_established": false,
+  "production_enabled": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-30T10:48:25.294063+00:00",
+  "scope": "single_read_of_existing_account_client_field_schema",
+  "endpoint": "GET /admin/clients/fields",
+  "same_saved_account_identity_verified": true,
+  "existing_persistent_budget_used": true,
+  "response_shape": "object",
+  "field_count": 3,
+  "fields": [
+    {
+      "field_code": null,
+      "is_optional": false,
+      "is_required": null,
+      "required": null
+    },
+    {
+      "field_code": null,
+      "is_optional": false,
+      "is_required": null,
+      "required": null
+    },
+    {
+      "field_code": null,
+      "is_optional": false,
+      "is_required": null,
+      "required": null
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/admin/auth/refresh-token"
+    },
+    {
+      "method": "GET",
+      "path": "/admin/clients/fields"
+    }
+  ],
+  "client_field_get_requests": 1,
+  "authentication_requests": 1,
+  "client_or_customer_records_read": 0,
+  "account_mutations": 0,
+  "budget_request_delta": null,
+  "metadata_values_defaults_labels_or_contacts_recorded": false
+}

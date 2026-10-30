@@ -1,0 +1,20 @@
+{
+  "mins.": "min",
+  "hour": "sat",
+  "hours": "sati",
+  "2_3_4_hour_key": "sata",
+  "many_hours_key": "sati",
+  "minutes": "minuta",
+  "2_3_4_minutes": "minuta",
+  "2_3_4_minute_key": "minuta",
+  "This email was sent to": "Ovaj imejl je poslat na adresu",
+  "This email was sent to %client_email%. You are receiving this email as notification from %company_at_simplybook%.": "Ovaj imejl je poslat na adresu %client_email%. Dobijate ga kao obaveštenje od %company_at_simplybook%.",
+  "Please follow this link %company_terms_and_conditions% to check our terms of service or contact us if you need more information about how we collect and keep your personal data. You can check what information we hold about you, and get a copy of your data here: %link_to_client_gdpr_report_on_booking_site%.": "Na linku %company_terms_and_conditions% možete pročitati naše uslove korišćenja. Kontaktirajte nas ako želite više informacija o prikupljanju i čuvanju vaših ličnih podataka. Podatke koje čuvamo o vama možete pregledati i preuzeti ovde: %link_to_client_gdpr_report_on_booking_site%.",
+  "Please contact us if you need information about how we collect and keep your personal data. You can check what information we hold about you, and get a copy of your data here: %link_to_client_gdpr_report_on_booking_site%.": "Kontaktirajte nas ako želite informacije o prikupljanju i čuvanju vaših ličnih podataka. Podatke koje čuvamo o vama možete pregledati i preuzeti ovde: %link_to_client_gdpr_report_on_booking_site%.",
+  "You can delete your information by sending a delete request to %company_email_address%.": "Brisanje svojih podataka možete zatražiti slanjem zahteva na adresu %company_email_address%.",
+  "with Simplybook.me": "putem Simplybook.me",
+  "Client GDPR report": "Izveštaj o ličnim podacima klijenta",
+  "powered by": "Sistem omogućava",
+  "Powered by": "Sistem omogućava",
+  "Free widget powered by": "Besplatan obrazac omogućava"
+}

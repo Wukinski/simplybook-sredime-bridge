@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "prepared_at_utc": "2026-10-30T11:39:45.148562+00:00",
+  "scope": "dormant_fixed_scope_anonymous_booking_capability_probe",
+  "preparation_only": true,
+  "live_prepare_reads": 0,
+  "live_booking_posts": 0,
+  "live_booking_cancellations": 0,
+  "live_client_mutations": 0,
+  "live_source_requests": 0,
+  "credential_reads_or_transfers": 0,
+  "runtime_worker_gateway_profile_readiness_changes": false,
+  "owner_client_object_policy_clarification_pending": true,
+  "owner_experiment_uncertainty_consent_pending": true,
+  "fresh_test_record_identity_verified_live": false,
+  "future_free_slot_observed_live": false,
+  "anonymous_booking_server_capability_verified": false,
+  "windows_fake_transport_tests": {
+    "passed": 38,
+    "failed": 0,
+    "skipped": 0
+  },
+  "schema_snapshot_sha256": "116cb9121550e7e35010e210ec352cb9ae6fe4eb9f3e661e5934568a3eb0d327",
+  "client_count_check": {
+    "documented_route": "GET /admin/clients?page=1&on_page=1",
+    "persisted_fields": "counts_and_pagination_integers_only",
+    "documented_metadata_only_or_projection_parameter": false,
+    "client_rows_may_be_received_transiently": true,
+    "contact_fields_persisted": false,
+    "count_equality_proves_only_net_change": true
+  },
+  "ownership_limit": "A unique exact new candidate after an uncertain POST is not proof of ownership and is never canceled automatically.",
+  "mutation_policy": {
+    "max_booking_posts_per_journal": 1,
+    "max_exact_owned_booking_cancellations_per_journal": 1,
+    "uncertain_post_or_delete_replayed": false,
+    "any_client_endpoint_mutation_allowed": false,
+    "positive_or_nonnull_client_id_accepted": false
+  },
+  "file_sha256": {
+    "booking_bridge/anonymous_booking_probe.py": "fd2960d300efab99bcc42524143d1b3534b546e5e6d2da21f95d972e3ca78e4b",
+    "booking_bridge/tests/test_anonymous_booking_probe.py": "2f5d73f751f3cbadf6c08c4e4018542c9d17033cf03cb3dfa31f646a288b9c93",
+    "booking_bridge/deploy/ANONYMOUS_BOOKING_PROBE.md": "023c314d7a473d20a373554999c87102077ccbcf31d685c4e07c91d18e534e6b"
+  }
+}

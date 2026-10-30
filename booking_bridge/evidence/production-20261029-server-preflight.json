@@ -1,0 +1,221 @@
+{
+  "target": "production",
+  "current_mode": "production",
+  "configuration_ready": false,
+  "checks": [
+    {
+      "code": "runtime_configuration",
+      "ok": false
+    },
+    {
+      "code": "approval_live_writes",
+      "ok": true
+    },
+    {
+      "code": "approval_business_rules",
+      "ok": false
+    },
+    {
+      "code": "approval_hosting",
+      "ok": true
+    },
+    {
+      "code": "approval_privacy",
+      "ok": false
+    },
+    {
+      "code": "approval_account_identity_verified",
+      "ok": false
+    },
+    {
+      "code": "approval_schedule_reference_verified",
+      "ok": false
+    },
+    {
+      "code": "approval_client_mapping",
+      "ok": false
+    },
+    {
+      "code": "approval_notification_behavior",
+      "ok": false
+    },
+    {
+      "code": "approval_account_booking_trial",
+      "ok": false
+    },
+    {
+      "code": "approval_calendar_blocks_trial",
+      "ok": false
+    },
+    {
+      "code": "approval_empty_feed_trial",
+      "ok": false
+    },
+    {
+      "code": "live_reads",
+      "ok": true
+    },
+    {
+      "code": "sredime_signing_secret",
+      "ok": false
+    },
+    {
+      "code": "simplybook_signing_secret",
+      "ok": false
+    },
+    {
+      "code": "admin_key",
+      "ok": false
+    },
+    {
+      "code": "rest_credentials",
+      "ok": false
+    },
+    {
+      "code": "rest_company",
+      "ok": false
+    },
+    {
+      "code": "rest_region",
+      "ok": false
+    },
+    {
+      "code": "employee_allowlist",
+      "ok": false
+    },
+    {
+      "code": "employee_mappings",
+      "ok": false
+    },
+    {
+      "code": "unique_employee_targets",
+      "ok": true
+    },
+    {
+      "code": "service_mappings",
+      "ok": false
+    },
+    {
+      "code": "service_timing_and_resources",
+      "ok": false
+    },
+    {
+      "code": "schedule_references",
+      "ok": false
+    },
+    {
+      "code": "private_feed_tokens",
+      "ok": false
+    },
+    {
+      "code": "source_export_endpoints",
+      "ok": false
+    },
+    {
+      "code": "local_state_readable",
+      "ok": true
+    },
+    {
+      "code": "restore_reconciliation_complete",
+      "ok": true
+    },
+    {
+      "code": "remote_intents_resolved",
+      "ok": true
+    },
+    {
+      "code": "client_mappings",
+      "ok": false
+    },
+    {
+      "code": "production_evidence_manifest",
+      "ok": true,
+      "status": "reviewed"
+    },
+    {
+      "code": "production_state_reconciliation",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_identity_mappings",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_business_rules",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_notification_delivery",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_original_created_delivery",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_availability_latency",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_empty_feed_removal",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_external_monitoring",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_encrypted_off_host_restore",
+      "ok": true,
+      "status": "reviewed"
+    },
+    {
+      "code": "production_tls_renewal",
+      "ok": true,
+      "status": "reviewed"
+    },
+    {
+      "code": "production_linux_http_validation",
+      "ok": true,
+      "status": "reviewed"
+    },
+    {
+      "code": "production_soak_72h",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_server_credentials_review",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_diagnostic_qwen_readonly",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_diagnostic_email_delivery",
+      "ok": false,
+      "status": "pending"
+    },
+    {
+      "code": "production_activation",
+      "ok": true,
+      "status": "reviewed"
+    },
+    {
+      "code": "production_state_present",
+      "ok": false
+    }
+  ],
+  "external_validation_performed": false
+}

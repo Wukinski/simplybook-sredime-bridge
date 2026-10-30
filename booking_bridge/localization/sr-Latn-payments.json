@@ -1,0 +1,11 @@
+{
+  "client_payment_fail_template_email_subject_text": "Obaveštenje o otkazanoj kupovini ili rezervaciji",
+  "client_payment_fail_template_email_textarea": "Vaša kupovina ili rezervacija otkazana je jer uplata nije primljena u predviđenom roku.\n\nAko smatrate da je došlo do greške, vratite se na sajt i ponovite kupovinu ili rezervaciju. Dovršite plaćanje u predviđenom roku ili, ako je dostupno, izaberite plaćanje kasnije.",
+  "client_payment_fail_template_textarea": "Vaša kupovina kod [company_name] otkazana je jer je rok za plaćanje istekao. Kontaktirajte nas ako smatrate da je došlo do greške.",
+  "client_payment_paylater_template_email_subject_text": "Potvrda porudžbine",
+  "client_payment_paylater_template_email_textarea": "Poštovani [client_name],\n\nIzabrali ste plaćanje kasnije. Porudžbinu možete platiti putem linka [payment_link] ili gotovinom prilikom dolaska.",
+  "client_payment_paylater_template_textarea": "Porudžbinu možete platiti putem linka [payment_link] ili gotovinom prilikom dolaska.",
+  "client_payment_refund_template_email_subject_text": "Potvrda povraćaja novca",
+  "client_payment_refund_template_email_textarea": "Poštovani [client_name],\n\nVraćena vam je uplata u iznosu od [invoice_amount].",
+  "client_payment_refund_template_textarea": "Vraćena vam je uplata u iznosu od [invoice_amount]."
+}

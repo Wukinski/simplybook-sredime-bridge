@@ -1,0 +1,89 @@
+{
+  "observed_at_utc": "2026-10-27T09:48:25.554570+00:00",
+  "containers": [
+    {
+      "name": "/booking-bridge-pilot-api-1",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "image_tag": "andjelija-bridge:pilot-20261027-integration1",
+      "command": [
+        "python",
+        "-m",
+        "uvicorn",
+        "booking_bridge.api:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--no-access-log",
+        "--workers",
+        "1"
+      ],
+      "user": "10001:10001",
+      "readonly_root": true,
+      "dropped_capabilities": [
+        "ALL"
+      ],
+      "running": true
+    },
+    {
+      "name": "/booking-bridge-pilot-worker-1",
+      "image_id": "sha256:8a8440d7e6ab72d6a388deb5bf2594e5ae174bfd166075d939d81c8d08987cc0",
+      "image_tag": "andjelija-bridge:pilot-20261027-integration1",
+      "command": [
+        "python",
+        "-m",
+        "booking_bridge.pilot_receiver"
+      ],
+      "user": "10001:10001",
+      "readonly_root": true,
+      "dropped_capabilities": [
+        "ALL"
+      ],
+      "running": true
+    }
+  ],
+  "remote": {
+    "observed_at": 1793094502.6018965,
+    "mode": "simulation",
+    "reads_enabled": false,
+    "allowed_employees": [
+      "11772"
+    ],
+    "liveness_http": 200,
+    "private_readiness_http": 503,
+    "open_issues": [
+      {
+        "key": "feed:11772",
+        "reason": "booking_snapshot_stale"
+      }
+    ],
+    "event_state_counts": {
+      "ignored": 1
+    },
+    "links": 0,
+    "simplybook_signing_secret_configured": false,
+    "source_signing_secret_configured": true
+  },
+  "tests": {
+    "windows": {
+      "tests": 382,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "linux": {
+      "tests": 382,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "occupancy_packet_transfer": "blocked_by_automatic_approval_review",
+  "simplybook_signing_secret_transfer": "blocked_by_automatic_approval_review",
+  "production_enabled": false,
+  "live_end_to_end_import_proven": false,
+  "approval_requested_for": [
+    "test_provider_9_minimal_occupancy_to_existing_vps",
+    "simplybook_webhook_hmac_secret_to_existing_vps"
+  ]
+}

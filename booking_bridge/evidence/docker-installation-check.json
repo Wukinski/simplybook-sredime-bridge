@@ -1,0 +1,59 @@
+{
+  "architecture": "x86_64",
+  "automatic_restart": false,
+  "checked_at": "2026-10-22T12:10:19.390239+00:00",
+  "compose": {
+    "config_check": "compose config --quiet --no-env-resolution",
+    "project_config_valid": true,
+    "verified": true,
+    "version": "5.6.1"
+  },
+  "container_build_executed": true,
+  "docker_cli": {
+    "user_path_configured": true,
+    "verified": true,
+    "version": "29.9.2"
+  },
+  "docker_desktop": {
+    "authenticode_signer": "Docker Inc",
+    "authenticode_valid": true,
+    "installed": true,
+    "installer_exit_code": 0,
+    "sha256_verified_against_winget": true,
+    "version": "4.96.2"
+  },
+  "docker_engine_running": true,
+  "hardware_virtualization_enabled": true,
+  "hypervisor_running": true,
+  "installation_mode": "per-user",
+  "next_steps": [
+    "Complete Buker login and pilot prerequisites; production remains disabled"
+  ],
+  "os": "Windows 10 Pro 22H2 build 19045",
+  "post_restart_verification": {
+    "checked_at": "2026-10-22T15:02:46.738716+00:00",
+    "connector_tests_passed": 171,
+    "engine_running": true,
+    "hypervisor_running": true,
+    "image_id": "sha256:c98b774286733cd2d0d9c35b439be8cb16947f19d25e24fab96463941875fd95",
+    "linux_image_build": "passed",
+    "smoke_passed": true
+  },
+  "production_enabled": false,
+  "restart_required": false,
+  "wsl": {
+    "kernel": "6.18.33.2-2",
+    "package_installed": true,
+    "version": "2.7.13.0",
+    "windows_features": [
+      {
+        "name": "Microsoft-Windows-Subsystem-Linux",
+        "state": "Enabled"
+      },
+      {
+        "name": "VirtualMachinePlatform",
+        "state": "Enabled"
+      }
+    ]
+  }
+}

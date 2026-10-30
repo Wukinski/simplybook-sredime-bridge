@@ -1,0 +1,43 @@
+{
+  "read_only": true,
+  "business_writes": 0,
+  "mappings_applied": false,
+  "salon_slug": "studio-andjelija-sg",
+  "vendor_id": "1404",
+  "source_checked_at": "2026-10-22T17:04:52.668027+00:00",
+  "target_checked_at": "2026-10-22T19:01:26.445082+02:00",
+  "source_active_employee_count": 9,
+  "source_bookable_employee_count": 6,
+  "source_service_count": 677,
+  "target_employee_count": 6,
+  "target_service_count": 494,
+  "unique_employee_name_candidates": 4,
+  "employees_without_unique_name_match": [
+    "6873",
+    "5571"
+  ],
+  "bookable_employees_without_assigned_services": [
+    "6873",
+    "10857"
+  ],
+  "unique_service_name_candidates": 18,
+  "unique_service_duration_mismatches": 9,
+  "source_imports_configured": 0,
+  "source_exports_available": 9,
+  "instant_booking_enabled": false,
+  "source_webhook_count": 0,
+  "resource_count": 4,
+  "production_enabled": false,
+  "subminute_verified": false,
+  "authenticated_account_verified": true,
+  "service_detail_forms_read": 18,
+  "remote_account_settings_changed": false,
+  "private_urls_saved_to_ignored_env": 9,
+  "password_saved_to_project": false,
+  "live_reads_enabled": false,
+  "notes": [
+    "Catalog entries include entries whose active status was not individually verified.",
+    "18 unique service-name candidates were read in detail; no automatic identity/timing approvals.",
+    "Sanja/Sara identity remains unresolved pending owner clarification."
+  ]
+}

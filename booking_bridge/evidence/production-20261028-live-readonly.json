@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-28T11:09:10.949280+00:00",
+  "read_only": true,
+  "account_api_calls": 0,
+  "live_booking_writes": 0,
+  "deployed_services_changed": false,
+  "tls": {
+    "public_chain_and_hostname_verified": true,
+    "expires_at": "2026-11-02T14:34:01+00:00",
+    "timer": "booking-bridge-certbot.timer",
+    "timer_active": true,
+    "timer_enabled": true,
+    "last_service_result": "success",
+    "last_service_exit_status": 0,
+    "renewed_certificate_observed": false
+  },
+  "host_snapshot": {
+    "collected_at": "2026-10-28T10:56:55.140834+00:00",
+    "open_issue_reasons": {
+      "booking_snapshot_stale": 1
+    },
+    "state_review": "production-20261028-state-review.json"
+  },
+  "limitations": [
+    "expiry_not_a_renewal_guarantee",
+    "snapshot_not_a_current_account_readback"
+  ]
+}

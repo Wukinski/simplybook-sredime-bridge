@@ -1,0 +1,38 @@
+{
+  "checked_at_epoch": 1793062066.7236962,
+  "source": "existing_durable_inbox_read_only",
+  "events": [
+    {
+      "state": "ignored",
+      "reason": "employee_outside_allowlist",
+      "received_at": 1792763877.453955,
+      "type": "booking.updated",
+      "test_flag": false,
+      "envelope_keys": [
+        "created_at",
+        "data",
+        "id",
+        "test",
+        "type"
+      ],
+      "data_schema": {
+        "id": "str",
+        "status": "int",
+        "start_at": "str",
+        "end_at": "str",
+        "duration": "int",
+        "service": "dict",
+        "employee": "dict",
+        "customer": "dict",
+        "changes": "dict"
+      },
+      "customer_field_names": [
+        "id"
+      ],
+      "employee_in_test_allowlist": false
+    }
+  ],
+  "links_count": 0,
+  "intents_count": 0,
+  "new_delivery_requested": false
+}

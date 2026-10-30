@@ -1,0 +1,14 @@
+{
+  "read_only": true,
+  "service_shape": {
+    "id": 6,
+    "duration": 60,
+    "buffer_time_after": 0,
+    "is_active": true,
+    "providers": [
+      5,
+      6
+    ]
+  },
+  "off_day": []
+}

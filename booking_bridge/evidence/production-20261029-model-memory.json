@@ -1,0 +1,8 @@
+{
+  "observed_at": 1793277180.5352058,
+  "historical_oom_baseline": 1,
+  "oom_kills": 1,
+  "new_oom_kills": 0,
+  "memory_current_bytes": 6696300544,
+  "memory_limit_bytes": 8589934592
+}

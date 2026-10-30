@@ -1,0 +1,56 @@
+{
+  "validated_at": "2026-10-21T14:48:01.379585+00:00",
+  "python": "3.12.10",
+  "sredime_document": {
+    "path": "C:\\Users\\aaaaz\\Downloads\\SrediMe for Developers.html",
+    "version": "2026-09-10-1",
+    "sha256": "2a9c05f463c85c629c6c060b42cb9ff7bcb454e668b4a2ba6e088baf30380013"
+  },
+  "official_openapi": {
+    "url": "https://simplybook.me/api/swagger-admin",
+    "sha256": "116cb9121550e7e35010e210ec352cb9ae6fe4eb9f3e661e5934568a3eb0d327"
+  },
+  "test_results": {
+    "connector": {
+      "tests": 106,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "seconds": 9.11
+    },
+    "existing_modules": {
+      "tests": 132,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "seconds": 14.531
+    }
+  },
+  "localhost_http": {
+    "mode": "simulation",
+    "external_reads": false,
+    "external_writes": false,
+    "ack_ms": 15,
+    "accepted_status": 202,
+    "deduplicated_rows": 1,
+    "final_state": "test",
+    "invalid_signature_status": 401,
+    "status": "passed"
+  },
+  "dependency_check": "pip check: No broken requirements found",
+  "warning": "Existing FastAPI/Starlette TestClient reports httpx deprecation; tests pass. No shared dependencies upgraded.",
+  "production_writes": 0,
+  "hosting_created": false,
+  "production_ready": false,
+  "pending": [
+    "business decisions",
+    "SrediMe activation and explicit ID mappings",
+    "isolated remote pilot",
+    "private client mapping approval",
+    "notification/resource/block/empty-feed verification",
+    "hosting and alerts approval",
+    "Linux image and off-host restore validation"
+  ],
+  "locked_packages": 37,
+  "documentation_links": "all local Markdown links resolve"
+}

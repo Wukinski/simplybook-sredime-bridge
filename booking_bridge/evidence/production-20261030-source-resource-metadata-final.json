@@ -1,0 +1,549 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-30T11:59:40.589459+00:00",
+  "complete": true,
+  "read_only": true,
+  "scope": "explicit_final_corrected_four_native_asset_forms",
+  "prior_projection_gets": 3,
+  "maximum_new_gets": 4,
+  "latest_authorized_total_gets": 7,
+  "minimum_start_spacing_seconds": 1,
+  "automatic_request_retries": 0,
+  "requests": [
+    {
+      "id": "48",
+      "requested_at_utc": "2026-10-30T11:59:41.070851+00:00",
+      "http_status": 200,
+      "nonsecret_control_names": [
+        "active",
+        "close_1",
+        "close_2",
+        "close_3",
+        "close_4",
+        "close_5",
+        "close_6",
+        "close_7",
+        "id",
+        "name",
+        "open_1",
+        "open_2",
+        "open_3",
+        "open_4",
+        "open_5",
+        "open_6",
+        "open_7",
+        "quantity",
+        "services[]",
+        "vendor_id",
+        "works_1",
+        "works_2",
+        "works_3",
+        "works_4",
+        "works_5",
+        "works_6",
+        "works_7"
+      ],
+      "native_id_matches": true,
+      "vendor_id_matches_1404": true,
+      "form_action_bound_to_current_url": true,
+      "projected": true
+    },
+    {
+      "id": "49",
+      "requested_at_utc": "2026-10-30T11:59:42.069994+00:00",
+      "http_status": 200,
+      "nonsecret_control_names": [
+        "active",
+        "close_1",
+        "close_2",
+        "close_3",
+        "close_4",
+        "close_5",
+        "close_6",
+        "close_7",
+        "id",
+        "name",
+        "open_1",
+        "open_2",
+        "open_3",
+        "open_4",
+        "open_5",
+        "open_6",
+        "open_7",
+        "quantity",
+        "services[]",
+        "vendor_id",
+        "works_1",
+        "works_2",
+        "works_3",
+        "works_4",
+        "works_5",
+        "works_6",
+        "works_7"
+      ],
+      "native_id_matches": true,
+      "vendor_id_matches_1404": true,
+      "form_action_bound_to_current_url": true,
+      "projected": true
+    },
+    {
+      "id": "50",
+      "requested_at_utc": "2026-10-30T11:59:43.074588+00:00",
+      "http_status": 200,
+      "nonsecret_control_names": [
+        "active",
+        "close_1",
+        "close_2",
+        "close_3",
+        "close_4",
+        "close_5",
+        "close_6",
+        "close_7",
+        "id",
+        "name",
+        "open_1",
+        "open_2",
+        "open_3",
+        "open_4",
+        "open_5",
+        "open_6",
+        "open_7",
+        "quantity",
+        "services[]",
+        "vendor_id",
+        "works_1",
+        "works_2",
+        "works_3",
+        "works_4",
+        "works_5",
+        "works_6",
+        "works_7"
+      ],
+      "native_id_matches": true,
+      "vendor_id_matches_1404": true,
+      "form_action_bound_to_current_url": true,
+      "projected": true
+    },
+    {
+      "id": "51",
+      "requested_at_utc": "2026-10-30T11:59:44.080025+00:00",
+      "http_status": 200,
+      "nonsecret_control_names": [
+        "active",
+        "close_1",
+        "close_2",
+        "close_3",
+        "close_4",
+        "close_5",
+        "close_6",
+        "close_7",
+        "id",
+        "name",
+        "open_1",
+        "open_2",
+        "open_3",
+        "open_4",
+        "open_5",
+        "open_6",
+        "open_7",
+        "quantity",
+        "services[]",
+        "vendor_id",
+        "works_1",
+        "works_2",
+        "works_3",
+        "works_4",
+        "works_5",
+        "works_6",
+        "works_7"
+      ],
+      "native_id_matches": true,
+      "vendor_id_matches_1404": true,
+      "form_action_bound_to_current_url": true,
+      "projected": true
+    }
+  ],
+  "rows": [
+    {
+      "id": "48",
+      "vendor_id": "1404",
+      "name": "Lipolaser",
+      "quantity": 1,
+      "quantity_raw_values": [
+        "1"
+      ],
+      "quantity_from_actual_form": true,
+      "quantity_inferred_from_name": false,
+      "active": true,
+      "selected_service_ids": [
+        "150277",
+        "128417",
+        "128419",
+        "128423",
+        "128418",
+        "128420",
+        "128427",
+        "128425",
+        "208032",
+        "208034",
+        "150280",
+        "150281",
+        "150282",
+        "150283",
+        "150288",
+        "150290"
+      ],
+      "service_relation_values_all_numeric": true,
+      "group_or_capacity_controls": {},
+      "weekly_schedule_raw": [
+        {
+          "native_day": 1,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 2,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 3,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 4,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 5,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 6,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 7,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        }
+      ],
+      "observed_at_utc": "2026-10-30T11:59:41.370063+00:00",
+      "response_sha256": "c6ada52d36ccde56c5572dddfa91e39c2da742d7ad99593d492f9688707add64",
+      "linked_service_ids_from_complete_catalog": [
+        "150277",
+        "128417",
+        "128419",
+        "128423",
+        "128418",
+        "128420",
+        "128427",
+        "128425",
+        "208032",
+        "208034",
+        "150280",
+        "150281",
+        "150282",
+        "150283",
+        "150288",
+        "150290"
+      ],
+      "linked_active_service_ids_from_complete_catalog": [
+        "150277",
+        "128417",
+        "128419",
+        "128423",
+        "128418",
+        "128420",
+        "128427",
+        "128425",
+        "208032",
+        "208034",
+        "150280",
+        "150281",
+        "150282",
+        "150283",
+        "150288",
+        "150290"
+      ],
+      "form_service_links_match_complete_catalog": true
+    },
+    {
+      "id": "49",
+      "vendor_id": "1404",
+      "name": "Tesla",
+      "quantity": 1,
+      "quantity_raw_values": [
+        "1"
+      ],
+      "quantity_from_actual_form": true,
+      "quantity_inferred_from_name": false,
+      "active": true,
+      "selected_service_ids": [
+        "141221",
+        "141223",
+        "141222",
+        "141224",
+        "150286",
+        "150287",
+        "150284",
+        "150285"
+      ],
+      "service_relation_values_all_numeric": true,
+      "group_or_capacity_controls": {},
+      "weekly_schedule_raw": [
+        {
+          "native_day": 1,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 2,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 3,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 4,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 5,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 6,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 7,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        }
+      ],
+      "observed_at_utc": "2026-10-30T11:59:42.334545+00:00",
+      "response_sha256": "831aa66ee56375706c13881adb3400363c52b93764c6061a9b4cc560424d7abd",
+      "linked_service_ids_from_complete_catalog": [
+        "141221",
+        "141223",
+        "141222",
+        "141224",
+        "150286",
+        "150287",
+        "150284",
+        "150285"
+      ],
+      "linked_active_service_ids_from_complete_catalog": [
+        "141221",
+        "141223",
+        "141222",
+        "141224",
+        "150286",
+        "150287"
+      ],
+      "form_service_links_match_complete_catalog": true
+    },
+    {
+      "id": "50",
+      "vendor_id": "1404",
+      "name": "Termo ćebe / Vaccum slim",
+      "quantity": 1,
+      "quantity_raw_values": [
+        "1"
+      ],
+      "quantity_from_actual_form": true,
+      "quantity_inferred_from_name": false,
+      "active": true,
+      "selected_service_ids": [
+        "128432",
+        "128434",
+        "128435",
+        "128436",
+        "128437",
+        "208065",
+        "208066",
+        "176068"
+      ],
+      "service_relation_values_all_numeric": true,
+      "group_or_capacity_controls": {},
+      "weekly_schedule_raw": [
+        {
+          "native_day": 1,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 2,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 3,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 4,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 5,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 6,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 7,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        }
+      ],
+      "observed_at_utc": "2026-10-30T11:59:43.215083+00:00",
+      "response_sha256": "9032a5d7c5eb340ecb628f962e8569c1ea393b15831fd1de4e3a22b4bfe4d669",
+      "linked_service_ids_from_complete_catalog": [
+        "128432",
+        "128434",
+        "128435",
+        "128436",
+        "128437",
+        "208065",
+        "208066",
+        "176068"
+      ],
+      "linked_active_service_ids_from_complete_catalog": [
+        "128432",
+        "128434",
+        "128435",
+        "128436",
+        "128437",
+        "208065",
+        "208066",
+        "176068"
+      ],
+      "form_service_links_match_complete_catalog": true
+    },
+    {
+      "id": "51",
+      "vendor_id": "1404",
+      "name": "Presoterapija",
+      "quantity": 1,
+      "quantity_raw_values": [
+        "1"
+      ],
+      "quantity_from_actual_form": true,
+      "quantity_inferred_from_name": false,
+      "active": true,
+      "selected_service_ids": [
+        "150302",
+        "150303",
+        "176067"
+      ],
+      "service_relation_values_all_numeric": true,
+      "group_or_capacity_controls": {},
+      "weekly_schedule_raw": [
+        {
+          "native_day": 1,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 2,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 3,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 4,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 5,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 6,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        },
+        {
+          "native_day": 7,
+          "works": true,
+          "open_values": [],
+          "close_values": []
+        }
+      ],
+      "observed_at_utc": "2026-10-30T11:59:44.232656+00:00",
+      "response_sha256": "04dfe1c8868810210f198e01a1b4be252df9c147a9c90daa217aa10db00f9ef8",
+      "linked_service_ids_from_complete_catalog": [
+        "150302",
+        "150303",
+        "176067"
+      ],
+      "linked_active_service_ids_from_complete_catalog": [
+        "150302",
+        "150303",
+        "176067"
+      ],
+      "form_service_links_match_complete_catalog": true
+    }
+  ],
+  "source_posts": 0,
+  "customer_or_booking_reads": 0,
+  "raw_html_tokens_cookies_export_urls_saved": false,
+  "source_catalog_sha256": "baa9473119019510f28cbff659d2573d71305e54d3ecf35add14ec932f0ef82d",
+  "completed_at_utc": "2026-10-30T11:59:44.258656+00:00",
+  "get_count_this_pass": 4,
+  "total_asset_gets": 7,
+  "business_mutations": 0,
+  "runtime_mapping_changes": false,
+  "quantities_observed_for_all_four": true
+}
